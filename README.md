@@ -65,7 +65,7 @@
 
 ### 方式一：安装包（推荐，自动适配多版本）
 1. 运行配套安装包（见下方「重新生成安装包」），**右键以管理员身份运行**（需写入 Program Files 下的 Max 目录）。
-2. 安装程序会扫描注册表里**所有**已装 3ds Max 版本，列出菜单让你**勾选**要安装到哪些版本（支持 `1 3` 多选、`all` 全部、或手动输入路径）。
+2. 安装向导会扫描注册表里**所有**已装的 3ds Max 版本，用勾选框让你**勾选**要安装到哪些版本（默认全选）；若未列出，也可在安装页手动指定 3ds Max 安装目录。
 3. 装完后**重启对应的 3ds Max** 即可，启动时会自动加载面板。
 
 ### 方式二：手动安装
@@ -89,8 +89,8 @@ ScenePromoter4/
 ├─ Help/                   # 使用说明与帮助文档
 ├─ images/                 # 界面图标与 Logo
 ├─ build.ps1              # 原 .NET 方案安装包构建脚本（参考）
-├─ installer.py           # 新版安装逻辑（Python）
-└─ build_installer.py     # 新版安装包打包脚本（生成独立 exe）
+├─ installer.nsi          # 安装包脚本（NSIS，向导式，与原版 4.1.1 同款）
+└─ build_nsis.bat         # 编译安装包的批处理（需先安装 NSIS）
 ```
 
 > 说明：仓库刻意**不包含任何编译产物（`.exe` / `dist/` / `payload.zip` 等）**，保持源码纯净；安装包由下面的脚本在本地生成。
@@ -99,20 +99,21 @@ ScenePromoter4/
 
 ## 重新生成安装包（开发者）
 
-环境要求：Python 3.10+，并在隔离环境中安装 `pyinstaller`。
+本安装包使用 **NSIS（Nullsoft 安装系统）** 制作，与原版 `场景助手4_1_1.exe` 同款——向导式安装（欢迎 → 选择版本 → 安装 → 完成），并自动在控制面板注册卸载项，**不是自解压包**。
 
-```bash
-# 1. 准备隔离环境并安装依赖（示例）
-python -m venv .venv
-.\.venv\Scripts\pip install pyinstaller
+环境要求：安装 NSIS（https://nsis.sourceforge.io ，安装时会自动加入 PATH）。
 
-# 2. 生成安装包（单文件、自动请求管理员权限）
-.\.venv\Scripts\python build_installer.py
+```bat
+REM 方式一：直接运行批处理
+build_nsis.bat
+
+REM 方式二：手动调用 makensis
+makensis installer.nsi
 ```
 
-生成的 `dist\场景助手4_3_0.exe` 即为独立安装程序：
-- 把插件目录与启动脚本压缩为 `payload.zip` 内嵌进 exe
-- 运行时自动检测本机所有 3ds Max 版本并让用户勾选安装
+生成的 `dist\场景助手4_3_0.exe` 即为安装程序：
+- 向导式界面，运行时自动检测本机所有 3ds Max 版本并让用户勾选安装（默认全选）；未列出时可手动指定目录
+- 插件复制到 `<Max>\scripts\ScenePromoter4\`，启动脚本 `SP4_startup.ms` 复制到 `<Max>\scripts\Startup\`
 
 ---
 
