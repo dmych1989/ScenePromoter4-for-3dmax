@@ -310,7 +310,16 @@ class InstallerApp:
 
 def main():
     if tk is None:
-        print("错误：当前环境缺少 Tkinter，无法运行图形安装程序。")
+        # 窗口程序里 print 不可见，用 Win32 消息框给出明确错误
+        try:
+            import ctypes
+            ctypes.windll.user32.MessageBoxW(
+                0,
+                "安装程序无法启动：当前运行环境缺少 Tkinter (tcl/tk) 组件。\n"
+                "请重新下载最新版本的安装包。",
+                "场景助手 安装程序 - 错误", 0x10)
+        except Exception:
+            pass
         return
     root = tk.Tk()
     try:

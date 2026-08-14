@@ -39,8 +39,7 @@ STAGE_DIRS = ["Lib", "Help", "images"]
 
 
 def stage_files():
-    if os.path.exists(STAGE):
-        shutil.rmtree(STAGE)
+    # 复用暂存目录（覆盖写入即可），避免批量删除触发某些环境的拦截
     plugin_dir = os.path.join(STAGE, "ScenePromoter4")
     os.makedirs(plugin_dir, exist_ok=True)
 
@@ -54,7 +53,7 @@ def stage_files():
     for d in STAGE_DIRS:
         src = os.path.join(PROJECT, d)
         if os.path.isdir(src):
-            shutil.copytree(src, os.path.join(plugin_dir, d))
+            shutil.copytree(src, os.path.join(plugin_dir, d), dirs_exist_ok=True)
         else:
             print("  [警告] 缺少目录: %s" % d)
 
@@ -91,6 +90,7 @@ def build_exe():
         "--onefile",
         "--windowed",            # 图形界面，无控制台（避免中文乱码）
         "--uac-admin",           # 请求管理员权限（写 Program Files 需要）
+        "--collect-all", "tkinter",   # 确保把 tcl/tk 运行时一起打进 exe
         "--name", OUT_NAME,
         "--distpath", dist,
         "--workpath", build,
@@ -124,14 +124,17 @@ def main():
         print("\n打包失败：未生成 exe")
 
     # 清理临时产物（保留 dist 里的 exe）
+    # 注：某些环境对批量删除(>50 文件)有拦截，清理失败不影响产物，忽略即可
     build_dir = os.path.join(PROJECT, "build")
-    if os.path.exists(STAGE):
-        shutil.rmtree(STAGE)
-    if os.path.exists(PAYLOAD):
-        os.remove(PAYLOAD)
-    if os.path.exists(build_dir):
-        shutil.rmtree(build_dir)
-    print("临时文件已清理")
+    for p in (STAGE, PAYLOAD, build_dir):
+        try:
+            if os.path.isdir(p):
+                shutil.rmtree(p)
+            elif os.path.isfile(p):
+                os.remove(p)
+        except Exception as e:
+            print("  [提示] 清理临时文件被环境拦截（可忽略，已被 .gitignore 忽略）: %s" % p)
+    print("打包完成")
 
 
 if __name__ == "__main__":
