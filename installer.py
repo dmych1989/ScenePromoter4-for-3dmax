@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-场景助手 4 安装程序 (Python 版, 单文件自解压)
--------------------------------------------------
+场景助手 4 安装程序 (Python 版, 单文件自解压, 图形界面)
+--------------------------------------------------------
 安装逻辑：
   1. 从注册表扫描本机所有已安装的 3ds Max 版本（同时查 64 位与 32 位视图）
-  2. 列出菜单让用户勾选要安装到哪些版本（支持多选 / 全部）
+  2. 在窗口中以勾选框列出，用户勾选要安装到哪些版本
   3. 将内嵌的 payload.zip 解压到临时目录，再把：
         ScenePromoter4/  ->  <Max>\\scripts\\ScenePromoter4\\
         SP4_startup.ms   ->  <Max>\\scripts\\Startup\\SP4_startup.ms
   3ds Max 启动时会自动加载 Startup 里的 SP4_startup.ms，再 filein 各主脚本。
+
+说明：使用 Tkinter 图形界面，文字为 Unicode 原生显示，不再受 Windows
+控制台代码页影响（旧版控制台方式在部分系统上会出现中文乱码）。
 """
 
 import os
@@ -17,6 +20,12 @@ import sys
 import zipfile
 import shutil
 import tempfile
+
+try:
+    import tkinter as tk
+    from tkinter import messagebox, scrolledtext
+except ImportError:
+    tk = None
 
 try:
     import winreg
@@ -35,17 +44,6 @@ MAX_VERSION_NAMES = {
     "22.0": "2020", "23.0": "2021", "24.0": "2022", "25.0": "2023",
     "26.0": "2024", "27.0": "2025", "28.0": "2026",
 }
-
-
-def setup_encoding():
-    """让 Windows 控制台正确显示中文（GBK / 代码页 936）。"""
-    try:
-        if hasattr(sys.stdout, "reconfigure"):
-            sys.stdout.reconfigure(encoding="gbk")
-        if hasattr(sys.stderr, "reconfigure"):
-            sys.stderr.reconfigure(encoding="gbk")
-    except Exception:
-        pass
 
 
 def resource_path(filename):
@@ -119,107 +117,209 @@ def copy_tree(src, dst):
             shutil.copy2(s, d)
 
 
-def main():
-    setup_encoding()
-    print("=" * 44)
-    print("    场景助手 %s 安装程序" % VERSION)
-    print("    作者：%s" % AUTHOR)
-    print("    QQ群：%s" % QQGROUP)
-    print("=" * 44)
-    print("")
+class InstallerApp:
+    def __init__(self, root):
+        self.root = root
+        self.checks = []          # [(BooleanVar, name, path), ...]
+        self.payload = find_payload()
 
-    payload = find_payload()
-    if not payload:
-        print("错误：未找到安装数据 payload.zip！")
-        input("按回车退出...")
-        return
+        root.title("场景助手 %s 安装程序" % VERSION)
+        root.geometry("580x640")
+        root.resizable(True, True)
 
-    print("正在检测本机已安装的 3ds Max ...")
-    installs = enum_max_installs()
-    if not installs:
-        print("未检测到任何 3ds Max 安装。")
-        print("若 3ds Max 安装在非标准位置或注册表项缺失，可手动输入。")
-        manual = input("请输入 3ds Max 安装目录(含末尾反斜杠, 如 C:\\Program Files\\Autodesk\\3ds Max 2022\\)：").strip()
-        if not manual:
-            print("未提供路径，已退出。")
-            input("按回车退出...")
+        # ---- 标题区 ----
+        head = tk.Frame(root, padx=12, pady=8)
+        head.pack(fill=tk.X)
+        tk.Label(head, text="场景助手 %s 安装程序" % VERSION,
+                 font=("Microsoft YaHei", 16, "bold")).pack(anchor=tk.W)
+        tk.Label(head, text="作者：%s     QQ群：%s" % (AUTHOR, QQGROUP),
+                 font=("Microsoft YaHei", 10), fg="#555555").pack(anchor=tk.W)
+
+        # ---- 版本列表区 ----
+        mid = tk.Frame(root, padx=12)
+        mid.pack(fill=tk.BOTH, expand=True)
+
+        tk.Label(mid, text="检测到以下 3ds Max 版本，勾选要安装到的版本：",
+                 font=("Microsoft YaHei", 11), anchor=tk.W).pack(fill=tk.X, pady=(4, 6))
+
+        list_frame = tk.Frame(mid)
+        list_frame.pack(fill=tk.BOTH, expand=True)
+
+        self.canvas = tk.Canvas(list_frame)
+        self.scroll = tk.Scrollbar(list_frame, orient=tk.VERTICAL, command=self.canvas.yview)
+        self.canvas.configure(yscrollcommand=self.scroll.set)
+        self.canvas.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        self.scroll.pack(side=tk.RIGHT, fill=tk.Y)
+
+        self.inner = tk.Frame(self.canvas)
+        self.canvas.create_window((0, 0), window=self.inner, anchor=tk.NW)
+        self.inner.bind("<Configure>",
+                        lambda e: self.canvas.configure(scrollregion=self.canvas.bbox("all")))
+
+        btn_row = tk.Frame(mid)
+        btn_row.pack(fill=tk.X, pady=6)
+        tk.Button(btn_row, text="全选", width=8, command=self.select_all).pack(side=tk.LEFT, padx=4)
+        tk.Button(btn_row, text="全不选", width=8, command=self.select_none).pack(side=tk.LEFT, padx=4)
+
+        # ---- 手动添加路径 ----
+        man = tk.Frame(mid)
+        man.pack(fill=tk.X, pady=(0, 8))
+        tk.Label(man, text="未检测到？手动指定 3ds Max 安装目录：").pack(anchor=tk.W)
+        row = tk.Frame(man)
+        row.pack(fill=tk.X)
+        self.manual_var = tk.StringVar()
+        tk.Entry(row, textvariable=self.manual_var, font=("Microsoft YaHei", 10)).pack(
+            side=tk.LEFT, fill=tk.X, expand=True, padx=(0, 6))
+        tk.Button(row, text="添加", width=8, command=self.add_manual).pack(side=tk.RIGHT)
+
+        # ---- 安装按钮 ----
+        act = tk.Frame(root, padx=12, pady=8)
+        act.pack(fill=tk.X)
+        self.install_btn = tk.Button(
+            act, text="安装所选版本", font=("Microsoft YaHei", 12, "bold"),
+            bg="#2e7d32", fg="white", height=1, command=self.on_install)
+        self.install_btn.pack(fill=tk.X)
+
+        # ---- 日志区 ----
+        log_frame = tk.Frame(root, padx=12, pady=(0, 10))
+        log_frame.pack(fill=tk.BOTH, expand=True)
+        tk.Label(log_frame, text="安装日志：", font=("Microsoft YaHei", 10)).pack(anchor=tk.W)
+        self.log = scrolledtext.ScrolledText(
+            log_frame, height=10, font=("Consolas", 9), state=tk.DISABLED)
+        self.log.pack(fill=tk.BOTH, expand=True)
+
+        # ---- 填充版本 ----
+        self.populate()
+
+        if not self.payload:
+            self.log_print("错误：未找到安装数据 payload.zip！")
+            messagebox.showerror("错误", "未找到安装数据 payload.zip，安装无法继续。")
+            self.install_btn.configure(state=tk.DISABLED)
+
+    # ---------- 界面逻辑 ----------
+    def log_print(self, msg):
+        self.log.configure(state=tk.NORMAL)
+        self.log.insert(tk.END, msg + "\n")
+        self.log.see(tk.END)
+        self.log.configure(state=tk.DISABLED)
+        self.root.update_idletasks()
+
+    def populate(self):
+        installs = enum_max_installs()
+        if not installs:
+            self.log_print("未检测到已安装的 3ds Max（注册表中无 Autodesk\\3dsMax 项）。")
+            self.log_print("如需安装，请用上方输入框手动指定安装目录。")
+        for name, path in installs:
+            self._add_check(name, path)
+
+    def _add_check(self, name, path):
+        var = tk.BooleanVar(value=True)
+        cb = tk.Checkbutton(self.inner, text="%s   ->   %s" % (name, path),
+                            variable=var, anchor=tk.W, font=("Microsoft YaHei", 10))
+        cb.pack(fill=tk.X, padx=2, pady=1)
+        self.checks.append((var, name, path))
+
+    def select_all(self):
+        for var, _, _ in self.checks:
+            var.set(True)
+
+    def select_none(self):
+        for var, _, _ in self.checks:
+            var.set(False)
+
+    def add_manual(self):
+        p = self.manual_var.get().strip().replace("/", "\\")
+        if not p:
             return
-        manual = manual.replace("/", "\\")
-        if not manual.endswith("\\"):
-            manual += "\\"
-        installs = [("手动指定路径", manual)]
+        if not p.endswith("\\"):
+            p += "\\"
+        # 去重
+        for _, _, existing in self.checks:
+            if os.path.normcase(os.path.normpath(p)) == os.path.normcase(os.path.normpath(existing)):
+                self.log_print("该路径已存在，忽略：%s" % p)
+                return
+        self._add_check("手动指定: %s" % p, p)
+        self.manual_var.set("")
+        self.log_print("已添加手动路径：%s" % p)
 
-    print("")
-    print("检测到以下 3ds Max 版本：")
-    for idx, (name, _) in enumerate(installs, 1):
-        print("  [%d] %s" % (idx, name))
-    print("")
-    print("请选择要安装到的版本 —— 输入序号, 多个用空格分隔(如 '1 3'), 输入 'all' 安装全部：")
-    choice = input("选择：").strip()
-    if choice.lower() == "all":
-        selected = list(range(len(installs)))
-    else:
-        selected = []
-        for part in choice.replace(",", " ").split():
-            try:
-                n = int(part)
-                if 1 <= n <= len(installs):
-                    selected.append(n - 1)
-            except ValueError:
-                pass
-    selected = sorted(set(selected))
-    if not selected:
-        print("未选择任何版本，已退出。")
-        input("按回车退出...")
-        return
+    # ---------- 安装逻辑 ----------
+    def on_install(self):
+        selected = [(name, path) for var, name, path in self.checks if var.get()]
+        if not selected:
+            messagebox.showwarning("提示", "请至少勾选一个 3ds Max 版本。")
+            return
 
-    print("")
-    print("开始安装 ...")
-
-    temp_dir = tempfile.mkdtemp(prefix="SP4_")
-    try:
-        with zipfile.ZipFile(payload, "r") as z:
-            z.extractall(temp_dir)
-
-        src_plugin = os.path.join(temp_dir, "ScenePromoter4")
-        src_startup = os.path.join(temp_dir, "SP4_startup.ms")
-
-        for idx in selected:
-            name, max_dir = installs[idx]
-            print("")
-            print(">> 安装到 %s (%s)" % (name, max_dir))
-            try:
-                plugin_dir = os.path.join(max_dir, "scripts", "ScenePromoter4")
-                startup_dir = os.path.join(max_dir, "scripts", "Startup")
-                os.makedirs(plugin_dir, exist_ok=True)
-                os.makedirs(startup_dir, exist_ok=True)
-                if os.path.isdir(src_plugin):
-                    copy_tree(src_plugin, plugin_dir)
-                    print("   插件目录: %s" % plugin_dir)
-                else:
-                    print("   警告：压缩包内缺少 ScenePromoter4 目录")
-                if os.path.isfile(src_startup):
-                    dst = os.path.join(startup_dir, "SP4_startup.ms")
-                    shutil.copy2(src_startup, dst)
-                    print("   启动脚本: %s" % dst)
-                else:
-                    print("   警告：压缩包内缺少 SP4_startup.ms")
-            except PermissionError:
-                print("   失败：权限不足！请右键本程序『以管理员身份运行』后重试。")
-            except Exception as e:
-                print("   失败：%s" % e)
-
-        print("")
-        print("安装完成！重启对应的 3ds Max 即可使用场景助手 %s。" % VERSION)
-    except Exception as e:
-        print("安装过程出错：%s" % e)
-    finally:
+        self.install_btn.configure(state=tk.DISABLED)
         try:
-            shutil.rmtree(temp_dir, ignore_errors=True)
-        except Exception:
-            pass
+            self.do_install(selected)
+        finally:
+            self.install_btn.configure(state=tk.NORMAL)
 
-    input("按回车退出...")
+    def do_install(self, selected):
+        temp_dir = tempfile.mkdtemp(prefix="SP4_")
+        try:
+            with zipfile.ZipFile(self.payload, "r") as z:
+                z.extractall(temp_dir)
+
+            src_plugin = os.path.join(temp_dir, "ScenePromoter4")
+            src_startup = os.path.join(temp_dir, "SP4_startup.ms")
+
+            ok = 0
+            for name, max_dir in selected:
+                self.log_print(">> 安装到 %s (%s)" % (name, max_dir))
+                try:
+                    plugin_dir = os.path.join(max_dir, "scripts", "ScenePromoter4")
+                    startup_dir = os.path.join(max_dir, "scripts", "Startup")
+                    os.makedirs(plugin_dir, exist_ok=True)
+                    os.makedirs(startup_dir, exist_ok=True)
+                    if os.path.isdir(src_plugin):
+                        copy_tree(src_plugin, plugin_dir)
+                        self.log_print("   插件目录 -> %s" % plugin_dir)
+                    else:
+                        self.log_print("   警告：压缩包内缺少 ScenePromoter4 目录")
+                    if os.path.isfile(src_startup):
+                        dst = os.path.join(startup_dir, "SP4_startup.ms")
+                        shutil.copy2(src_startup, dst)
+                        self.log_print("   启动脚本 -> %s" % dst)
+                    else:
+                        self.log_print("   警告：压缩包内缺少 SP4_startup.ms")
+                    ok += 1
+                except PermissionError:
+                    self.log_print("   失败：权限不足！请右键本程序『以管理员身份运行』后重试。")
+                except Exception as e:
+                    self.log_print("   失败：%s" % e)
+
+            self.log_print("")
+            if ok:
+                self.log_print("安装完成 %d/%d！重启对应的 3ds Max 即可使用场景助手 %s。"
+                               % (ok, len(selected), VERSION))
+                messagebox.showinfo("完成",
+                                    "已成功安装 %d 个版本。\n重启对应的 3ds Max 即可使用场景助手 %s。"
+                                    % (ok, VERSION))
+            else:
+                self.log_print("没有任何版本安装成功，请检查权限或路径后重试。")
+        except Exception as e:
+            self.log_print("安装过程出错：%s" % e)
+            messagebox.showerror("错误", "安装过程出错：%s" % e)
+        finally:
+            try:
+                shutil.rmtree(temp_dir, ignore_errors=True)
+            except Exception:
+                pass
+
+
+def main():
+    if tk is None:
+        print("错误：当前环境缺少 Tkinter，无法运行图形安装程序。")
+        return
+    root = tk.Tk()
+    try:
+        # 让界面使用系统默认中文字体更顺眼
+        root.tk.call("tk", "scaling", 1.0)
+    except Exception:
+        pass
+    InstallerApp(root)
+    root.mainloop()
 
 
 if __name__ == "__main__":

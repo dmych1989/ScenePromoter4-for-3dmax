@@ -89,7 +89,7 @@ def build_exe():
     cmd = [
         sys.executable, "-m", "PyInstaller",
         "--onefile",
-        "--console",
+        "--windowed",            # 图形界面，无控制台（避免中文乱码）
         "--uac-admin",           # 请求管理员权限（写 Program Files 需要）
         "--name", OUT_NAME,
         "--distpath", dist,
