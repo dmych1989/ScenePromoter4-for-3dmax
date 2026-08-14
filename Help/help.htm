@@ -1,0 +1,1259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0071)http://www.cgplusplus.com/bbs/viewthread.php -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>[原创]场景助手详细使用说明 - Max脚本下载 | MaxScript Download - CG++ - Max脚本下载与交流社区</TITLE>
+<META content="text/html; charset=gbk" http-equiv=Content-Type>
+<META name=keywords 
+content="助手,原创,CG++,maxscript,max脚本,3ds max,3dmax,场景助手,飞浪脚本">
+<META name=description 
+content="CG++本帖的网络地址为：http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;amp;page=1欢迎访问CG++：http://www.cgplusplus.com/bbs/说明：场景助手4与场 ...">
+<META name=GENERATOR content="MSHTML 8.00.6001.19170">
+<META name=author content="Discuz! Team and Comsenz UI Team">
+<META name=copyright content="2001-2009 Comsenz Inc.">
+<META name=MSSmartTagsPreventParsing content=True>
+<META content=Yes http-equiv=MSThemeCompatible>
+<META content=ie=7 http-equiv=x-ua-compatible><LINK title=CG++ rel=archives 
+href="http://www.cgplusplus.com/bbs/archiver/"><LINK rel=stylesheet 
+type=text/css href="help_files/style_2_common.css"><LINK rel=stylesheet 
+type=text/css href="help_files/scriptstyle_2_viewthread.css">
+<SCRIPT type=text/javascript>var STYLEID = '2', IMGDIR = 'images/default', VERHASH = 'Mjk', charset = 'gbk', discuz_uid = 0, cookiedomain = '', cookiepath = '/', attackevasive = '0', disallowfloat = 'newthread|reply', creditnotice = '1|威望|,2|金钱|,3|贡献|', gid = parseInt('1'), fid = parseInt('2'), tid = parseInt('15')</SCRIPT>
+
+<SCRIPT type=text/javascript src="help_files/common.js"></SCRIPT>
+</HEAD>
+<BODY onkeydown="if(event.keyCode==27) return false;" id=viewthread>
+<DIV id=append_parent></DIV>
+<DIV id=ajaxwaitid></DIV>
+<DIV id=header>
+<DIV class="wrap s_clear">
+<H2><A title=CG++ href="http://www.cgplusplus.com/bbs/index.php"><IMG border=0 
+alt=CG++ src="help_files/logo.gif"></A></H2>
+<DIV id=umenu><A class=noborder 
+onclick="showWindow('register', this.href);return false;" 
+href="http://www.cgplusplus.com/bbs/signin.php">注册</A> <A 
+onclick="showWindow('login', this.href);return false;" 
+href="http://www.cgplusplus.com/bbs/logging.php?action=login">登录</A> </DIV>
+<DIV id=ad_headerbanner></DIV>
+<DIV id=menu>
+<UL>
+  <LI class=menu_1><A hideFocus id=mn_index 
+  href="http://www.cgplusplus.com/bbs/index.php">论坛</A></LI>
+  <LI class=menu_2><A hideFocus id=mn_search 
+  href="http://www.cgplusplus.com/bbs/search.php">搜索</A></LI>
+  <LI class=menu_6><A hideFocus id=mn_online-reference 
+  href="http://www.cgplusplus.com/online-reference/" target=_blank>在线手册</A></LI>
+  <LI class=menu_7><A hideFocus id=mn_maxscript-reference 
+  href="http://www.cgplusplus.com/online-reference/maxscript-reference/" 
+  target=_blank>MaxScript Reference</A></LI>
+  <LI><A id=mn_plugin_invite_put_invite 
+  href="http://www.cgplusplus.com/bbs/plugin.php?id=invite_put:invite">领取邀请码</A></LI>
+  <LI class=menu_4><A hideFocus id=mn_faq 
+  href="http://www.cgplusplus.com/bbs/faq.php">帮助</A></LI></UL>
+<SCRIPT type=text/javascript>
+var currentMenu = $('mn_') ? $('mn_') : $('mn_index');
+currentMenu.parentNode.className = 'current';
+</SCRIPT>
+</DIV>
+<SCRIPT type=text/javascript>
+function setstyle(styleid) {
+str = unescape('tid%3D15%26page%3D1%26extra%3D');
+str = str.replace(/(^|&)styleid=\d+/ig, '');
+str = (str != '' ? str + '&' : '') + 'styleid=' + styleid;
+location.href = 'viewthread.php?' + str;
+}
+</SCRIPT>
+
+<UL id=style_switch>
+  <LI class=current><A style="BACKGROUND: #1e4b7e" title=默认 onclick=setstyle(2) 
+  href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;page=1&amp;extra=###">默认</A></LI>
+  <LI><A style="BACKGROUND: #f70000" title=2011 onclick=setstyle(16) 
+  href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;page=1&amp;extra=###">2011</A></LI></UL></DIV>
+<DIV style="DISPLAY: none" id=myprompt_menu class=promptmenu>
+<DIV class=promptcontent>
+<UL class=s_clear>
+  <LI style="DISPLAY: none"><A id=prompt_pm 
+  href="http://www.cgplusplus.com/bbs/pm.php?filter=newpm" target=_blank>私人消息 
+  (0)</A></LI>
+  <LI style="DISPLAY: none"><A id=prompt_announcepm 
+  href="http://www.cgplusplus.com/bbs/pm.php?filter=announcepm" 
+  target=_blank>公共消息 (0)</A></LI>
+  <LI style="DISPLAY: none"><A id=prompt_systempm 
+  href="http://www.cgplusplus.com/bbs/notice.php?filter=systempm" 
+  target=_blank>系统消息 (0)</A></LI>
+  <LI style="DISPLAY: none"><A id=prompt_friend 
+  href="http://www.cgplusplus.com/bbs/notice.php?filter=friend" 
+  target=_blank>好友消息 (0)</A></LI>
+  <LI style="DISPLAY: none"><A id=prompt_threads 
+  href="http://www.cgplusplus.com/bbs/notice.php?filter=threads" 
+  target=_blank>帖子消息 (0)</A></LI></UL></DIV></DIV></DIV>
+<SCRIPT type=text/javascript src="help_files/viewthread.js"></SCRIPT>
+
+<SCRIPT type=text/javascript>zoomstatus = parseInt(1);var imagemaxwidth = '600';var aimgcount = new Array();</SCRIPT>
+
+<DIV id=nav><A href="http://www.cgplusplus.com/bbs/index.php">CG++</A> &raquo; <A 
+href="http://www.cgplusplus.com/bbs/forumdisplay.php?fid=2">Max脚本下载 | MaxScript 
+Download</A> &raquo; [原创]场景助手详细使用说明</DIV>
+<DIV id=ad_text class=ad_text>
+<TABLE cellSpacing=1 summary="Text Ad" cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD width="25%"><A style="COLOR: #f00; FONT-SIZE: 12px" 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=219&amp;extra=&amp;page=1">热烈欢迎新会员，新手报到帖</A></TD>
+    <TD width="25%"><A style="COLOR: #090; FONT-SIZE: 12px; FONT-WEIGHT: bold" 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=2728">场景助手4.0正式下载</A></TD>
+    <TD width="25%"><A style="COLOR: #2d979f; FONT-SIZE: 12px" 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=659&amp;extra=page%3D1">场景助手3.0下载</A></TD>
+    <TD width="25%"><A style="COLOR: #2d979f; FONT-SIZE: 12px" 
+      href="http://www.cgplusplus.com/bbs/forumdisplay.php?fid=2&amp;filter=type&amp;typeid=1">Max脚本零起点入门</A></TD></TR></TBODY></TABLE></DIV>
+<DIV id=wrap class="wrap s_clear threadfix">
+<DIV class=forumcontrol>
+<TABLE cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=modaction></TD>
+    <TD>
+      <DIV class=pages><STRONG>1</STRONG><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=2">2</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=3">3</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=4">4</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=5">5</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=6">6</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=7">7</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=8">8</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=9">9</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=10">10</A><A 
+      class=next 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=2">下一页</A></DIV><SPAN 
+      class=pageback><A 
+      href="http://www.cgplusplus.com/bbs/forumdisplay.php?fid=2">返回列表</A></SPAN> 
+      <SPAN id=newspecial class=postbtn 
+      onmouseover="$('newspecial').id = 'newspecialtmp';this.id = 'newspecial';showMenu({'ctrlid':this.id})" 
+      prompt="post_newthread"><A 
+      onclick="showWindow('newthread', this.href);return false;" 
+      href="http://www.cgplusplus.com/bbs/post.php?action=newthread&amp;fid=2">发帖</A></SPAN> 
+    </TD></TR></TBODY></TABLE></DIV>
+<DIV id=postlist class="mainbox viewthread">
+<DIV id=post_20>
+<TABLE id=pid20 cellSpacing=0 summary=pid20 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=postauthor rowSpan=2>
+      <DIV class=postinfo><A style="MARGIN-LEFT: 20px; FONT-WEIGHT: 800" 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=3" 
+      target=_blank>feilang</A> </DIV>
+      <DIV style="POSITION: absolute; MARGIN-TOP: -11px; DISPLAY: none" 
+      id=userinfo20 class="popupmenu_popup userinfopanel">
+      <DIV class=popavatar>
+      <DIV id=userinfo20_ma></DIV>
+      <UL class=profile_side>
+        <LI class=pm><A title=发短消息 
+        onclick="hideMenu('userinfo20');showWindow('sendpm', this.href);return false;" 
+        href="http://www.cgplusplus.com/bbs/pm.php?action=new&amp;uid=3">发短消息</A> 
+
+        <LI class=buddy><A id=ajax_buddy_0 title=加为好友 
+        onclick="ajaxmenu(this, 3000);doane(event);" 
+        href="http://www.cgplusplus.com/bbs/my.php?item=buddylist&amp;newbuddyid=3&amp;buddysubmit=yes" 
+        target=_blank>加为好友</A> </LI></UL></DIV>
+      <DIV class=popuserinfo>
+      <P><A href="http://www.cgplusplus.com/bbs/space.php?uid=3" 
+      target=_blank>feilang</A> <EM>(飞浪)</EM><EM>当前在线 </EM></P>
+      <P class=customstatus>CG++Man</P>
+      <DL class=s_clear>
+        <DT>UID</DT>
+        <DD>3&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>1037&nbsp;</DD>
+        <DT>精华</DT>
+        <DD>8&nbsp;</DD>
+        <DT>积分</DT>
+        <DD>1459&nbsp;</DD>
+        <DT>阅读权限</DT>
+        <DD>200&nbsp;</DD>
+        <DT>在线时间</DT>
+        <DD>107 小时&nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-7-18&nbsp;</DD>
+        <DT>最后登录</DT>
+        <DD>2012-2-12&nbsp;</DD></DL>
+      <DIV class=imicons><A title=查看个人网站 href="http://www.cgplusplus.com/" 
+      target=_blank><IMG alt=查看个人网站 src="help_files/forumlink.gif"></A><A 
+      title=查看详细资料 href="http://www.cgplusplus.com/bbs/space.php?uid=3" 
+      target=_blank><IMG alt=查看详细资料 src="help_files/userinfo.gif"></A> </DIV>
+      <DIV id=avatarfeed><SPAN id=threadsortswait></SPAN></DIV></DIV></DIV>
+      <DIV>
+      <DIV class=avatar onmouseover="showauthor(this, 'userinfo20')"><A 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=3" target=_blank><IMG 
+      src="help_files/03_avatar_middle.jpg"></A></DIV>
+      <P><EM><A 
+      href="http://www.cgplusplus.com/bbs/faq.php?action=grouppermission&amp;searchgroupid=1" 
+      target=_blank>管理员</A></EM></P></DIV>
+      <P><IMG alt="Rank: 9" src="help_files/star_level3.gif"><IMG alt="Rank: 9" 
+      src="help_files/star_level3.gif"><IMG alt="Rank: 9" 
+      src="help_files/star_level1.gif"></P>
+      <DL class="profile s_clear">
+        <DT>UID</DT>
+        <DD>3&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>1037&nbsp;</DD>
+        <DT>威望</DT>
+        <DD>178 &nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-7-18&nbsp;</DD></DL></TD>
+    <TD class=postcontent>
+      <DIV id=threadstamp></DIV>
+      <DIV class=postinfo><STRONG><A id=postnum20 title=复制本帖链接 
+      onclick="setCopy('http://www.cgplusplus.com/bbs/viewthread.php?tid=15', '帖子地址已经复制到剪贴板')" 
+      href="javascript:;"><EM>1</EM><SUP>#</SUP></A> <EM class=rpostno 
+      title=跳转到指定楼层>跳转到 <INPUT 
+      onkeydown="if(event.keyCode==13) {$('rpostnobtn').click();return false;}" 
+      id=rpostnovalue class=txtarea size=3><SPAN id=rpostnobtn 
+      onclick="window.location='redirect.php?ptid=15&amp;ordertype=0&amp;postno='+$('rpostnovalue').value">&raquo;</SPAN></EM> 
+      <A class=left 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;ordertype=1">倒序看帖</A> 
+      </STRONG>
+      <DIV class=posterinfo>
+      <DIV class=pagecontrol><A class="print left" 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?action=printable&amp;tid=15" 
+      target=_blank>打印</A> 
+      <DIV class="msgfsize right"><LABEL>字体大小: </LABEL><SMALL title=正常 
+      onclick="$('postlist').className='mainbox viewthread'">t</SMALL><BIG 
+      title=放大 
+      onclick="$('postlist').className='mainbox viewthread t_bigfont'">T</BIG> 
+      </DIV></DIV>
+      <DIV class=authorinfo><IMG id=authicon20 class=authicon 
+      onclick="showauthor(this, 'userinfo20')" 
+      src="help_files/online_admin.gif"> <EM id=authorposton20>发表于 2008-8-20 
+      13:00</EM> | <A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;page=1&amp;authorid=3" 
+      rel=nofollow>只看该作者</A> </DIV></DIV></DIV>
+      <DIV class=defaultpost>
+      <DIV id=ad_thread2_0></DIV>
+      <DIV id=ad_thread3_0></DIV>
+      <DIV id=ad_thread4_0></DIV>
+      <DIV class="postmessage firstpost">
+      <DIV id=threadtitle>
+      <H1>[原创]场景助手详细使用说明</H1>
+      <DIV class=threadtags><A 
+      href="http://www.cgplusplus.com/bbs/tag.php?name=%D6%FA%CA%D6" 
+      target=_blank>助手</A>, <A 
+      href="http://www.cgplusplus.com/bbs/tag.php?name=%D4%AD%B4%B4" 
+      target=_blank>原创</A></DIV></DIV>
+      <DIV class=t_msgfontfix>
+      <TABLE cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD id=postmessage_20 class=t_msgfont><STRONG>本帖的网络地址为：<A 
+            href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;page=1" 
+            target=_blank>http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;page=1</A></STRONG><STRONG><BR>欢迎访问CG++：<A 
+            href="http://www.cgplusplus.com/bbs/" 
+            target=_blank>http://www.cgplusplus.com/bbs/</A></STRONG><BR><BR><STRONG>说明：<BR></STRONG>场景助手4与场景助手3的最主要的区别在于：<BR>1.前者开源，后者加密<BR>2.界面布局完全不同<BR>3.具体工具功能只有小更新，所以选择4.1或3.0都可以 
+            <BR><BR><BR><FONT 
+            color=darkorange>-----------------------------------版本更新分割线-------------------------------<BR></FONT><STRONG>场景助手4.0 
+            &amp; 
+            4.1<BR></STRONG>1.代码开源<BR>2.Vray代理管理器更新<BR>3.界面重写<BR>4.场景助手4.1适用于3dmax9及以上版本，4.0适用于3dmax8及以下版本。<BR>场景助手4.0视频讲解视频地址为：<A 
+            href="http://v.youku.com/v_show/id_XMjU4NjM2MDcy.html" 
+            target=_blank>http://v.youku.com/v_show/id_XMjU4NjM2MDcy.html</A><BR>
+            <SCRIPT type=text/javascript reload="1">document.write(AC_FL_RunContent('width', '480', 'height', '400', 'allowNetworking', 'internal', 'allowScriptAccess', 'never', 'src', 'http://player.youku.com/player.php/sid/XMjU4NjM2MDcy/v.swf', 'quality', 'high', 'bgcolor', '#ffffff', 'wmode', 'transparent', 'allowfullscreen', 'true'));</SCRIPT>
+            <BR><BR><FONT 
+            color=darkorange>-----------------------------------版本更新分割线----------------------------------</FONT><BR><STRONG>场景助手3.0<BR></STRONG>增加部分新功能，见 
+            <A 
+            href="http://www.cgplusplus.com/bbs/viewthread.php?tid=659&amp;extra=page%3D1" 
+            target=_blank>http://www.cgplusplus.com/bbs/viewthread.php?tid=659&amp;extra=page%3D1</A> 
+            <BR>提供免安装版使用，即拖到max界面即可用。<BR><FONT 
+            color=darkorange>-----------------------------------版本更新分割线----------------------------------<BR></FONT><STRONG>场景助手2.6<BR></STRONG>场景助手2.6更新列表(2009-04-02)：<BR>适用MAX版本:3d?max7及以上所有版本<BR>一 
+            、增加功能<BR>●增加“单”选项，勾选后，每次只打开一个栏<BR>●场景信息刷新后可永久保存，并增加清除按钮“清”<BR>●增加“选择的线条点归0”功能<BR>●增加“按元素分离物体”功能<BR>●增加“显示/隐藏界面元素”功能<BR>●增加“打开所有组”“关闭所有组”功能<BR>●当脚本界面移出屏幕或者最小化后，下次打开脚本界面恢复到最初状态<BR>●增加“CG++迷你首页”功能，可在MAX里面直接访问CG++<BR>●集成Flash小游戏：把那小子打飞<BR>二、修复更新<BR>●所有选择物体操作均不选择隐藏的物体<BR>●修复“一键上材质”BUG<BR>●随机操作中，随机缩放和旋转都遵循“打组物体优先”<BR>●修复“选择摄像机看不到的物体”BUG<BR>●脚本安装成功后，如果设置成工具栏按钮，单击按钮打开脚本，再单击关闭脚本如果设置快捷键，快捷键可激活或者关闭此脚本<BR>CG++会员对此次更新提出了很多有用的意见和建议，在此表示感谢。<BR><FONT 
+            color=darkorange>-----------------------------------版本更新分割线-----------------------------------<BR></FONT><STRONG>场景助手2.0Final<BR></STRONG>场景助手2.0Final更新说明如下：<BR>1、界面仿polyboost，下一次打开跟上一次界面位置与布局一样。此版本分为简体版和繁体版，为方便繁体操作系统的朋友，这也是CG++网友提的意见。至于有朋友想要英文版，我会逐渐把功能分离出来写成英文版。英文版界面要重新调整。<BR>2、场景整理.彻底解决按材质塌陷的法线问题，调整随机颜色的算法。合并按材质塌陷按钮，增加刷新物体单位，按材质ID分离物体，选择空物体。<BR>3、重命名.命名框合并，增加常用名，常用名可以自己定义，使命名更方便。<BR>4、随机操作.将点、线、面、元素的随机选择单独分离出来，更直观，随机变形增加撤销功能。<BR>5、特殊功能.增加找回渲染框，选择关联物体，关联选择物体功能。优化选择摄像机看不到的物体。<BR>6、自定义脚本.此功能方便大家调用外面的脚本，你以后就不用每次都去找脚本了。<BR>7、使用此版本请先卸载以前版本的场景助手，以免产生冲突。如果你不知道怎么去掉菜单项tools里面的“场景用手”（上个版本打错了字，呵呵）请查看这里:MAX脚本安装调用方法及彻底卸载详细解说!!!<BR>8、其他功能跟老版本用法一样，你可以查看：场景助手2.0详细使用说明?(即本贴)<BR><FONT 
+            color=darkorange>-----------------------------------版本更新分割线-----------------------------------<BR></FONT><STRONG>场景助手2.0RC1<BR></STRONG>场景助手帮助教程:<BR><STRONG>简介：</STRONG>场景助手2.0在1.0基础上增加了很多功能，最大优势体现在建筑动画大量场景的处理，当<BR>然在建筑效果图的制作上也有很多实用的功能。所有对VRay?渲染器相关操作都是在VRay英文版<BR>下编写。以下对整个插件作详细解说。<BR>场景信息：此栏显示场景整体信息。<BR>物体数量：统计数据包括物体总个数，选择物体个数，没上材质物体个数。<BR>物体总个数，选择物体个数包括所有物体类型，没上材质物体只包括几何体(geometry)和可渲染<BR>线条(renderable 
+            spline).<BR>材质球数：统计材质总个数，同名材质个数，丢失贴图材质个数。<BR>场景总面数：计算场景所有物体总面数，可渲染线条也计算在内。<BR>选择物体面数：计算选择物体总面数，可渲染线条也计算在内。<BR>计算场景面数：控制是否计算场景总面数。<BR>计算选择物体面数：控制是否计算选择物体面数。<BR>计算Multi/sub-Object子材质:勾选则将Multi/sub-Object子材质都单独计算个数，它本身不算<BR>在内，不勾选则Multi/sub-Object算一个材质。<BR>刷新：每次单击都重新计算以上值，计算所用时间在左下脚脚本框里显示，如：刷新用时0.0秒。<BR>场景整理：此栏主要针对物体和材质集中整理。<BR>选择没上材质的物体：如题。<BR>按材质塌陷：所有物体按材质塌陷，会合并同名的材质。修正1.0法线出问题的BUG。<BR>按材质修改线框色：如题，随机修改。<BR>选择按材质塌陷：如题，参照按材质塌陷。<BR>清空材质球，颜色，VRayMtl:将编辑器所有材质清空成默认材质，VRayMtl勾选，则默认为<BR>VRayMtl，不勾选则为Standard。如果当前渲染器不是VRay，则默认清空成Standard。如果颜色<BR>修改，则清空的材质球固有色为修改的颜色。每次清空材质球，导入材质操作都会先从第一屏开<BR>始导入。<BR>导入材质：导入场景所有材质，导入顺序按材质名称排列顺序。如果编辑器的材质球不够，则下<BR>一次单击会导入下一屏材质,直到导完最后一屏,再单击又导入第一屏材质。<BR>导入选择物体材质,导入同名材质,导入丢失贴图材质：如题。<BR>查看丢失贴图：打开查看丢失贴图和光域网文件对话框。如下：<BR>查看丢失贴图和光域网文件子面板：<BR>清除选择贴图：将使用选择的贴图路径的材质贴图清空。<BR>选择物体：选择使用该贴图的物体，也可以在列表中双击实现。<BR>刷新：重新算计丢失贴图和光域网。<BR>寻找贴图：打开和关闭寻找贴图对话框。<BR>寻找贴图对话框：包括所有子目录如果勾选，则在此目录下各级子目录中寻找贴图。<BR>默认贴图路径：下面增加的路径，便于下次打开时直接调用。<BR>其他功能一看就明白，不啰嗦。<BR>------------------------------------------<BR>转所有材质为彩色：把所有材质转为随机彩色通道，理论支持无数个材质，每个第偶数个材质的<BR>颜色与第奇数个材质颜色是互补色，这也导致有可能接连几个材质颜色相近。修正了1.0可能漏<BR>物体的BUG。<BR>一键上材质：如果物体名称是以当前打开的外部材质库中某材质名称开头，则将该材质赋给此物<BR>体。<BR>合并同名材质：如题。<BR>导入材质库材质：将当前打开材质库材质导入编辑器。<BR>拾取材质：将材质库中某材质拾取到当前激活的材质球。<BR>重命名：此栏对场景物体或材质重命名，均有两种方式命名：全部命名和作为前缀。材质命名中<BR>接前一屏重命名会记录编辑器中上次命名序号，后面依次增加。<BR>材质转换：提供standard材质和VRayMtl的互相转换，每个材质转换的地方有以下几个：Diffues<BR>color，Duffuse 
+            map，Bump,Opacity,Displacement,复合材质只提供Multi/sub-Object转换。<BR>场景VRayMtl修改：对场景VRayMtl材质整体的控制，可以选择Whole（整个场景所有材质）和Mtl<BR>Editor（材质编辑器）两种范围，能够修改的复合材质包括：Blend,Composite,Double<BR>Dided,Multi/sub-Object,Shell 
+            Material,TopBottom,VRay2SidedMtl,VRayBlendMtl,<BR>VRayMtlWrapper,VRayOverrideMtl<BR>随机操作：对场景物体或单个Editable 
+            poly进行处理。主要用于大量需要随机操作的场景如摆<BR>树，随机给材质ID等。<BR>随机选择：1、如果没有选择物体，则按照场景中看得到的物体的百分比选择物体。2、如果选择<BR>物体个数大于1，则按选择物体百分比选择物体。3、如果选择了一个Poly物体且当前修改层级在<BR>Editable 
+            Poly下，按照当前指定的点、线、面、体的百分比选择。4、也可以直接在本按钮右键<BR>随机选择相应的子层级，前提是修改层级在Editable 
+            Poly下。5、在Editable 
+            Poly第三个层级<BR>下，选择所有没闭合的边。<BR>刷新：每次刷新重新统计物体或点线面体个数。每次启动“随机选择”后，自动刷新。<BR>缩放：将选择的物体整体随机缩放，每个物体缩放大小取最大，最小值之间的一个随机值，按原<BR>始大小的百分比缩放。建议先用下面的“轴心归底”。如果右键单击，则都回到原始大小。<BR>旋转：将选择的物体按Z轴方向随机旋转，每个物体旋转角度取最大，最小之间随机值，右键单<BR>击则回到原来角度。<BR>轴心归中：将选择的物体轴心归中，相当于Hierarchy面板的Pivot/Affect 
+            Pivot Only -<BR>Center to 
+            Object。遵循“打组物体优先”。<BR>轴心归底：将选择的物体轴心归到底部中心位置。遵循“打组物体优先”。<BR>归坐标中心：将物体移到轴心位置，相当于Hierarchy面板的Pivot/Affect 
+            Object Only -<BR>Center to 
+            Pivot.遵循“打组物体优先”。<BR>最低点归零：将选择物体以最低点为准移到X，Y轴水平面上。遵循“打组物体优先”。<BR>打组物体优先：如果勾选，只对打组物体的最外层组别进行轴心操作，不勾选对选择物体所有子<BR>物体操作。<BR>特殊功能：关键时候起作用的功能。<BR>释放内存：清除场景贴图使用内存和保存撤消操作使用内存，场景大量处理后渲染或保存max可<BR>能挂掉，建议先释放内存。<BR>选择丢失UV物体：物体场景中没有UV的物体（不是没给UV的物体，默认geometry有UV），包括渲<BR>染UV会出错的物体。<BR>选择当前激活视图看不到的物体：如题。只要物体有一部分在视图里面则不选择，如果想选择打<BR>组物体的子物体，请打开组。<BR>选择动画摄像机看不到的物体:先选择一个摄像机，执行此命令后，按照此摄像机在当前时间轴<BR>上显示的帧数,逐帧统计，最后选择场景中在整个摄像机动画里看不到的物体。如果是单帧摄像<BR>机，请使用上面的功能。<BR><BR>一键渲染：为偷懒而写，有兴趣的可以玩玩：）(注：2.0Final已经去掉了这个功能)<BR>预设，即渲染面板最下面render按钮左边有个Preset:---------,里面可以save 
+            preset...保存<BR>当前所有渲染的参数，格式为.rps。如果你有几套常用参数，则不用每次设置，保存几个，用此<BR>面板打开预设，直接点茶壶渲染则先导入再渲染，单击“导入预设”则只导入不渲染。打开一次<BR>预设后，路径会自动记，偷懒到家：D<BR>使用预设分辨率：如题。<BR>使用说明：终于解说完了，本人写此插件花了很多心血，现免费发放希望认识更多喜欢<BR>maxscript的朋友。希望我们能聚集在<A 
+            href="http://www.cgplusplus.com/bbs/" 
+            target=_blank>CG++论坛</A>，共同学习进步。<BR>如果对此插件还有什么疑问，请在下面跟贴。</TD></TR></TBODY></TABLE>
+      <DIV class=locked>附件: <EM>您需要<A class=lightlink 
+      onclick="showWindow('login', this.href);return false;" 
+      href="http://www.cgplusplus.com/bbs/logging.php?action=login">登录</A>才可以下载或查看附件。没有帐号？<A 
+      class=lightlink title=注册帐号 
+      onclick="hideWindow('login');showWindow('register', this.href);return false;" 
+      href="http://www.cgplusplus.com/bbs/signin.php">注册</A></EM></DIV></DIV>
+      <DIV id=post_rate_div_20></DIV>
+      <DIV class=useraction><A 
+      onclick="showDialog($('favoritewin').innerHTML, 'info', '收藏/关注')" 
+      href="javascript:;">收藏</A> <A id=share 
+      onclick="showDialog($('sharewin').innerHTML, 'info', '分享')" 
+      href="javascript:;">分享</A> </DIV></DIV></DIV></TD></TR>
+  <TR>
+    <TD class="postcontent postbottom">
+      <DIV style="MAX-HEIGHT: 100px; maxHeightIE: 100px" class=signatures><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=2728" 
+      target=_blank><FONT color=#2d979f>场景助手4.0正式下载</FONT></A></DIV>
+      <DIV id=ad_thread1_0 class=ad_textlink1><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=1506&amp;extra=page%3D1" 
+      target=_blank>如果觉得我的回复好，请给我评分，谢谢！</A></DIV></TD></TR>
+  <TR>
+    <TD class=postauthor></TD>
+    <TD class=postcontent>
+      <DIV class=postactions>
+      <DIV class="postact s_clear"><EM></EM>
+      <P></P></DIV></DIV></TD></TR>
+  <TR class=threadad>
+    <TD class=postauthor></TD>
+    <TD class=adcontent>
+      <DIV id=ad_interthread></DIV></TD></TR></TBODY></TABLE></DIV>
+<DIV id=post_47>
+<TABLE id=pid47 cellSpacing=0 summary=pid47 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=postauthor rowSpan=2>
+      <DIV class=avatar><A href="javascript:;">游客 <EM>60.205.173.x</EM></A> 
+      </DIV></TD>
+    <TD class=postcontent>
+      <DIV class=postinfo><STRONG><A id=postnum47 title=复制本帖链接 
+      onclick="setCopy('http://www.cgplusplus.com/bbs/redirect.php?goto=findpost&amp;ptid=15&amp;pid=47', '帖子地址已经复制到剪贴板')" 
+      href="javascript:;"><EM>2</EM><SUP>#</SUP></A> </STRONG>
+      <DIV class=posterinfo>
+      <DIV class=pagecontrol></DIV>
+      <DIV class=authorinfo><IMG id=authicon47 class=authicon 
+      onclick="showauthor(this, 'userinfo47');" 
+      src="help_files/online_member.gif"> 游客 <EM id=authorposton47>发表于 2008-8-22 
+      19:59</EM> </DIV></DIV></DIV>
+      <DIV class=defaultpost>
+      <DIV id=ad_thread2_1></DIV>
+      <DIV id=ad_thread3_1></DIV>
+      <DIV id=ad_thread4_1></DIV>
+      <DIV class="postmessage ">
+      <DIV class=t_msgfontfix>
+      <TABLE cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD id=postmessage_47 
+      class=t_msgfont>太高手,,,大好人,,谢谢</TD></TR></TBODY></TABLE></DIV>
+      <DIV id=post_rate_div_47></DIV></DIV></DIV></TD></TR>
+  <TR>
+    <TD class="postcontent postbottom">
+      <DIV id=ad_thread1_1 class=ad_textlink1><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=1506&amp;extra=page%3D1" 
+      target=_blank>如果觉得我的回复好，请给我评分，谢谢！</A></DIV></TD></TR>
+  <TR>
+    <TD class=postauthor></TD>
+    <TD class=postcontent>
+      <DIV class=postactions>
+      <DIV class="postact s_clear"><EM></EM>
+      <P><A onclick=scrollTo(0,0); href="javascript:;">TOP</A> 
+    </P></DIV></DIV></TD></TR>
+  <TR class=threadad>
+    <TD class=postauthor></TD>
+    <TD class=adcontent></TD></TR></TBODY></TABLE></DIV>
+<DIV id=post_48>
+<TABLE id=pid48 cellSpacing=0 summary=pid48 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=postauthor rowSpan=2>
+      <DIV class=postinfo><A style="MARGIN-LEFT: 20px; FONT-WEIGHT: 800" 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=38" 
+      target=_blank>Sarah</A> </DIV>
+      <DIV style="POSITION: absolute; MARGIN-TOP: -11px; DISPLAY: none" 
+      id=userinfo48 class="popupmenu_popup userinfopanel">
+      <DIV class=popavatar>
+      <DIV id=userinfo48_ma></DIV>
+      <UL class=profile_side>
+        <LI class=pm><A title=发短消息 
+        onclick="hideMenu('userinfo48');showWindow('sendpm', this.href);return false;" 
+        href="http://www.cgplusplus.com/bbs/pm.php?action=new&amp;uid=38">发短消息</A> 
+
+        <LI class=buddy><A id=ajax_buddy_2 title=加为好友 
+        onclick="ajaxmenu(this, 3000);doane(event);" 
+        href="http://www.cgplusplus.com/bbs/my.php?item=buddylist&amp;newbuddyid=38&amp;buddysubmit=yes" 
+        target=_blank>加为好友</A> </LI></UL></DIV>
+      <DIV class=popuserinfo>
+      <P><A href="http://www.cgplusplus.com/bbs/space.php?uid=38" 
+      target=_blank>Sarah</A> <EM>当前离线 </EM></P>
+      <DL class=s_clear>
+        <DT>UID</DT>
+        <DD>38&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>1&nbsp;</DD>
+        <DT>精华</DT>
+        <DD>0&nbsp;</DD>
+        <DT>积分</DT>
+        <DD>3&nbsp;</DD>
+        <DT>阅读权限</DT>
+        <DD>10&nbsp;</DD>
+        <DT>在线时间</DT>
+        <DD>0 小时&nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-8-22&nbsp;</DD>
+        <DT>最后登录</DT>
+        <DD>2009-7-14&nbsp;</DD></DL>
+      <DIV class=imicons><A title=查看详细资料 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=38" target=_blank><IMG 
+      alt=查看详细资料 src="help_files/userinfo.gif"></A> </DIV>
+      <DIV id=avatarfeed><SPAN id=threadsortswait></SPAN></DIV></DIV></DIV>
+      <DIV>
+      <DIV class=avatar onmouseover="showauthor(this, 'userinfo48')"><A 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=38" target=_blank><IMG 
+      src="help_files/noavatar_middle.gif"></A></DIV>
+      <P><EM><A 
+      href="http://www.cgplusplus.com/bbs/faq.php?action=grouppermission&amp;searchgroupid=11" 
+      target=_blank>新手上路</A></EM></P></DIV>
+      <P><IMG alt="Rank: 1" src="help_files/star_level1.gif"></P>
+      <DL class="profile s_clear">
+        <DT>UID</DT>
+        <DD>38&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>1&nbsp;</DD>
+        <DT>威望</DT>
+        <DD>1 &nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-8-22&nbsp;</DD></DL></TD>
+    <TD class=postcontent>
+      <DIV class=postinfo><STRONG><A id=postnum48 title=复制本帖链接 
+      onclick="setCopy('http://www.cgplusplus.com/bbs/redirect.php?goto=findpost&amp;ptid=15&amp;pid=48', '帖子地址已经复制到剪贴板')" 
+      href="javascript:;"><EM>3</EM><SUP>#</SUP></A> </STRONG>
+      <DIV class=posterinfo>
+      <DIV class=pagecontrol></DIV>
+      <DIV class=authorinfo><IMG id=authicon48 class=authicon 
+      onclick="showauthor(this, 'userinfo48');" 
+      src="help_files/online_member.gif"> <EM id=authorposton48>发表于 2008-8-22 
+      22:21</EM> | <A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;page=1&amp;authorid=38" 
+      rel=nofollow>只看该作者</A> </DIV></DIV></DIV>
+      <DIV class=defaultpost>
+      <DIV id=ad_thread2_2></DIV>
+      <DIV id=ad_thread3_2></DIV>
+      <DIV id=ad_thread4_2></DIV>
+      <DIV class="postmessage ">
+      <DIV class=t_msgfontfix>
+      <TABLE cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD id=postmessage_48 class=t_msgfont>Very Good! 
+      [em17]</TD></TR></TBODY></TABLE></DIV>
+      <DIV id=post_rate_div_48></DIV></DIV></DIV></TD></TR>
+  <TR>
+    <TD class="postcontent postbottom">
+      <DIV id=ad_thread1_2 class=ad_textlink1><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=1506&amp;extra=page%3D1" 
+      target=_blank>如果觉得我的回复好，请给我评分，谢谢！</A></DIV></TD></TR>
+  <TR>
+    <TD class=postauthor></TD>
+    <TD class=postcontent>
+      <DIV class=postactions>
+      <DIV class="postact s_clear"><EM></EM>
+      <P><A onclick=scrollTo(0,0); href="javascript:;">TOP</A> 
+    </P></DIV></DIV></TD></TR>
+  <TR class=threadad>
+    <TD class=postauthor></TD>
+    <TD class=adcontent></TD></TR></TBODY></TABLE></DIV>
+<DIV id=post_67>
+<TABLE id=pid67 cellSpacing=0 summary=pid67 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=postauthor rowSpan=2>
+      <DIV class=postinfo><A style="MARGIN-LEFT: 20px; FONT-WEIGHT: 800" 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=53" 
+      target=_blank>Sawyer</A> </DIV>
+      <DIV style="POSITION: absolute; MARGIN-TOP: -11px; DISPLAY: none" 
+      id=userinfo67 class="popupmenu_popup userinfopanel">
+      <DIV class=popavatar>
+      <DIV id=userinfo67_ma></DIV>
+      <UL class=profile_side>
+        <LI class=pm><A title=发短消息 
+        onclick="hideMenu('userinfo67');showWindow('sendpm', this.href);return false;" 
+        href="http://www.cgplusplus.com/bbs/pm.php?action=new&amp;uid=53">发短消息</A> 
+
+        <LI class=buddy><A id=ajax_buddy_3 title=加为好友 
+        onclick="ajaxmenu(this, 3000);doane(event);" 
+        href="http://www.cgplusplus.com/bbs/my.php?item=buddylist&amp;newbuddyid=53&amp;buddysubmit=yes" 
+        target=_blank>加为好友</A> </LI></UL></DIV>
+      <DIV class=popuserinfo>
+      <P><A href="http://www.cgplusplus.com/bbs/space.php?uid=53" 
+      target=_blank>Sawyer</A> <EM>当前离线 </EM></P>
+      <DL class=s_clear>
+        <DT>UID</DT>
+        <DD>53&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>1&nbsp;</DD>
+        <DT>精华</DT>
+        <DD>0&nbsp;</DD>
+        <DT>积分</DT>
+        <DD>1&nbsp;</DD>
+        <DT>阅读权限</DT>
+        <DD>10&nbsp;</DD>
+        <DT>在线时间</DT>
+        <DD>0 小时&nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-8-25&nbsp;</DD>
+        <DT>最后登录</DT>
+        <DD>2008-10-30&nbsp;</DD></DL>
+      <DIV class=imicons><A title=查看详细资料 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=53" target=_blank><IMG 
+      alt=查看详细资料 src="help_files/userinfo.gif"></A> </DIV>
+      <DIV id=avatarfeed><SPAN id=threadsortswait></SPAN></DIV></DIV></DIV>
+      <DIV>
+      <DIV class=avatar onmouseover="showauthor(this, 'userinfo67')"><A 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=53" target=_blank><IMG 
+      src="help_files/noavatar_middle(1).gif"></A></DIV>
+      <P><EM><A 
+      href="http://www.cgplusplus.com/bbs/faq.php?action=grouppermission&amp;searchgroupid=11" 
+      target=_blank>新手上路</A></EM></P></DIV>
+      <P><IMG alt="Rank: 1" src="help_files/star_level1.gif"></P>
+      <DL class="profile s_clear">
+        <DT>UID</DT>
+        <DD>53&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>1&nbsp;</DD>
+        <DT>威望</DT>
+        <DD>0 &nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-8-25&nbsp;</DD></DL></TD>
+    <TD class=postcontent>
+      <DIV class=postinfo><STRONG><A id=postnum67 title=复制本帖链接 
+      onclick="setCopy('http://www.cgplusplus.com/bbs/redirect.php?goto=findpost&amp;ptid=15&amp;pid=67', '帖子地址已经复制到剪贴板')" 
+      href="javascript:;"><EM>4</EM><SUP>#</SUP></A> </STRONG>
+      <DIV class=posterinfo>
+      <DIV class=pagecontrol></DIV>
+      <DIV class=authorinfo><IMG id=authicon67 class=authicon 
+      onclick="showauthor(this, 'userinfo67');" 
+      src="help_files/online_member.gif"> <EM id=authorposton67>发表于 2008-8-25 
+      15:50</EM> | <A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;page=1&amp;authorid=53" 
+      rel=nofollow>只看该作者</A> </DIV></DIV></DIV>
+      <DIV class=defaultpost>
+      <DIV id=ad_thread2_3></DIV>
+      <DIV id=ad_thread3_3></DIV>
+      <DIV id=ad_thread4_3></DIV>
+      <DIV class="postmessage ">
+      <DIV class=t_msgfontfix>
+      <TABLE cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD id=postmessage_67 class=t_msgfont>
+            <P>忠实用户，以后开始收费了，给我一个黄金VIP啊</P></TD></TR></TBODY></TABLE></DIV>
+      <DIV id=post_rate_div_67></DIV></DIV></DIV></TD></TR>
+  <TR>
+    <TD class="postcontent postbottom">
+      <DIV id=ad_thread1_3 class=ad_textlink1><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=1506&amp;extra=page%3D1" 
+      target=_blank>如果觉得我的回复好，请给我评分，谢谢！</A></DIV></TD></TR>
+  <TR>
+    <TD class=postauthor></TD>
+    <TD class=postcontent>
+      <DIV class=postactions>
+      <DIV class="postact s_clear"><EM></EM>
+      <P><A onclick=scrollTo(0,0); href="javascript:;">TOP</A> 
+    </P></DIV></DIV></TD></TR>
+  <TR class=threadad>
+    <TD class=postauthor></TD>
+    <TD class=adcontent></TD></TR></TBODY></TABLE></DIV>
+<DIV id=post_68>
+<TABLE id=pid68 cellSpacing=0 summary=pid68 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=postauthor rowSpan=2>
+      <DIV class=postinfo><A style="MARGIN-LEFT: 20px; FONT-WEIGHT: 800" 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=3" 
+      target=_blank>feilang</A> </DIV>
+      <DIV style="POSITION: absolute; MARGIN-TOP: -11px; DISPLAY: none" 
+      id=userinfo68 class="popupmenu_popup userinfopanel">
+      <DIV class=popavatar>
+      <DIV id=userinfo68_ma></DIV>
+      <UL class=profile_side>
+        <LI class=pm><A title=发短消息 
+        onclick="hideMenu('userinfo68');showWindow('sendpm', this.href);return false;" 
+        href="http://www.cgplusplus.com/bbs/pm.php?action=new&amp;uid=3">发短消息</A> 
+
+        <LI class=buddy><A id=ajax_buddy_4 title=加为好友 
+        onclick="ajaxmenu(this, 3000);doane(event);" 
+        href="http://www.cgplusplus.com/bbs/my.php?item=buddylist&amp;newbuddyid=3&amp;buddysubmit=yes" 
+        target=_blank>加为好友</A> </LI></UL></DIV>
+      <DIV class=popuserinfo>
+      <P><A href="http://www.cgplusplus.com/bbs/space.php?uid=3" 
+      target=_blank>feilang</A> <EM>(飞浪)</EM><EM>当前在线 </EM></P>
+      <P class=customstatus>CG++Man</P>
+      <DL class=s_clear>
+        <DT>UID</DT>
+        <DD>3&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>1037&nbsp;</DD>
+        <DT>精华</DT>
+        <DD>8&nbsp;</DD>
+        <DT>积分</DT>
+        <DD>1459&nbsp;</DD>
+        <DT>阅读权限</DT>
+        <DD>200&nbsp;</DD>
+        <DT>在线时间</DT>
+        <DD>107 小时&nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-7-18&nbsp;</DD>
+        <DT>最后登录</DT>
+        <DD>2012-2-12&nbsp;</DD></DL>
+      <DIV class=imicons><A title=查看个人网站 href="http://www.cgplusplus.com/" 
+      target=_blank><IMG alt=查看个人网站 src="help_files/forumlink.gif"></A><A 
+      title=查看详细资料 href="http://www.cgplusplus.com/bbs/space.php?uid=3" 
+      target=_blank><IMG alt=查看详细资料 src="help_files/userinfo.gif"></A> </DIV>
+      <DIV id=avatarfeed><SPAN id=threadsortswait></SPAN></DIV></DIV></DIV>
+      <DIV>
+      <DIV class=avatar onmouseover="showauthor(this, 'userinfo68')"><A 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=3" target=_blank><IMG 
+      src="help_files/03_avatar_middle.jpg"></A></DIV>
+      <P><EM><A 
+      href="http://www.cgplusplus.com/bbs/faq.php?action=grouppermission&amp;searchgroupid=1" 
+      target=_blank>管理员</A></EM></P></DIV>
+      <P><IMG alt="Rank: 9" src="help_files/star_level3.gif"><IMG alt="Rank: 9" 
+      src="help_files/star_level3.gif"><IMG alt="Rank: 9" 
+      src="help_files/star_level1.gif"></P>
+      <DL class="profile s_clear">
+        <DT>UID</DT>
+        <DD>3&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>1037&nbsp;</DD>
+        <DT>威望</DT>
+        <DD>178 &nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-7-18&nbsp;</DD></DL></TD>
+    <TD class=postcontent>
+      <DIV class=postinfo><STRONG><A id=postnum68 title=复制本帖链接 
+      onclick="setCopy('http://www.cgplusplus.com/bbs/redirect.php?goto=findpost&amp;ptid=15&amp;pid=68', '帖子地址已经复制到剪贴板')" 
+      href="javascript:;"><EM>5</EM><SUP>#</SUP></A> </STRONG>
+      <DIV class=posterinfo>
+      <DIV class=pagecontrol></DIV>
+      <DIV class=authorinfo><IMG id=authicon68 class=authicon 
+      onclick="showauthor(this, 'userinfo68')" 
+      src="help_files/online_admin.gif"> <EM id=authorposton68>发表于 2008-8-25 
+      16:20</EM> | <A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;page=1&amp;authorid=3" 
+      rel=nofollow>只看该作者</A> </DIV></DIV></DIV>
+      <DIV class=defaultpost>
+      <DIV id=ad_thread2_4></DIV>
+      <DIV id=ad_thread3_4></DIV>
+      <DIV id=ad_thread4_4></DIV>
+      <DIV class="postmessage ">
+      <DIV class=t_msgfontfix>
+      <TABLE cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD id=postmessage_68 class=t_msgfont>
+            <DIV class=msgheader>QUOTE:</DIV>
+            <DIV class=msgborder><B>以下是引用<I>Sawyer</I>在2008-8-25 
+            15:50:50的发言：</B><BR>
+            <P>忠实用户，以后开始收费了，给我一个黄金VIP啊</P></DIV>
+            <P>场景助手对中国人永远免费[em218]</P></TD></TR></TBODY></TABLE></DIV>
+      <DIV id=post_rate_div_68></DIV></DIV></DIV></TD></TR>
+  <TR>
+    <TD class="postcontent postbottom">
+      <DIV style="MAX-HEIGHT: 100px; maxHeightIE: 100px" class=signatures><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=2728" 
+      target=_blank><FONT color=#2d979f>场景助手4.0正式下载</FONT></A></DIV>
+      <DIV id=ad_thread1_4 class=ad_textlink1><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=1506&amp;extra=page%3D1" 
+      target=_blank>如果觉得我的回复好，请给我评分，谢谢！</A></DIV></TD></TR>
+  <TR>
+    <TD class=postauthor></TD>
+    <TD class=postcontent>
+      <DIV class=postactions>
+      <DIV class="postact s_clear"><EM></EM>
+      <P><A onclick=scrollTo(0,0); href="javascript:;">TOP</A> 
+    </P></DIV></DIV></TD></TR>
+  <TR class=threadad>
+    <TD class=postauthor></TD>
+    <TD class=adcontent></TD></TR></TBODY></TABLE></DIV>
+<DIV id=post_80>
+<TABLE id=pid80 cellSpacing=0 summary=pid80 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=postauthor rowSpan=2>
+      <DIV class=postinfo><A style="MARGIN-LEFT: 20px; FONT-WEIGHT: 800" 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=82" 
+      target=_blank>ljs817900</A> </DIV>
+      <DIV style="POSITION: absolute; MARGIN-TOP: -11px; DISPLAY: none" 
+      id=userinfo80 class="popupmenu_popup userinfopanel">
+      <DIV class=popavatar>
+      <DIV id=userinfo80_ma></DIV>
+      <UL class=profile_side>
+        <LI class=pm><A title=发短消息 
+        onclick="hideMenu('userinfo80');showWindow('sendpm', this.href);return false;" 
+        href="http://www.cgplusplus.com/bbs/pm.php?action=new&amp;uid=82">发短消息</A> 
+
+        <LI class=buddy><A id=ajax_buddy_5 title=加为好友 
+        onclick="ajaxmenu(this, 3000);doane(event);" 
+        href="http://www.cgplusplus.com/bbs/my.php?item=buddylist&amp;newbuddyid=82&amp;buddysubmit=yes" 
+        target=_blank>加为好友</A> </LI></UL></DIV>
+      <DIV class=popuserinfo>
+      <P><A href="http://www.cgplusplus.com/bbs/space.php?uid=82" 
+      target=_blank>ljs817900</A> <EM>当前离线 </EM></P>
+      <DL class=s_clear>
+        <DT>UID</DT>
+        <DD>82&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>1&nbsp;</DD>
+        <DT>精华</DT>
+        <DD>0&nbsp;</DD>
+        <DT>积分</DT>
+        <DD>3&nbsp;</DD>
+        <DT>阅读权限</DT>
+        <DD>10&nbsp;</DD>
+        <DT>在线时间</DT>
+        <DD>0 小时&nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-8-26&nbsp;</DD>
+        <DT>最后登录</DT>
+        <DD>2009-10-24&nbsp;</DD></DL>
+      <DIV class=imicons><A title=查看详细资料 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=82" target=_blank><IMG 
+      alt=查看详细资料 src="help_files/userinfo.gif"></A> </DIV>
+      <DIV id=avatarfeed><SPAN id=threadsortswait></SPAN></DIV></DIV></DIV>
+      <DIV>
+      <DIV class=avatar onmouseover="showauthor(this, 'userinfo80')"><A 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=82" target=_blank><IMG 
+      src="help_files/noavatar_middle(2).gif"></A></DIV>
+      <P><EM><A 
+      href="http://www.cgplusplus.com/bbs/faq.php?action=grouppermission&amp;searchgroupid=11" 
+      target=_blank>新手上路</A></EM></P></DIV>
+      <P><IMG alt="Rank: 1" src="help_files/star_level1.gif"></P>
+      <DL class="profile s_clear">
+        <DT>UID</DT>
+        <DD>82&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>1&nbsp;</DD>
+        <DT>威望</DT>
+        <DD>1 &nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-8-26&nbsp;</DD></DL></TD>
+    <TD class=postcontent>
+      <DIV class=postinfo><STRONG><A id=postnum80 title=复制本帖链接 
+      onclick="setCopy('http://www.cgplusplus.com/bbs/redirect.php?goto=findpost&amp;ptid=15&amp;pid=80', '帖子地址已经复制到剪贴板')" 
+      href="javascript:;"><EM>6</EM><SUP>#</SUP></A> </STRONG>
+      <DIV class=posterinfo>
+      <DIV class=pagecontrol></DIV>
+      <DIV class=authorinfo><IMG id=authicon80 class=authicon 
+      onclick="showauthor(this, 'userinfo80');" 
+      src="help_files/online_member.gif"> <EM id=authorposton80>发表于 2008-8-26 
+      13:23</EM> | <A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;page=1&amp;authorid=82" 
+      rel=nofollow>只看该作者</A> </DIV></DIV></DIV>
+      <DIV class=defaultpost>
+      <DIV id=ad_thread2_5></DIV>
+      <DIV id=ad_thread3_5></DIV>
+      <DIV id=ad_thread4_5></DIV>
+      <DIV class="postmessage ">
+      <DIV class=t_msgfontfix>
+      <TABLE cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD id=postmessage_80 class=t_msgfont>
+            <P>太牛逼了 哈哈 </P></TD></TR></TBODY></TABLE></DIV>
+      <DIV id=post_rate_div_80></DIV></DIV></DIV></TD></TR>
+  <TR>
+    <TD class="postcontent postbottom">
+      <DIV id=ad_thread1_5 class=ad_textlink1><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=1506&amp;extra=page%3D1" 
+      target=_blank>如果觉得我的回复好，请给我评分，谢谢！</A></DIV></TD></TR>
+  <TR>
+    <TD class=postauthor></TD>
+    <TD class=postcontent>
+      <DIV class=postactions>
+      <DIV class="postact s_clear"><EM></EM>
+      <P><A onclick=scrollTo(0,0); href="javascript:;">TOP</A> 
+    </P></DIV></DIV></TD></TR>
+  <TR class=threadad>
+    <TD class=postauthor></TD>
+    <TD class=adcontent></TD></TR></TBODY></TABLE></DIV>
+<DIV id=post_87>
+<TABLE id=pid87 cellSpacing=0 summary=pid87 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=postauthor rowSpan=2>
+      <DIV class=postinfo><A style="MARGIN-LEFT: 20px; FONT-WEIGHT: 800" 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=100" 
+      target=_blank>一xiao</A> </DIV>
+      <DIV style="POSITION: absolute; MARGIN-TOP: -11px; DISPLAY: none" 
+      id=userinfo87 class="popupmenu_popup userinfopanel">
+      <DIV class=popavatar>
+      <DIV id=userinfo87_ma></DIV>
+      <UL class=profile_side>
+        <LI class=pm><A title=发短消息 
+        onclick="hideMenu('userinfo87');showWindow('sendpm', this.href);return false;" 
+        href="http://www.cgplusplus.com/bbs/pm.php?action=new&amp;uid=100">发短消息</A> 
+
+        <LI class=buddy><A id=ajax_buddy_6 title=加为好友 
+        onclick="ajaxmenu(this, 3000);doane(event);" 
+        href="http://www.cgplusplus.com/bbs/my.php?item=buddylist&amp;newbuddyid=100&amp;buddysubmit=yes" 
+        target=_blank>加为好友</A> </LI></UL></DIV>
+      <DIV class=popuserinfo>
+      <P><A href="http://www.cgplusplus.com/bbs/space.php?uid=100" 
+      target=_blank>一xiao</A> <EM>当前离线 </EM></P>
+      <DL class=s_clear>
+        <DT>UID</DT>
+        <DD>100&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>8&nbsp;</DD>
+        <DT>精华</DT>
+        <DD>0&nbsp;</DD>
+        <DT>积分</DT>
+        <DD>7&nbsp;</DD>
+        <DT>阅读权限</DT>
+        <DD>10&nbsp;</DD>
+        <DT>在线时间</DT>
+        <DD>1 小时&nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-8-27&nbsp;</DD>
+        <DT>最后登录</DT>
+        <DD>2011-8-29&nbsp;</DD></DL>
+      <DIV class=imicons><A title=查看详细资料 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=100" target=_blank><IMG 
+      alt=查看详细资料 src="help_files/userinfo.gif"></A> </DIV>
+      <DIV id=avatarfeed><SPAN id=threadsortswait></SPAN></DIV></DIV></DIV>
+      <DIV>
+      <DIV class=avatar onmouseover="showauthor(this, 'userinfo87')"><A 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=100" target=_blank><IMG 
+      src="help_files/noavatar_middle(3).gif"></A></DIV>
+      <P><EM><A 
+      href="http://www.cgplusplus.com/bbs/faq.php?action=grouppermission&amp;searchgroupid=11" 
+      target=_blank>新手上路</A></EM></P></DIV>
+      <P><IMG alt="Rank: 1" src="help_files/star_level1.gif"></P>
+      <DL class="profile s_clear">
+        <DT>UID</DT>
+        <DD>100&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>8&nbsp;</DD>
+        <DT>威望</DT>
+        <DD>1 &nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-8-27&nbsp;</DD></DL></TD>
+    <TD class=postcontent>
+      <DIV class=postinfo><STRONG><A id=postnum87 title=复制本帖链接 
+      onclick="setCopy('http://www.cgplusplus.com/bbs/redirect.php?goto=findpost&amp;ptid=15&amp;pid=87', '帖子地址已经复制到剪贴板')" 
+      href="javascript:;"><EM>7</EM><SUP>#</SUP></A> </STRONG>
+      <DIV class=posterinfo>
+      <DIV class=pagecontrol></DIV>
+      <DIV class=authorinfo><IMG id=authicon87 class=authicon 
+      onclick="showauthor(this, 'userinfo87');" 
+      src="help_files/online_member.gif"> <EM id=authorposton87>发表于 2008-8-27 
+      11:26</EM> | <A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;page=1&amp;authorid=100" 
+      rel=nofollow>只看该作者</A> </DIV></DIV></DIV>
+      <DIV class=defaultpost>
+      <DIV id=ad_thread2_6></DIV>
+      <DIV id=ad_thread3_6></DIV>
+      <DIV id=ad_thread4_6></DIV>
+      <DIV class="postmessage ">
+      <DIV class=t_msgfontfix>
+      <TABLE cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD id=postmessage_87 
+      class=t_msgfont>来了，要支持，</TD></TR></TBODY></TABLE></DIV>
+      <DIV id=post_rate_div_87></DIV></DIV></DIV></TD></TR>
+  <TR>
+    <TD class="postcontent postbottom">
+      <DIV id=ad_thread1_6 class=ad_textlink1><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=1506&amp;extra=page%3D1" 
+      target=_blank>如果觉得我的回复好，请给我评分，谢谢！</A></DIV></TD></TR>
+  <TR>
+    <TD class=postauthor></TD>
+    <TD class=postcontent>
+      <DIV class=postactions>
+      <DIV class="postact s_clear"><EM></EM>
+      <P><A onclick=scrollTo(0,0); href="javascript:;">TOP</A> 
+    </P></DIV></DIV></TD></TR>
+  <TR class=threadad>
+    <TD class=postauthor></TD>
+    <TD class=adcontent></TD></TR></TBODY></TABLE></DIV>
+<DIV id=post_104>
+<TABLE id=pid104 cellSpacing=0 summary=pid104 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=postauthor rowSpan=2>
+      <DIV class=postinfo><A style="MARGIN-LEFT: 20px; FONT-WEIGHT: 800" 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=104" 
+      target=_blank>heixing</A> </DIV>
+      <DIV style="POSITION: absolute; MARGIN-TOP: -11px; DISPLAY: none" 
+      id=userinfo104 class="popupmenu_popup userinfopanel">
+      <DIV class=popavatar>
+      <DIV id=userinfo104_ma></DIV>
+      <UL class=profile_side>
+        <LI class=pm><A title=发短消息 
+        onclick="hideMenu('userinfo104');showWindow('sendpm', this.href);return false;" 
+        href="http://www.cgplusplus.com/bbs/pm.php?action=new&amp;uid=104">发短消息</A> 
+
+        <LI class=buddy><A id=ajax_buddy_7 title=加为好友 
+        onclick="ajaxmenu(this, 3000);doane(event);" 
+        href="http://www.cgplusplus.com/bbs/my.php?item=buddylist&amp;newbuddyid=104&amp;buddysubmit=yes" 
+        target=_blank>加为好友</A> </LI></UL></DIV>
+      <DIV class=popuserinfo>
+      <P><A href="http://www.cgplusplus.com/bbs/space.php?uid=104" 
+      target=_blank>heixing</A> <EM>当前离线 </EM></P>
+      <DL class=s_clear>
+        <DT>UID</DT>
+        <DD>104&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>14&nbsp;</DD>
+        <DT>精华</DT>
+        <DD>0&nbsp;</DD>
+        <DT>积分</DT>
+        <DD>8&nbsp;</DD>
+        <DT>阅读权限</DT>
+        <DD>10&nbsp;</DD>
+        <DT>在线时间</DT>
+        <DD>0 小时&nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-8-28&nbsp;</DD>
+        <DT>最后登录</DT>
+        <DD>2011-4-13&nbsp;</DD></DL>
+      <DIV class=imicons><A title=查看详细资料 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=104" target=_blank><IMG 
+      alt=查看详细资料 src="help_files/userinfo.gif"></A> </DIV>
+      <DIV id=avatarfeed><SPAN id=threadsortswait></SPAN></DIV></DIV></DIV>
+      <DIV>
+      <DIV class=avatar onmouseover="showauthor(this, 'userinfo104')"><A 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=104" target=_blank><IMG 
+      src="help_files/noavatar_middle(4).gif"></A></DIV>
+      <P><EM><A 
+      href="http://www.cgplusplus.com/bbs/faq.php?action=grouppermission&amp;searchgroupid=11" 
+      target=_blank>新手上路</A></EM></P></DIV>
+      <P><IMG alt="Rank: 1" src="help_files/star_level1.gif"></P>
+      <DL class="profile s_clear">
+        <DT>UID</DT>
+        <DD>104&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>14&nbsp;</DD>
+        <DT>威望</DT>
+        <DD>0 &nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-8-28&nbsp;</DD></DL></TD>
+    <TD class=postcontent>
+      <DIV class=postinfo><STRONG><A id=postnum104 title=复制本帖链接 
+      onclick="setCopy('http://www.cgplusplus.com/bbs/redirect.php?goto=findpost&amp;ptid=15&amp;pid=104', '帖子地址已经复制到剪贴板')" 
+      href="javascript:;"><EM>8</EM><SUP>#</SUP></A> </STRONG>
+      <DIV class=posterinfo>
+      <DIV class=pagecontrol></DIV>
+      <DIV class=authorinfo><IMG id=authicon104 class=authicon 
+      onclick="showauthor(this, 'userinfo104');" 
+      src="help_files/online_member.gif"> <EM id=authorposton104>发表于 2008-8-28 
+      03:42</EM> | <A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;page=1&amp;authorid=104" 
+      rel=nofollow>只看该作者</A> </DIV></DIV></DIV>
+      <DIV class=defaultpost>
+      <DIV id=ad_thread2_7></DIV>
+      <DIV id=ad_thread3_7></DIV>
+      <DIV id=ad_thread4_7></DIV>
+      <DIV class="postmessage ">
+      <DIV class=t_msgfontfix>
+      <TABLE cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD id=postmessage_104 class=t_msgfont>
+            <P>安装时候一个小问题， 默认是&nbsp; c:/……/max 9，如果在对话框中鼠标点击一个新目录，比如abc</P>
+            <P>&nbsp;</P>
+            <P>安装路径会变为 c:/……abc／max 9&nbsp;&nbsp; ，</P>
+            <P>最后的max9不能自动舍弃，需要手动删除。</P>
+            <P>&nbsp;</P></TD></TR></TBODY></TABLE></DIV>
+      <DIV id=post_rate_div_104></DIV></DIV></DIV></TD></TR>
+  <TR>
+    <TD class="postcontent postbottom">
+      <DIV style="MAX-HEIGHT: 100px; maxHeightIE: 100px" class=signatures><A 
+      href="http://t.sina.com.cn/1780766154" target=_blank><STRONG>-- 我的微博 
+      --</STRONG></A></DIV>
+      <DIV id=ad_thread1_7 class=ad_textlink1><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=1506&amp;extra=page%3D1" 
+      target=_blank>如果觉得我的回复好，请给我评分，谢谢！</A></DIV></TD></TR>
+  <TR>
+    <TD class=postauthor></TD>
+    <TD class=postcontent>
+      <DIV class=postactions>
+      <DIV class="postact s_clear"><EM></EM>
+      <P><A onclick=scrollTo(0,0); href="javascript:;">TOP</A> 
+    </P></DIV></DIV></TD></TR>
+  <TR class=threadad>
+    <TD class=postauthor></TD>
+    <TD class=adcontent></TD></TR></TBODY></TABLE></DIV>
+<DIV id=post_105>
+<TABLE id=pid105 cellSpacing=0 summary=pid105 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=postauthor rowSpan=2>
+      <DIV class=postinfo><A style="MARGIN-LEFT: 20px; FONT-WEIGHT: 800" 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=3" 
+      target=_blank>feilang</A> </DIV>
+      <DIV style="POSITION: absolute; MARGIN-TOP: -11px; DISPLAY: none" 
+      id=userinfo105 class="popupmenu_popup userinfopanel">
+      <DIV class=popavatar>
+      <DIV id=userinfo105_ma></DIV>
+      <UL class=profile_side>
+        <LI class=pm><A title=发短消息 
+        onclick="hideMenu('userinfo105');showWindow('sendpm', this.href);return false;" 
+        href="http://www.cgplusplus.com/bbs/pm.php?action=new&amp;uid=3">发短消息</A> 
+
+        <LI class=buddy><A id=ajax_buddy_8 title=加为好友 
+        onclick="ajaxmenu(this, 3000);doane(event);" 
+        href="http://www.cgplusplus.com/bbs/my.php?item=buddylist&amp;newbuddyid=3&amp;buddysubmit=yes" 
+        target=_blank>加为好友</A> </LI></UL></DIV>
+      <DIV class=popuserinfo>
+      <P><A href="http://www.cgplusplus.com/bbs/space.php?uid=3" 
+      target=_blank>feilang</A> <EM>(飞浪)</EM><EM>当前在线 </EM></P>
+      <P class=customstatus>CG++Man</P>
+      <DL class=s_clear>
+        <DT>UID</DT>
+        <DD>3&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>1037&nbsp;</DD>
+        <DT>精华</DT>
+        <DD>8&nbsp;</DD>
+        <DT>积分</DT>
+        <DD>1459&nbsp;</DD>
+        <DT>阅读权限</DT>
+        <DD>200&nbsp;</DD>
+        <DT>在线时间</DT>
+        <DD>107 小时&nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-7-18&nbsp;</DD>
+        <DT>最后登录</DT>
+        <DD>2012-2-12&nbsp;</DD></DL>
+      <DIV class=imicons><A title=查看个人网站 href="http://www.cgplusplus.com/" 
+      target=_blank><IMG alt=查看个人网站 src="help_files/forumlink.gif"></A><A 
+      title=查看详细资料 href="http://www.cgplusplus.com/bbs/space.php?uid=3" 
+      target=_blank><IMG alt=查看详细资料 src="help_files/userinfo.gif"></A> </DIV>
+      <DIV id=avatarfeed><SPAN id=threadsortswait></SPAN></DIV></DIV></DIV>
+      <DIV>
+      <DIV class=avatar onmouseover="showauthor(this, 'userinfo105')"><A 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=3" target=_blank><IMG 
+      src="help_files/03_avatar_middle.jpg"></A></DIV>
+      <P><EM><A 
+      href="http://www.cgplusplus.com/bbs/faq.php?action=grouppermission&amp;searchgroupid=1" 
+      target=_blank>管理员</A></EM></P></DIV>
+      <P><IMG alt="Rank: 9" src="help_files/star_level3.gif"><IMG alt="Rank: 9" 
+      src="help_files/star_level3.gif"><IMG alt="Rank: 9" 
+      src="help_files/star_level1.gif"></P>
+      <DL class="profile s_clear">
+        <DT>UID</DT>
+        <DD>3&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>1037&nbsp;</DD>
+        <DT>威望</DT>
+        <DD>178 &nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-7-18&nbsp;</DD></DL></TD>
+    <TD class=postcontent>
+      <DIV class=postinfo><STRONG><A id=postnum105 title=复制本帖链接 
+      onclick="setCopy('http://www.cgplusplus.com/bbs/redirect.php?goto=findpost&amp;ptid=15&amp;pid=105', '帖子地址已经复制到剪贴板')" 
+      href="javascript:;"><EM>9</EM><SUP>#</SUP></A> </STRONG>
+      <DIV class=posterinfo>
+      <DIV class=pagecontrol></DIV>
+      <DIV class=authorinfo><IMG id=authicon105 class=authicon 
+      onclick="showauthor(this, 'userinfo105')" 
+      src="help_files/online_admin.gif"> <EM id=authorposton105>发表于 2008-8-28 
+      10:09</EM> | <A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;page=1&amp;authorid=3" 
+      rel=nofollow>只看该作者</A> </DIV></DIV></DIV>
+      <DIV class=defaultpost>
+      <DIV id=ad_thread2_8></DIV>
+      <DIV id=ad_thread3_8></DIV>
+      <DIV id=ad_thread4_8></DIV>
+      <DIV class="postmessage ">
+      <DIV class=t_msgfontfix>
+      <TABLE cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD id=postmessage_105 
+      class=t_msgfont>嗯,我试了下,这很是个问题啊~~</TD></TR></TBODY></TABLE></DIV>
+      <DIV id=post_rate_div_105></DIV></DIV></DIV></TD></TR>
+  <TR>
+    <TD class="postcontent postbottom">
+      <DIV style="MAX-HEIGHT: 100px; maxHeightIE: 100px" class=signatures><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=2728" 
+      target=_blank><FONT color=#2d979f>场景助手4.0正式下载</FONT></A></DIV>
+      <DIV id=ad_thread1_8 class=ad_textlink1><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=1506&amp;extra=page%3D1" 
+      target=_blank>如果觉得我的回复好，请给我评分，谢谢！</A></DIV></TD></TR>
+  <TR>
+    <TD class=postauthor></TD>
+    <TD class=postcontent>
+      <DIV class=postactions>
+      <DIV class="postact s_clear"><EM></EM>
+      <P><A onclick=scrollTo(0,0); href="javascript:;">TOP</A> 
+    </P></DIV></DIV></TD></TR>
+  <TR class=threadad>
+    <TD class=postauthor></TD>
+    <TD class=adcontent></TD></TR></TBODY></TABLE></DIV>
+<DIV id=post_247>
+<TABLE id=pid247 cellSpacing=0 summary=pid247 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=postauthor rowSpan=2>
+      <DIV class=postinfo><A style="MARGIN-LEFT: 20px; FONT-WEIGHT: 800" 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=193" 
+      target=_blank>imageimaging</A> </DIV>
+      <DIV style="POSITION: absolute; MARGIN-TOP: -11px; DISPLAY: none" 
+      id=userinfo247 class="popupmenu_popup userinfopanel">
+      <DIV class=popavatar>
+      <DIV id=userinfo247_ma></DIV>
+      <UL class=profile_side>
+        <LI class=pm><A title=发短消息 
+        onclick="hideMenu('userinfo247');showWindow('sendpm', this.href);return false;" 
+        href="http://www.cgplusplus.com/bbs/pm.php?action=new&amp;uid=193">发短消息</A> 
+
+        <LI class=buddy><A id=ajax_buddy_9 title=加为好友 
+        onclick="ajaxmenu(this, 3000);doane(event);" 
+        href="http://www.cgplusplus.com/bbs/my.php?item=buddylist&amp;newbuddyid=193&amp;buddysubmit=yes" 
+        target=_blank>加为好友</A> </LI></UL></DIV>
+      <DIV class=popuserinfo>
+      <P><A href="http://www.cgplusplus.com/bbs/space.php?uid=193" 
+      target=_blank>imageimaging</A> <EM>当前离线 </EM></P>
+      <DL class=s_clear>
+        <DT>UID</DT>
+        <DD>193&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>2&nbsp;</DD>
+        <DT>精华</DT>
+        <DD>0&nbsp;</DD>
+        <DT>积分</DT>
+        <DD>3&nbsp;</DD>
+        <DT>阅读权限</DT>
+        <DD>10&nbsp;</DD>
+        <DT>在线时间</DT>
+        <DD>1 小时&nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-9-6&nbsp;</DD>
+        <DT>最后登录</DT>
+        <DD>2010-9-18&nbsp;</DD></DL>
+      <DIV class=imicons><A title=查看详细资料 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=193" target=_blank><IMG 
+      alt=查看详细资料 src="help_files/userinfo.gif"></A> </DIV>
+      <DIV id=avatarfeed><SPAN id=threadsortswait></SPAN></DIV></DIV></DIV>
+      <DIV>
+      <DIV class=avatar onmouseover="showauthor(this, 'userinfo247')"><A 
+      href="http://www.cgplusplus.com/bbs/space.php?uid=193" target=_blank><IMG 
+      src="help_files/noavatar_middle(5).gif"></A></DIV>
+      <P><EM><A 
+      href="http://www.cgplusplus.com/bbs/faq.php?action=grouppermission&amp;searchgroupid=11" 
+      target=_blank>新手上路</A></EM></P></DIV>
+      <P><IMG alt="Rank: 1" src="help_files/star_level1.gif"></P>
+      <DL class="profile s_clear">
+        <DT>UID</DT>
+        <DD>193&nbsp;</DD>
+        <DT>帖子</DT>
+        <DD>2&nbsp;</DD>
+        <DT>威望</DT>
+        <DD>1 &nbsp;</DD>
+        <DT>注册时间</DT>
+        <DD>2008-9-6&nbsp;</DD></DL></TD>
+    <TD class=postcontent>
+      <DIV class=postinfo><STRONG><A id=postnum247 title=复制本帖链接 
+      onclick="setCopy('http://www.cgplusplus.com/bbs/redirect.php?goto=findpost&amp;ptid=15&amp;pid=247', '帖子地址已经复制到剪贴板')" 
+      href="javascript:;"><EM>10</EM><SUP>#</SUP></A> </STRONG>
+      <DIV class=posterinfo>
+      <DIV class=pagecontrol></DIV>
+      <DIV class=authorinfo><IMG id=authicon247 class=authicon 
+      onclick="showauthor(this, 'userinfo247');" 
+      src="help_files/online_member.gif"> <EM id=authorposton247>发表于 2008-9-6 
+      02:48</EM> | <A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;page=1&amp;authorid=193" 
+      rel=nofollow>只看该作者</A> </DIV></DIV></DIV>
+      <DIV class=defaultpost>
+      <DIV id=ad_thread2_9></DIV>
+      <DIV id=ad_thread3_9></DIV>
+      <DIV id=ad_thread4_9></DIV>
+      <DIV class="postmessage ">
+      <DIV class=t_msgfontfix>
+      <TABLE cellSpacing=0 cellPadding=0>
+        <TBODY>
+        <TR>
+          <TD id=postmessage_247 
+      class=t_msgfont>&amp;nbsp;支持！</TD></TR></TBODY></TABLE></DIV>
+      <DIV id=post_rate_div_247></DIV></DIV></DIV></TD></TR>
+  <TR>
+    <TD class="postcontent postbottom">
+      <DIV id=ad_thread1_9 class=ad_textlink1><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=1506&amp;extra=page%3D1" 
+      target=_blank>如果觉得我的回复好，请给我评分，谢谢！</A></DIV></TD></TR>
+  <TR>
+    <TD class=postauthor></TD>
+    <TD class=postcontent>
+      <DIV class=postactions>
+      <DIV class="postact s_clear"><EM></EM>
+      <P><A onclick=scrollTo(0,0); href="javascript:;">TOP</A> 
+    </P></DIV></DIV></TD></TR>
+  <TR class=threadad>
+    <TD class=postauthor></TD>
+    <TD class=adcontent></TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV id=postlistreply class="mainbox viewthread">
+<DIV style="DISPLAY: none" id=post_new class=viewthread_table></DIV></DIV>
+<FORM id=modactions method=post name=modactions><INPUT value=de6b1e8d 
+type=hidden name=formhash> <INPUT type=hidden name=optgroup> <INPUT type=hidden 
+name=operation> <INPUT type=hidden name=listextra> </FORM>
+<SCRIPT type=text/javascript>var tagarray = ['脚本','如何','求助','max','模型','动画','物体','原创','材质','论坛','快捷键','朋友','MAXScript','时间','修改器','插件','3DMAX','工具','功能','贴图','style','通道','推荐','文件夹','助手','设计师','undefined','软件','选择','制作','编辑','游戏','编辑器','面板','对话框','教程','文件','名字','批量','灯光','中文','color','图片','高手','请教','下载','办法','怎样','代理','控制器','学习','效果图','VRay','photoshop','中文版','移动','建模','路径','false','电脑','face','鼠标','起点','命令','大哥','信息','pressed','上海','分享','程序','旋转','button','渲染','获取','讨论','视频','记录','团队精神','团队合作','源代码','塌陷','入门','英文版','3dsmax','英文','运动','maya','老师','下载地址','material','设置','法线','对象','解决','参数','目录','艺术','资源','在线','ffffff'];var tagencarray = ['%BD%C5%B1%BE','%C8%E7%BA%CE','%C7%F3%D6%FA','max','%C4%A3%D0%CD','%B6%AF%BB%AD','%CE%EF%CC%E5','%D4%AD%B4%B4','%B2%C4%D6%CA','%C2%DB%CC%B3','%BF%EC%BD%DD%BC%FC','%C5%F3%D3%D1','MAXScript','%CA%B1%BC%E4','%D0%DE%B8%C4%C6%F7','%B2%E5%BC%FE','3DMAX','%B9%A4%BE%DF','%B9%A6%C4%DC','%CC%F9%CD%BC','style','%CD%A8%B5%C0','%CD%C6%BC%F6','%CE%C4%BC%FE%BC%D0','%D6%FA%CA%D6','%C9%E8%BC%C6%CA%A6','undefined','%C8%ED%BC%FE','%D1%A1%D4%F1','%D6%C6%D7%F7','%B1%E0%BC%AD','%D3%CE%CF%B7','%B1%E0%BC%AD%C6%F7','%C3%E6%B0%E5','%B6%D4%BB%B0%BF%F2','%BD%CC%B3%CC','%CE%C4%BC%FE','%C3%FB%D7%D6','%C5%FA%C1%BF','%B5%C6%B9%E2','%D6%D0%CE%C4','color','%CD%BC%C6%AC','%B8%DF%CA%D6','%C7%EB%BD%CC','%CF%C2%D4%D8','%B0%EC%B7%A8','%D4%F5%D1%F9','%B4%FA%C0%ED','%BF%D8%D6%C6%C6%F7','%D1%A7%CF%B0','%D0%A7%B9%FB%CD%BC','VRay','photoshop','%D6%D0%CE%C4%B0%E6','%D2%C6%B6%AF','%BD%A8%C4%A3','%C2%B7%BE%B6','false','%B5%E7%C4%D4','face','%CA%F3%B1%EA','%C6%F0%B5%E3','%C3%FC%C1%EE','%B4%F3%B8%E7','%D0%C5%CF%A2','pressed','%C9%CF%BA%A3','%B7%D6%CF%ED','%B3%CC%D0%F2','%D0%FD%D7%AA','button','%E4%D6%C8%BE','%BB%F1%C8%A1','%CC%D6%C2%DB','%CA%D3%C6%B5','%BC%C7%C2%BC','%CD%C5%B6%D3%BE%AB%C9%F1','%CD%C5%B6%D3%BA%CF%D7%F7','%D4%B4%B4%FA%C2%EB','%CB%FA%CF%DD','%C8%EB%C3%C5','%D3%A2%CE%C4%B0%E6','3dsmax','%D3%A2%CE%C4','%D4%CB%B6%AF','maya','%C0%CF%CA%A6','%CF%C2%D4%D8%B5%D8%D6%B7','material','%C9%E8%D6%C3','%B7%A8%CF%DF','%B6%D4%CF%F3','%BD%E2%BE%F6','%B2%CE%CA%FD','%C4%BF%C2%BC','%D2%D5%CA%F5','%D7%CA%D4%B4','%D4%DA%CF%DF','ffffff'];parsetag(20);</SCRIPT>
+
+<DIV class="forumcontrol s_clear">
+<TABLE class=narrow cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=modaction></TD>
+    <TD>
+      <DIV class=pages><STRONG>1</STRONG><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=2">2</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=3">3</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=4">4</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=5">5</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=6">6</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=7">7</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=8">8</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=9">9</A><A 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=10">10</A><A 
+      class=next 
+      href="http://www.cgplusplus.com/bbs/viewthread.php?tid=15&amp;extra=&amp;page=2">下一页</A></DIV><SPAN 
+      class=pageback><A 
+      href="http://www.cgplusplus.com/bbs/forumdisplay.php?fid=2">返回列表</A></SPAN> 
+    </TD></TR></TBODY></TABLE></DIV>
+<DIV style="DISPLAY: none" id=favoritewin>
+<H5><A class=lightlink 
+onclick="ajaxget('my.php?item=favorites&amp;tid=15', 'favorite_msg');return false;" 
+href="javascript:;">[收藏此主题]</A>&nbsp; <A class=lightlink 
+onclick="ajaxget('my.php?item=attention&amp;action=add&amp;tid=15', 'favorite_msg');return false;" 
+href="javascript:;">[关注此主题的新回复]</A> </H5><SPAN id=favorite_msg></SPAN></DIV>
+<DIV style="DISPLAY: none" id=sharewin>
+<H5><A class=lightlink 
+onclick="setCopy('[原创]场景助手详细使用说明\nhttp://www.cgplusplus.com/bbs/viewthread.php?tid=15', '帖子地址已经复制到剪贴板<br />您可以用快捷键 Ctrl + V 粘贴到 QQ、MSN 里。')" 
+href="javascript:;">[通过 QQ、MSN 分享给朋友]</A><BR><BR></H5></DIV>
+<SCRIPT type=text/javascript>document.onkeyup = function(e){keyPageScroll(e, 0, 1, 'viewthread.php?tid=15', 1);}</SCRIPT>
+</DIV>
+<DIV id=ad_footerbanner1 class=ad_footerbanner></DIV>
+<DIV id=footer>
+<DIV class="wrap s_clear">
+<DIV id=footlink>
+<P><STRONG><A href="http://www.cgplusplus.com/bbs/" 
+target=_blank>CG++</A></STRONG> ( <A href="http://www.miibeian.gov.cn/" 
+target=_blank>鄂ICP备08100808号</A>)<SPAN class=pipe>|</SPAN><A 
+href="mailto:cgplusplus@vip.qq.com">联系我们</A> <SPAN class=pipe>|</SPAN><A 
+href="http://www.cgplusplus.com/bbs/wap/" target=_blank>WAP</A><SPAN 
+class=pipe>|
+<SCRIPT language=JavaScript charset=gb2312 src="help_files/stat.htm"></SCRIPT>
+
+<SCRIPT type=text/javascript>
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5927727-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</SCRIPT>
+ </SPAN></P>
+<P class=smalltext>GMT+8, 2012-2-12 17:46, <SPAN id=debuginfo>Processed in 
+0.309561 second(s), 5 queries</SPAN>. </P></DIV>
+<DIV id=rightinfo>
+<P>Powered by <STRONG><A href="http://www.discuz.net/" 
+target=_blank>Discuz!</A></STRONG> <EM>7.2</EM> <A 
+href="http://www.cgplusplus.com/"></A></P>
+<P class=smalltext>&copy; 2001-2009 <A href="http://www.comsenz.com/" 
+target=_blank>Comsenz Inc.</A></P></DIV></DIV></DIV></BODY></HTML>
