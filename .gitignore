@@ -20,3 +20,7 @@ Thumbs.db
 .DS_Store
 *.suo
 *.user
+
+# Windows 保留设备名(nul)伪文件：Git Bash 中 `2>nul` 会误建此 0 字节文件，
+# 无法用常规方式删除，且 `git add -A` 会因设备名报错，故忽略之。
+nul
