@@ -317,7 +317,6 @@ rollout ro_vrayao "Vray AO 渲染" width:260 height:596
 )
 rollout version "相关说明" width:250 height:400
 (
-	HyperLink link2 "http://www.cgplusplus.com/bbs" pos:[41,40] width:156 height:15 enabled:true address:"http://www.cgplusplus.com/bbs"
 	label lbl11 "本版适合VRay中文版各版本，如有意见或建议，请到这里：" pos:[22,7] width:207 height:28
 	on version open do
 	(

@@ -165,7 +165,6 @@ rollout SP4missingMap "查看丢失贴图和光域网文件" width:460 height:285
 	edittext edt_missingmapObjs "使用该贴图的物体：" pos:[5,210] width:450 height:20 readOnly:true labelOnTop:true
 	button btn_relinkDialog "指定贴图" pos:[351,184] width:85 height:25 toolTip:"打开/关闭指定贴图对话框"
 	button btn_delSelectedMaps "清除选择贴图" pos:[166,14] width:85 height:25 toolTip:"光域网文件请手动清除"
-	HyperLink hplbs "www.cgplusplus.com/bbs" pos:[283,258] width:150 height:15 address:"http://www.cgplusplus.com/bbs" color:(color 255 127.5 0) hovercolor:(color 0 0 255) visitedcolor:(color 0 0 255) 
 	label lbl "可缩放" pos:[416,258] width:59 height:16 enabled:false
 	on SP4missingMap open do	--Initialize this dialog
 		btn_refeshMaps.pressed()

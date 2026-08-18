@@ -1217,7 +1217,6 @@ rollout SPabtRol "关于场景助手" width:319 height:262
 	label lbl1 "Label" pos:[38,30] width:150 height:70
 	label lbl2 "Label" pos:[38,120] width:250 height:70
 
-	HyperLink hy "www.cgplusplus.com" pos:[38,99] width:100 height:15 address:"http://www.cgplusplus.com/" color:(color 0 128 128) hovercolor:(color 128 0 255) visitedcolor:(color 0 128 128)
 	HyperLink hy1 "公众号：山医命象卜下载新脚本" pos:[38,180] width:150 height:15 address:"http://mp.weixin.qq.com/mp/homepage?__biz=MzA4NjQ2MDYzMA==&hid=1&sn=bb2531d86a7d41ca361cca9081151faa&scene=18#wechat_redirect" color:(color 0 128 128) hovercolor:(color 128 0 255) visitedcolor:(color 0 128 128)
 	button okok "确 定" pos:[205,214] width:80 height:18
 	on SPabtRol open do

@@ -418,7 +418,6 @@ fn fl_refrInterOff origMtl =
 	button btn_refrOff "Off" pos:[127,141] width:25 height:18
 	button btn_refrOn "On" pos:[99,141] width:25 height:18
 	radiobuttons rdoScale "" pos:[13,78] width:150 height:16 labels:#("Whole", "Mtl Editor") default:1 columns:2
-	HyperLink hplbs "www.cgplusplus.com" pos:[9,170] width:104 height:15 color:(color 255 127.5 0) hovercolor:(color 0 0 255) visitedcolor:(color 0 0 255) address:"http://www.cgplusplus.com/bbs"
 	button btn21 "?" pos:[138,168] width:20 height:18
 	local reflSubdivs = 8,refrSubdivs = 8
 	--Reflection modify
