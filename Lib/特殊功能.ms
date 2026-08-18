@@ -1,32 +1,31 @@
---×÷Õß£º·ÉÀË
+--ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½ï¿½
 --Author:Feilang
---www.cgplusplus.com
 --------------------------------------------------
---»¶Ó­Ê¹ÓÃ³¡¾°ÖúÊÖ4.0 
+--ï¿½ï¿½Ó­Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0 
 
-----¿ªÔ´·îÏ×----
+----ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½----
 
 ---------------------------------------------------
---³¡¾°ÖúÊÖ4.0		2011-04-01
---³¡¾°ÖúÊÖ3.0		2009-08-01
---³¡¾°ÖúÊÖ2.6		2009-03-30
---³¡¾°ÖúÊÖ2.0		2008-08-06
---³¡¾°ÖúÊÖ1.0		2008-05-27
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0		2011-04-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3.0		2009-08-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.6		2009-03-30
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.0		2008-08-06
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1.0		2008-05-27
 
-rollout fl_specialFunctions4_1 "ÌØÊâ¹¦ÄÜ" width:240 height:123
+rollout fl_specialFunctions4_1 "ï¿½ï¿½ï¿½â¹¦ï¿½ï¿½" width:240 height:123
 (
-	button btn_freeMemory "ÊÍ·ÅÄÚ´æ" pos:[4,4] width:55 height:16 toolTip:"ÊÍ·Å³¡¾°ÖĞËùÓĞÌùÍ¼Ê¹ÓÃµÄÄÚ´æ²¢Çå³ı³·Ïû±£´æµÄ²Ù×÷"
-	button btn_selectMissUVObjs "ÕÒ¶ªÊ§UVµÄÎïÌå" pos:[61,4] width:96 height:16
-	button btn_selectOutSceneObj "Ñ¡Ôñµ±Ç°ÊÓÍ¼¿´²»µ½µÄÎïÌå" pos:[4,22] width:154 height:16 toolTip:"Ñ¡Ôñµ±Ç°¼¤»îÊÓÍ¼¿´²»µ½µÄgeometryºÍshapes"
-	button btn_selectOutCameraObj "Ñ¡Ôñ¶¯»­Ïñ»ú¿´²»µ½µÄÎïÌå" pos:[4,41] width:154 height:16 toolTip:"Ñ¡Ôñ¶¯»­ÉãÏñ»ú¿´²»µ½µÄgeometryºÍshapes"
-	button btn_setRegionRect "ÕÒ»ØäÖÈ¾¿ò" pos:[162,4] width:73 height:16 toolTip:"½«ÒÆµ½ÆÁÄ»ÍâÃæµÄäÖÈ¾¿òÕÒ»Ø"
+	button btn_freeMemory "ï¿½Í·ï¿½ï¿½Ú´ï¿½" pos:[4,4] width:55 height:16 toolTip:"ï¿½Í·Å³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Ê¹ï¿½Ãµï¿½ï¿½Ú´æ²¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½"
+	button btn_selectMissUVObjs "ï¿½Ò¶ï¿½Ê§UVï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[61,4] width:96 height:16
+	button btn_selectOutSceneObj "Ñ¡ï¿½ï¿½Ç°ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[4,22] width:154 height:16 toolTip:"Ñ¡ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½geometryï¿½ï¿½shapes"
+	button btn_selectOutCameraObj "Ñ¡ï¿½ñ¶¯»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[4,41] width:154 height:16 toolTip:"Ñ¡ï¿½ñ¶¯»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½geometryï¿½ï¿½shapes"
+	button btn_setRegionRect "ï¿½Ò»ï¿½ï¿½ï¿½È¾ï¿½ï¿½" pos:[162,4] width:73 height:16 toolTip:"ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¾ï¿½ï¿½ï¿½Ò»ï¿½"
 	dropdownList ddl_region "" pos:[162,27] width:70 height:22 items:#("Region", "Blowup")
-	GroupBox grp2 "¹ØÁª¹¦ÄÜ" pos:[3,59] width:233 height:57
-	pickbutton btn_pickTarget "Ê°È¡Ä¿±êÎïÌå" pos:[6,77] width:100 height:30 message:"ÇëÑ¡ÔñÒ»¸öÎïÌå×÷Îª¹ØÁªµÄ²ÎÕÕÎï" toolTip:"µ¥»÷²¢Ñ¡ÔñÒ»¸öÎïÌå×÷Îª¹ØÁªµÄ²ÎÕÕÎï" autoDisplay:true
-	button btn_selectInstance "Ñ¡Ôñ¹ØÁªÎïÌå" pos:[109,72] width:104 height:16 toolTip:"Ñ¡ÔñÓëÄ¿±êÎïÌåÏà¹ØÁªµÄÎïÌå"
-	button btn_instanceSelection "¹ØÁªÑ¡ÔñÎïÌå" pos:[109,94] width:104 height:16 toolTip:"½«Ñ¡ÔñµÄÎïÌåÓëÄ¿±êÎïÌå¹ØÁª"
+	GroupBox grp2 "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[3,59] width:233 height:57
+	pickbutton btn_pickTarget "Ê°È¡Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[6,77] width:100 height:30 message:"ï¿½ï¿½Ñ¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½" toolTip:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½" autoDisplay:true
+	button btn_selectInstance "Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[109,72] width:104 height:16 toolTip:"Ñ¡ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+	button btn_instanceSelection "ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[109,94] width:104 height:16 toolTip:"ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 	button btn_instanceHelp "?" pos:[217,82] width:15 height:16
-	local fl_tips01="³¡¾°ÖúÊÖÌáÊ¾"
+	local fl_tips01="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾"
 	--Judge if the node was hidden or frozen
 	fn fl_notHiddenOrFrozen obj = not (obj.isHidden or obj.isFrozen)
 
@@ -38,7 +37,7 @@ rollout fl_specialFunctions4_1 "ÌØÊâ¹¦ÄÜ" width:240 height:123
 	(	local objs=for i in geometry where ((classof i)==Editable_Poly or (classof i)==Editable_mesh)  collect i
 		missUVObjd=for obj in objs where (not (meshop.getMapSupport obj.mesh 1) and fl_notHiddenOrFrozen obj) collect obj
 		if missUVObjd.count==0 then 
-			messagebox "³¡¾°ÖĞÃ»ÓĞ¶ªÊ§UVµÄÎïÌå £¡" title:fl_friendllytips
+			messagebox "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ğ¶ï¿½Ê§UVï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½" title:fl_friendllytips
 		else select missUVObjd
 	)
 	on btn_selectOutSceneObj pressed do
@@ -52,7 +51,7 @@ rollout fl_specialFunctions4_1 "ÌØÊâ¹¦ÄÜ" width:240 height:123
 		currentSel = getCurrentSelection()
 		selObj = for k in currentSel where finditem objs k != 0 and fl_notHiddenOrFrozen k collect k --exculde not geometry and shapes
 		select selObj
-		if selection.count == 0 then messagebox "ÎïÌå¶¼¿´µÃµ½£¬Ã»µÃÑ¡ÁË£º£¨" title:fl_friendllytips
+		if selection.count == 0 then messagebox "ï¿½ï¿½ï¿½å¶¼ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ñ¡ï¿½Ë£ï¿½ï¿½ï¿½" title:fl_friendllytips
 	
 	)
 	on btn_selectOutCameraObj pressed do
@@ -75,12 +74,12 @@ rollout fl_specialFunctions4_1 "ÌØÊâ¹¦ÄÜ" width:240 height:123
 			selObj = for k in currentSel where finditem objs k != 0 and fl_notHiddenOrFrozen k collect k --exculde not geometry and shapes
 			select selObj
 		)
-		else messagebox "ÇëÏÈÑ¡ÔñÒ»¸öÉãÏñ»ú£¡" title:fl_friendllytips
+		else messagebox "ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" title:fl_friendllytips
 	)
 	on btn_setRegionRect pressed do
 	(	--get the activeViewport index
 		index = viewport.activeViewport
-		if index == 0 then messagebox "ÇëÏÈ¼¤»îÒ»¸öÈıÎ¬ÊÓÍ¼£¡" title:fl_tips01
+		if index == 0 then messagebox "ï¿½ï¿½ï¿½È¼ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Î¬ï¿½ï¿½Í¼ï¿½ï¿½" title:fl_tips01
 		else
 		(	
 			viewSize = getViewSize()
@@ -101,9 +100,9 @@ rollout fl_specialFunctions4_1 "ÌØÊâ¹¦ÄÜ" width:240 height:123
 			InstanceMgr.GetInstances obj &instances
 			myInstances = for i in instances where fl_notHiddenOrFrozen i collect i
 			if myInstances.count != 1 then select myInstances
-			else messagebox "Ã»ÓĞÕÒµ½ÓëÄ¿±êÏà¹ØÁªµÄÎïÌå£¡" title:fl_tips01
+			else messagebox "Ã»ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å£¡" title:fl_tips01
 		)
-		else messagebox "Ã»ÓĞÊ°È¡Ä¿±êÎïÌå»òÕßÊ°È¡ÎïÌå²»´æÔÚ£¬ÇëÖØĞÂÊ°È¡£¡" title:fl_tips01
+		else messagebox "Ã»ï¿½ï¿½Ê°È¡Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê°È¡ï¿½ï¿½ï¿½å²»ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê°È¡ï¿½ï¿½" title:fl_tips01
 	)
 	on btn_instanceSelection pressed do
 	(	s = getCurrentSelection()
@@ -122,19 +121,19 @@ rollout fl_specialFunctions4_1 "ÌØÊâ¹¦ÄÜ" width:240 height:123
 						i.pos=tempV
 					)
 				)--end undo on
-				else messagebox "ÎïÌå×Ô¼º¸ú×Ô¼º²»ÄÜ¹ØÁª£º£©" title:fl_tips01
+				else messagebox "ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" title:fl_tips01
 			)
-			else messagebox "ÇëÑ¡ÔñÒª¹ØÁªµÄÎïÌå£¡" title:fl_tips01
+			else messagebox "ï¿½ï¿½Ñ¡ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å£¡" title:fl_tips01
 		)
-		else messagebox "Ã»ÓĞÊ°È¡Ä¿±êÎïÌå»òÕßÊ°È¡ÎïÌå²»´æÔÚ£¬ÇëÖØĞÂÊ°È¡£¡" title:fl_tips01
+		else messagebox "Ã»ï¿½ï¿½Ê°È¡Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê°È¡ï¿½ï¿½ï¿½å²»ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê°È¡ï¿½ï¿½" title:fl_tips01
 	) --end instanceSelection button
 	on btn_instanceHelp pressed do
 	(
-		tips = "1¡¢µ¥»÷¡°Ê°È¡Ä¿±êÎïÌå¡±£¬ÔÙÑ¡ÖĞ³¡¾°ÖĞÒ»ÎïÌå×÷Îª²ÎÕÕ¡£\n"
-		tips += "2¡¢¡°Ñ¡Ôñ¹ØÁªÎïÌå¡±ÊÇ½«ÓëÊ°È¡ÎïÌåÏà¹ØÁªµÄÎïÌåÈ«²¿Ñ¡ÖĞ£¬°üÀ¨Ê°È¡µÄÎïÌå¡£\n"
-		tips += "3¡¢¡°¹ØÁªÑ¡ÔñÎïÌå¡±ÊÇ½«Ñ¡ÔñµÄÎïÌåÓë¸Õ²ÅÊ°È¡µÄÎïÌåÏà¹ØÁª£¬×¢ÒâÕâÀïµÄ¹ØÁª\n      ÊÇ¾ø¶Ô¹ØÁª£¬Äã¿ÉÒÔ½«Ò»¸öµÆ¹â¹ØÁªµ½Ò»¸öBOX£¬ÄÇÃ´µÆ¹âÒ²±ä³ÉÁËBOX¡£\n"
-		tips += "4¡¢¹ØÁª¿É³·Ïú¡£"
-		messagebox tips title: ("¹ØÁªÎïÌå - "+fl_tips01) beep:off
+		tips = "1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê°È¡Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½å¡±ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½Ğ³ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Õ¡ï¿½\n"
+		tips += "2ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å¡±ï¿½Ç½ï¿½ï¿½ï¿½Ê°È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½Ñ¡ï¿½Ğ£ï¿½ï¿½ï¿½ï¿½ï¿½Ê°È¡ï¿½ï¿½ï¿½ï¿½ï¿½å¡£\n"
+		tips += "3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½å¡±ï¿½Ç½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ²ï¿½Ê°È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½\n      ï¿½Ç¾ï¿½ï¿½Ô¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô½ï¿½Ò»ï¿½ï¿½ï¿½Æ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½BOXï¿½ï¿½ï¿½ï¿½Ã´ï¿½Æ¹ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½BOXï¿½ï¿½\n"
+		tips += "4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É³ï¿½ï¿½ï¿½ï¿½ï¿½"
+		messagebox tips title: ("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - "+fl_tips01) beep:off
 	)
 	on fl_specialFunctions4_1 moved pp do
 	(

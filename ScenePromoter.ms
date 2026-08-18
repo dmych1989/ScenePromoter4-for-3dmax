@@ -1,100 +1,99 @@
---³¡¾°ÖúÊÖ4.1.00
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.1.00
 
---×÷Õß£º·ÉÀË
+--ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½ï¿½
 --Author:Feilang
---www.cgplusplus.com
 --------------------------------------------------
---»¶Ó­Ê¹ÓÃ³¡¾°ÖúÊÖ4.0 
+--ï¿½ï¿½Ó­Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0 
 
-----¿ªÔ´·îÏ×----
+----ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½----
 
 ---------------------------------------------------
---³¡¾°ÖúÊÖ4.1 	2012-02-01
---³¡¾°ÖúÊÖ4.0		2011-04-01
---³¡¾°ÖúÊÖ3.0		2009-08-01
---³¡¾°ÖúÊÖ2.6		2009-03-30
---³¡¾°ÖúÊÖ2.0		2008-08-06
---³¡¾°ÖúÊÖ1.0		2008-05-27
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.1 	2012-02-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0		2011-04-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3.0		2009-08-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.6		2009-03-30
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.0		2008-08-06
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1.0		2008-05-27
 
---½çÃæ
+--ï¿½ï¿½ï¿½ï¿½
 
 --setting menu toolbar
 --setting menu main ui
 rcmenu SPsettingMenu 
-(	--Ñ¡Ïî²Ëµ¥
+(	--Ñ¡ï¿½ï¿½Ëµï¿½
 	fn filterAdd = ScenePromoter4Rol.listID!=1
 	fn setStrs =
 	(
 		strs = #()
-		append strs "1¡¢Èç¹ûÄãµÚÒ»´ÎÓÃ³¡¾°ÖúÊÖ£¬½¨ÒéÏÈ¿´Ò»ÏÂ³¡¾°ÖúÊÖ"
-		append strs "ÏêÏ¸Ê¹ÓÃËµÃ÷¡£Èç¹ûÄãÓÃ¹ý³¡¾°ÖúÊÖ3.0¼°ÒÔÇ°°æ±¾£¬"
-		append strs "°ïÖúÀïÃæÄÇ¸ö4.0µÄÊÓÆµ£¬ËäÈ»ÆÕÍ¨»°²»±ê×¼£¬Ò²ÄÜÌý¡£"
+		append strs "1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¿ï¿½Ò»ï¿½Â³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+		append strs "ï¿½ï¿½Ï¸Ê¹ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3.0ï¿½ï¿½ï¿½ï¿½Ç°ï¿½æ±¾ï¿½ï¿½"
+		append strs "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½4.0ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 		append strs ""
-		append strs "2¡¢³¡¾°ÖúÊÖ4.1µÄ½çÃæÖØÐ´ÁË£¬µ«ÊÇ¸ú4.0±ä»¯²»´ó£¬"
-		append strs "Ä³Ð©¹¦ÄÜ¿ÉÄÜ»»Î»ÖÃÁË¡£"
+		append strs "2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.1ï¿½Ä½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½Ë£ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½4.0ï¿½ä»¯ï¿½ï¿½ï¿½ï¿½"
+		append strs "Ä³Ð©ï¿½ï¿½ï¿½Ü¿ï¿½ï¿½Ü»ï¿½Î»ï¿½ï¿½ï¿½Ë¡ï¿½"
 		append strs ""
-		append strs "3¡¢Ä¬ÈÏ´ò¿ªMaxÖ÷½çÃæ»á×Ô¶¯Æô¶¯¡£ÔÚÑ¡Ïî£­½çÃæÉèÖÃ"
-		append strs "ÀïÃæÈ¡Ïû¹´Ñ¡[ Ö÷½çÃæËæMax×Ô¶¯Æô¶¯ ] ¼´¿É¹Øµô¡£"
+		append strs "3ï¿½ï¿½Ä¬ï¿½Ï´ï¿½Maxï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½î£­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+		append strs "ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ñ¡[ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Maxï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ ] ï¿½ï¿½ï¿½É¹Øµï¿½ï¿½ï¿½"
 		append strs ""
-		append strs "4¡¢Vray´úÀí¹ÜÀíÆ÷ÔÚ4.0¾ÍÉý¼¶ÁË£¬Ö»ÊÇÃ»¸æÖª´ó¼Ò£¬"
-		append strs "Ö§³Ö¶àÑ¡ÁË£¬Ôö¼ÓÁËÒ»Ð©¹¦ÄÜ¡£"
+		append strs "4ï¿½ï¿½Vrayï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½Ö»ï¿½ï¿½Ã»ï¿½ï¿½Öªï¿½ï¿½Ò£ï¿½"
+		append strs "Ö§ï¿½Ö¶ï¿½Ñ¡ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ð©ï¿½ï¿½ï¿½Ü¡ï¿½"
 		append strs ""
-		append strs "5¡¢3.0°æ±¾µÄ [ °´ÔªËØ·ÖÀë ] ÔÚ [ ³¬¼¶·ÖÀë ] ÀïÃæ¡£"
+		append strs "5ï¿½ï¿½3.0ï¿½æ±¾ï¿½ï¿½ [ ï¿½ï¿½Ôªï¿½Ø·ï¿½ï¿½ï¿½ ] ï¿½ï¿½ [ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ] ï¿½ï¿½ï¿½æ¡£"
 		append strs ""
-		append strs "6¡¢[ ÕûÀí¶ªÊ§ÌùÍ¼ ] ¿ÉÒÔµ¼³ö¶ªÊ§ÐÅÏ¢¡£"
+		append strs "6ï¿½ï¿½[ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½Í¼ ] ï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½Ï¢ï¿½ï¿½"
 		append strs ""
-		append strs "7¡¢½çÃæÉèÖÃ×÷ÁËµ÷Õû£¬¿ÉÒÔµ÷¸÷ÖÖÑÕÉ«£¬Ò»¿´¾ÍÃ÷°×¡£"
-		append strs "¼ÇµÃ±£´æÄãµ÷µÄ·½°¸¡£"
+		append strs "7ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¡ï¿½"
+		append strs "ï¿½ÇµÃ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½"
 		append strs ""
-		append strs "8¡¢µ¼º½À¸ÓÒ±ßÄÇ¸Ü¸Ü¿ÉÒÔ°Ñ½çÃæÊÕÆðÀ´£¬ÊÔÊÔ¾ÍÃ÷°×¡£"
+		append strs "8ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò±ï¿½ï¿½Ç¸Ü¸Ü¿ï¿½ï¿½Ô°Ñ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¾ï¿½ï¿½ï¿½ï¿½×¡ï¿½"
 		append strs ""
 		append strs ""
 		strs
 	)
-	subMenu "Ìí¼Ó"
+	subMenu "ï¿½ï¿½ï¿½ï¿½"
 	(
-		menuItem addOne "Ìí¼ÓÒ»¸ö½Å±¾" enabled:(ScenePromoter4Rol.listID!=1)
-		menuItem addFolder "Ìí¼Ó½Å±¾ÎÄ¼þ¼Ð" enabled:(ScenePromoter4Rol.listID!=1)
-		menuItem addExe "Ìí¼ÓexeÎÄ¼þ" enabled:(ScenePromoter4Rol.listID!=1)
-		menuItem addSep "Ìí¼Ó¿ÕÐÐ" enabled:(ScenePromoter4Rol.listID!=1)
-		menuItem addEpt "ÐÂ½¨½Å±¾" enabled:(ScenePromoter4Rol.listID!=1)
+		menuItem addOne "ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Å±ï¿½" enabled:(ScenePromoter4Rol.listID!=1)
+		menuItem addFolder "ï¿½ï¿½ï¿½Ó½Å±ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½" enabled:(ScenePromoter4Rol.listID!=1)
+		menuItem addExe "ï¿½ï¿½ï¿½ï¿½exeï¿½Ä¼ï¿½" enabled:(ScenePromoter4Rol.listID!=1)
+		menuItem addSep "ï¿½ï¿½ï¿½Ó¿ï¿½ï¿½ï¿½" enabled:(ScenePromoter4Rol.listID!=1)
+		menuItem addEpt "ï¿½Â½ï¿½ï¿½Å±ï¿½" enabled:(ScenePromoter4Rol.listID!=1)
 	)
-	subMenu "½çÃæÍ£¿¿"
+	subMenu "ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½"
 	(
-		menuItem dockleft "×óÍ£¿¿"
-		menuItem dockright "ÓÒÍ£¿¿"
-		menuItem floatstate "Ðü¸¡×´Ì¬"
+		menuItem dockleft "ï¿½ï¿½Í£ï¿½ï¿½"
+		menuItem dockright "ï¿½ï¿½Í£ï¿½ï¿½"
+		menuItem floatstate "ï¿½ï¿½ï¿½ï¿½×´Ì¬"
 	)
-	menuItem setui "½çÃæÉèÖÃ"
+	menuItem setui "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 
-	subMenu "¹¤¾ßÀ¸"
+	subMenu "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 	(
-		menuItem topBar "Í£¿¿¶¥²¿"
-		menuItem btmBar "Í£¿¿µ×²¿"
-		menuItem btnSize "°´Å¥´óÐ¡ÉèÖÃ"
+		menuItem topBar "Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+		menuItem btmBar "Í£ï¿½ï¿½ï¿½×²ï¿½"
+		menuItem btnSize "ï¿½ï¿½Å¥ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½"
 		separator sp2012
-		menuItem autoSt "ÊÇ·ñËæMaxÆô¶¯" checked:spShowtoolbar
-		menuItem closeBar "¹Ø±Õ¹¤¾ßÀ¸"
+		menuItem autoSt "ï¿½Ç·ï¿½ï¿½ï¿½Maxï¿½ï¿½ï¿½ï¿½" checked:spShowtoolbar
+		menuItem closeBar "ï¿½Ø±Õ¹ï¿½ï¿½ï¿½ï¿½ï¿½"
 	)
 	separator sp01
-	menuItem manage "½Å±¾¹ÜÀí"
-	menuItem backup "Êý¾ÝÍ¬²½"
-	menuItem linkmng "¿ì½Ý·½Ê½"
+	menuItem manage "ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½"
+	menuItem backup "ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½"
+	menuItem linkmng "ï¿½ï¿½Ý·ï¿½Ê½"
 	separator sp02
-	menuItem mytitle "¸öÐÔ»¯Max"
-	menuItem restart "ÖØÆôMax"
+	menuItem mytitle "ï¿½ï¿½ï¿½Ô»ï¿½Max"
+	menuItem restart "ï¿½ï¿½ï¿½ï¿½Max"
 	separator sp03
-	subMenu "°ïÖú"
+	subMenu "ï¿½ï¿½ï¿½ï¿½"
 	(
-		menuItem doc01 "°ïÖúËµÃ÷"
-		menuItem doc02 "³¡¾°ÖúÊÖÏêÏ¸Ê¹ÓÃËµÃ÷"
+		menuItem doc01 "ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½"
+		menuItem doc02 "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸Ê¹ï¿½ï¿½Ëµï¿½ï¿½"
 	)
-	menuItem abt "¹ØÓÚ"
+	menuItem abt "ï¿½ï¿½ï¿½ï¿½"
 	separator sp04
-	menuItem uninstall "Ð¶ÔØ"
+	menuItem uninstall "Ð¶ï¿½ï¿½"
 
 	
-	--¸öÐÔ»¯	
+	--ï¿½ï¿½ï¿½Ô»ï¿½	
 	on mytitle picked do (destroydialog SPmyPersTitle;CGplusplusFunc.createChild SPmyPersTitle width:347)
 
 	on dockleft picked do
@@ -110,10 +109,10 @@ rcmenu SPsettingMenu
 		CGplusplusFunc.dockMainRlt thetype:#float
 	)
 	on setui picked do (destroydialog SPmainRolSet;CGplusplusFunc.createChild  SPmainRolSet width:211)
-	--Ìí¼Ó
+	--ï¿½ï¿½ï¿½ï¿½
 	on addOne picked do
 	(
-		f=getOpenFileName caption:"Ôö¼ÓÒ»¸ö½Å±¾µ½ÖúÊÖ¹¤¾ßÀ¸" types:"*.ms, or *.mse|*.ms*"
+		f=getOpenFileName caption:"ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½" types:"*.ms, or *.mse|*.ms*"
 		if f!=undefined then
 		(
 			CGplusplusFunc.addBtn ScenePromoter4Rol.listID files:#(f)
@@ -121,7 +120,7 @@ rcmenu SPsettingMenu
 	)
 	on addFolder picked do
 	(
-		f=getSavePath  caption:"Ôö¼ÓÒ»¸öÎÄ¼þ¼Ð"
+		f=getSavePath  caption:"ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½"
 		if f!=undefined then
 		(	thefile=getfiles (f+"\\*.ms")
 			join thefile (getfiles (f+"\\*.mse"))
@@ -130,7 +129,7 @@ rcmenu SPsettingMenu
 	)
 	on addExe picked do
 	(	
-		f=getOpenFileName caption:"Ôö¼ÓÒ»¸ö¿ÉÖ´ÐÐÎÄ¼þ" types:"*.exe|*.exe"
+		f=getOpenFileName caption:"ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½Ä¼ï¿½" types:"*.exe|*.exe"
 		if f!=undefined then
 		(
 			CGplusplusFunc.addExe ScenePromoter4Rol.listID f
@@ -145,7 +144,7 @@ rcmenu SPsettingMenu
 		CGplusplusFunc.addBtn ScenePromoter4Rol.listID
 	)
 
-	--¹¤¾ßÀ¸
+	--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	on topBar picked do CGplusplusFunc.createToolbar thetype:#top
 	on btmBar picked do CGplusplusFunc.createToolbar thetype:#bottom
 	on closeBar picked do CGplusplusFunc.closeToolbar()
@@ -155,7 +154,7 @@ rcmenu SPsettingMenu
 	)
 	on btnSize picked do (destroydialog SPmtoolbarRolSet ; CGplusplusFunc.createChild SPmtoolbarRolSet width:277)
 
-	--½Å±¾¹ÜÀí
+	--ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½
 	on manage picked do (
 		try destroydialog SPmanageScripts catch ()
 		CGplusplusFunc.createChild SPmanageScripts width:350
@@ -163,7 +162,7 @@ rcmenu SPsettingMenu
 		if thenum==1 then thenum=2
 		SPmanageScripts.refeshList thenum
 		)
-	--Í¬²½
+	--Í¬ï¿½ï¿½
 	on backup picked do (destroydialog SPdataSync ; CGplusplusFunc.createChild SPdataSync width:432)
 	on linkmng picked do (destroydialog SPlinkmanage ; CGplusplusFunc.createChild SPlinkmanage width:350)
 	on restart picked do CGplusplusFunc.restartMax()
@@ -172,13 +171,13 @@ rcmenu SPsettingMenu
 		createdialog SPabtRol fgcolor:(color 0 123 238) bgcolor:white
 	)
 	on uninstall picked do CGplusplusFunc.unInstall()
-	--°ïÖú
+	--ï¿½ï¿½ï¿½ï¿½
 	on doc01 picked do
 	(
-		rollout doc01rol "°ïÖúÎÄµµ" width:352 height:306
+		rollout doc01rol "ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½" width:352 height:306
 		(
 			listbox lb "" pos:[13,7] width:323 height:17
-			button btn1 "¹Ø±Õ" pos:[93,263] width:158 height:25
+			button btn1 "ï¿½Ø±ï¿½" pos:[93,263] width:158 height:25
 			on doc01rol open do
 			(
 
@@ -195,48 +194,48 @@ rcmenu SPsettingMenu
 )
 --setting menu toolbar
 rcmenu SPsettingMenuTB 
-(	--Ñ¡Ïî²Ëµ¥,¹¤¾ßÀ¸
-	subMenu "Ìí¼Ó"
+(	--Ñ¡ï¿½ï¿½Ëµï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	subMenu "ï¿½ï¿½ï¿½ï¿½"
 	(
-		menuItem addOne "Ìí¼ÓÒ»¸ö½Å±¾"
-		menuItem addFolder "Ìí¼Ó½Å±¾ÎÄ¼þ¼Ð"
-		menuItem addExe "Ìí¼ÓexeÎÄ¼þ"
-		menuItem addEpt "ÐÂ½¨½Å±¾"
+		menuItem addOne "ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Å±ï¿½"
+		menuItem addFolder "ï¿½ï¿½ï¿½Ó½Å±ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½"
+		menuItem addExe "ï¿½ï¿½ï¿½ï¿½exeï¿½Ä¼ï¿½"
+		menuItem addEpt "ï¿½Â½ï¿½ï¿½Å±ï¿½"
 	)
-	subMenu "½çÃæÍ£¿¿"
+	subMenu "ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½"
 	(
-		menuItem dockleft "×óÍ£¿¿"
-		menuItem dockright "ÓÒÍ£¿¿"
-		menuItem floatstate "Ðü¸¡×´Ì¬"
+		menuItem dockleft "ï¿½ï¿½Í£ï¿½ï¿½"
+		menuItem dockright "ï¿½ï¿½Í£ï¿½ï¿½"
+		menuItem floatstate "ï¿½ï¿½ï¿½ï¿½×´Ì¬"
 	)
-	menuItem setui "½çÃæÉèÖÃ"
-	subMenu "¹¤¾ßÀ¸"
+	menuItem setui "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+	subMenu "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 	(
-		menuItem topBar "Í£¿¿¶¥²¿"
-		menuItem btmBar "Í£¿¿µ×²¿"
-		menuItem btnSize "°´Å¥´óÐ¡ÉèÖÃ"
+		menuItem topBar "Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+		menuItem btmBar "Í£ï¿½ï¿½ï¿½×²ï¿½"
+		menuItem btnSize "ï¿½ï¿½Å¥ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½"
 		separator sp2012
-		menuItem autoSt "ÊÇ·ñËæMaxÆô¶¯" checked:spShowtoolbar
-		menuItem closeBar "¹Ø±Õ¹¤¾ßÀ¸"
+		menuItem autoSt "ï¿½Ç·ï¿½ï¿½ï¿½Maxï¿½ï¿½ï¿½ï¿½" checked:spShowtoolbar
+		menuItem closeBar "ï¿½Ø±Õ¹ï¿½ï¿½ï¿½ï¿½ï¿½"
 	)
 	separator sp01
-	menuItem manage "½Å±¾¹ÜÀí"
-	menuItem backup "Êý¾ÝÍ¬²½"
-	menuItem linkmng "¿ì½Ý·½Ê½"
+	menuItem manage "ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½"
+	menuItem backup "ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½"
+	menuItem linkmng "ï¿½ï¿½Ý·ï¿½Ê½"
 	separator sp02
-	menuItem mytitle "¸öÐÔ»¯Max"
-	menuItem restart "ÖØÆôMax"
+	menuItem mytitle "ï¿½ï¿½ï¿½Ô»ï¿½Max"
+	menuItem restart "ï¿½ï¿½ï¿½ï¿½Max"
 	separator sp03
-	subMenu "°ïÖú"
+	subMenu "ï¿½ï¿½ï¿½ï¿½"
 	(
-		menuItem doc01 "°ïÖúËµÃ÷"
-		menuItem doc02 "³¡¾°ÖúÊÖÏêÏ¸Ê¹ÓÃËµÃ÷"
+		menuItem doc01 "ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½"
+		menuItem doc02 "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¸Ê¹ï¿½ï¿½Ëµï¿½ï¿½"
 	)
-	menuItem abt "¹ØÓÚ"
+	menuItem abt "ï¿½ï¿½ï¿½ï¿½"
 	separator sp04
-	menuItem uninstall "Ð¶ÔØ"
+	menuItem uninstall "Ð¶ï¿½ï¿½"
 	on mytitle picked do (destroydialog SPmyPersTitle;CGplusplusFunc.createChild SPmyPersTitle width:347)
-	--½çÃæÉèÖÃ
+	--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	on dockleft picked do
 	(	
 		CGplusplusFunc.dockMainRlt thetype:#left
@@ -250,10 +249,10 @@ rcmenu SPsettingMenuTB
 		CGplusplusFunc.dockMainRlt thetype:#float
 	)
 	on setui picked do (destroydialog SPmainRolSet;CGplusplusFunc.createChild  SPmainRolSet width:211)
-	--Ìí¼Ó
+	--ï¿½ï¿½ï¿½ï¿½
 	on addOne picked do
 	(
-		f=getOpenFileName caption:"Ôö¼ÓÒ»¸ö½Å±¾µ½ÖúÊÖ¹¤¾ßÀ¸" types:"*.ms, or *.mse|*.ms*"
+		f=getOpenFileName caption:"ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½" types:"*.ms, or *.mse|*.ms*"
 		if f!=undefined then
 		(
 			CGplusplusFunc.addBtn 6 files:#(f)
@@ -261,7 +260,7 @@ rcmenu SPsettingMenuTB
 	)
 	on addFolder picked do
 	(
-		f=getSavePath  caption:"Ôö¼ÓÒ»¸öÎÄ¼þ¼Ð"
+		f=getSavePath  caption:"ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½"
 		if f!=undefined then
 		(	thefile=getfiles (f+"\\*.ms")
 			join thefile (getfiles (f+"\\*.mse"))
@@ -270,7 +269,7 @@ rcmenu SPsettingMenuTB
 	)
 	on addExe picked do
 	(	
-		f=getOpenFileName caption:"Ôö¼ÓÒ»¸ö¿ÉÖ´ÐÐÎÄ¼þ" types:"*.exe|*.exe"
+		f=getOpenFileName caption:"ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½Ä¼ï¿½" types:"*.exe|*.exe"
 		if f!=undefined then
 		(
 			CGplusplusFunc.addExe 6 f
@@ -280,7 +279,7 @@ rcmenu SPsettingMenuTB
 	(
 		CGplusplusFunc.addEpt 6
 	)
-	--¹¤¾ßÀ¸
+	--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	on topBar picked do CGplusplusFunc.createToolbar thetype:#top
 	on btmBar picked do CGplusplusFunc.createToolbar thetype:#bottom
 	on closeBar picked do CGplusplusFunc.closeToolbar()
@@ -303,13 +302,13 @@ rcmenu SPsettingMenuTB
 		createdialog SPabtRol fgcolor:(color 0 123 238) bgcolor:white
 	)
 	on uninstall picked do CGplusplusFunc.unInstall()
-	--°ïÖú
+	--ï¿½ï¿½ï¿½ï¿½
 	on doc01 picked do
 	(
-		rollout doc01rol "°ïÖúÎÄµµ" width:352 height:306
+		rollout doc01rol "ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½" width:352 height:306
 		(
 			listbox lb "" pos:[13,7] width:323 height:17
-			button btn1 "¹Ø±Õ" pos:[93,263] width:158 height:25
+			button btn1 "ï¿½Ø±ï¿½" pos:[93,263] width:158 height:25
 			on doc01rol open do
 			(
 
@@ -324,7 +323,7 @@ rcmenu SPsettingMenuTB
 	)
 	on doc02 picked do shellLaunch (spRootPath + "\\Help\\help.htm") ""
 )
---½Å±¾¹ÜÀí,Ìí¼Óµ½...
+--ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½Óµï¿½...
 global SPmngAddtoValue=#()
 rcmenu SPmngAddto 
 (	fn filterFN2 = SPmngAddtoValue[1]!=2
@@ -332,11 +331,11 @@ rcmenu SPmngAddto
 	fn filterFN4 = SPmngAddtoValue[1]!=4
 	fn filterFN5 = SPmngAddtoValue[1]!=5
 	fn filterFN6 = SPmngAddtoValue[1]!=6
-	menuItem s2 "Ìí¼Óµ½µÚ¶þÆÁ" filter:filterFN2
-	menuItem s3 "Ìí¼Óµ½µÚÈýÆÁ" filter:filterFN3
-	menuItem s4 "Ìí¼Óµ½µÚËÄÆÁ" filter:filterFN4
-	menuItem s5 "Ìí¼Óµ½µÚÎåÆÁ" filter:filterFN5
-	menuItem s6 "Ìí¼Óµ½ÖúÊÖ¹¤¾ßÀ¸" filter:filterFN6
+	menuItem s2 "ï¿½ï¿½ï¿½Óµï¿½ï¿½Ú¶ï¿½ï¿½ï¿½" filter:filterFN2
+	menuItem s3 "ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" filter:filterFN3
+	menuItem s4 "ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" filter:filterFN4
+	menuItem s5 "ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" filter:filterFN5
+	menuItem s6 "ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½" filter:filterFN6
 	on s2 picked do CGplusplusFunc.addBtn 2 files:SPmngAddtoValue[2]
 	on s3 picked do CGplusplusFunc.addBtn 3 files:SPmngAddtoValue[2]
 	on s4 picked do CGplusplusFunc.addBtn 4 files:SPmngAddtoValue[2]
@@ -344,28 +343,28 @@ rcmenu SPmngAddto
 	on s6 picked do CGplusplusFunc.addBtn 6 files:SPmngAddtoValue[2]
 )
 --manage scripts
-rollout SPmanageScripts "½Å±¾¹ÜÀí" width:350 height:350
+rollout SPmanageScripts "ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½" width:350 height:350
 (
-	checkbutton btn2 "µÚ¶þÆÁ" pos:[4,3] width:46 height:18
-	checkbutton btn3 "µÚÈýÆÁ" pos:[53,3] width:46 height:18
-	checkbutton btn4 "µÚËÄÆÁ" pos:[102,3] width:46 height:18
-	checkbutton btn5 "µÚÎåÆÁ" pos:[151,3] width:46 height:18
-	checkbutton btn6 "¹¤¾ßÀ¸" pos:[201,3] width:46 height:18
-	checkbutton nohome "ÎÞ¼Ò¿É¹é" pos:[252,3] width:60 height:18
-	multiListBox mt "ÇëÏÈÑ¡ÔñÁÐ±í" pos:[5,26] width:242 height:16
-	button del "É¾³ý°´Å¥" pos:[251,127] width:95 height:18 toolTip:"É¾³ýÑ¡Ôñ°´Å¥,¿É¶àÑ¡"
-	button addto "Ìí¼Óµ½..." pos:[251,42] width:95 height:18 toolTip:"Ìí¼Óµ½ÆäËûÆÁ,¿É¶àÑ¡"
-	button showfolder "Ô´´úÂëÎÄ¼þ¼Ð" pos:[251,210] width:95 height:18 toolTip:"´ò¿ªÎÄ¼þ¼Ð"
-	button Rename "ÖØÃüÃû" pos:[251,85] width:95 height:18 toolTip:"ÖØÃüÃû½Å±¾Í¬Ê±¸ü¸Ä°´Å¥,µ¥Ñ¡"
-	button editsp "±à¼­´úÂë" pos:[251,106] width:95 height:18 toolTip:"´ò¿ª½Å±¾,¿É¶àÑ¡"
-	button btnlink "Éú³É¿ì½Ý·½Ê½" pos:[251,189] width:95 height:18 toolTip:"¿É¶àÑ¡"
-	button delspt "É¾³ý½Å±¾(É÷ÓÃ)" pos:[251,168] width:95 height:18 toolTip:"É¾³ý½Å±¾,²¢É¾³ýÓëÖ®Ïà¹ØµÄËùÓÐ°´Å¥"
+	checkbutton btn2 "ï¿½Ú¶ï¿½ï¿½ï¿½" pos:[4,3] width:46 height:18
+	checkbutton btn3 "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[53,3] width:46 height:18
+	checkbutton btn4 "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[102,3] width:46 height:18
+	checkbutton btn5 "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[151,3] width:46 height:18
+	checkbutton btn6 "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[201,3] width:46 height:18
+	checkbutton nohome "ï¿½Þ¼Ò¿É¹ï¿½" pos:[252,3] width:60 height:18
+	multiListBox mt "ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Ð±ï¿½" pos:[5,26] width:242 height:16
+	button del "É¾ï¿½ï¿½ï¿½ï¿½Å¥" pos:[251,127] width:95 height:18 toolTip:"É¾ï¿½ï¿½Ñ¡ï¿½ï¿½Å¥,ï¿½É¶ï¿½Ñ¡"
+	button addto "ï¿½ï¿½ï¿½Óµï¿½..." pos:[251,42] width:95 height:18 toolTip:"ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½É¶ï¿½Ñ¡"
+	button showfolder "Ô´ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½" pos:[251,210] width:95 height:18 toolTip:"ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½"
+	button Rename "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[251,85] width:95 height:18 toolTip:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å±ï¿½Í¬Ê±ï¿½ï¿½ï¿½Ä°ï¿½Å¥,ï¿½ï¿½Ñ¡"
+	button editsp "ï¿½à¼­ï¿½ï¿½ï¿½ï¿½" pos:[251,106] width:95 height:18 toolTip:"ï¿½ò¿ª½Å±ï¿½,ï¿½É¶ï¿½Ñ¡"
+	button btnlink "ï¿½ï¿½ï¿½É¿ï¿½Ý·ï¿½Ê½" pos:[251,189] width:95 height:18 toolTip:"ï¿½É¶ï¿½Ñ¡"
+	button delspt "É¾ï¿½ï¿½ï¿½Å±ï¿½(ï¿½ï¿½ï¿½ï¿½)" pos:[251,168] width:95 height:18 toolTip:"É¾ï¿½ï¿½ï¿½Å±ï¿½,ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½Ð°ï¿½Å¥"
 	label hy1 "Label" pos:[20,262] width:350 height:40
-	button clearEpt "Çå³ý¿Õ°´Å¥" pos:[251,147] width:95 height:18 toolTip:"Èç¹ûLibÎÄ¼þ¼ÐÏÂÎÞ´ËÎÄ¼þÇå³ýÏà¹Ø°´Å¥"
-	button cls "¹Ø ±Õ" pos:[130,310] width:95 height:25
-	button addEpt "ÐÂ½¨½Å±¾" pos:[251,64] width:95 height:18
-	button moveUp "ÉÏÒÆ" pos:[251,231] width:46 height:18
-	button moveDown "ÏÂÒÆ" pos:[300,232] width:46 height:18
+	button clearEpt "ï¿½ï¿½ï¿½ï¿½Õ°ï¿½Å¥" pos:[251,147] width:95 height:18 toolTip:"ï¿½ï¿½ï¿½Libï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ´ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø°ï¿½Å¥"
+	button cls "ï¿½ï¿½ ï¿½ï¿½" pos:[130,310] width:95 height:25
+	button addEpt "ï¿½Â½ï¿½ï¿½Å±ï¿½" pos:[251,64] width:95 height:18
+	button moveUp "ï¿½ï¿½ï¿½ï¿½" pos:[251,231] width:46 height:18
+	button moveDown "ï¿½ï¿½ï¿½ï¿½" pos:[300,232] width:46 height:18
 	local btns=#(btn2,btn3,btn4,btn5,btn6,nohome)
 	local num=2
 	fn getAllbtn =
@@ -404,7 +403,7 @@ rollout SPmanageScripts "½Å±¾¹ÜÀí" width:350 height:350
 		itemsFile
 	)
 	fn clearEptFN =
-	(	--Çå³ý¿Õ°´Å¥
+	(	--ï¿½ï¿½ï¿½ï¿½Õ°ï¿½Å¥
 		itemsTxtArr=getinisetting spIniCategory "S2"
 		for s in itemsTxtArr.count to 1 by -1 where itemsTxtArr[s]!=undefined do (
 		temp=getinisetting spIniCategory "S2" itemsTxtArr[s]
@@ -437,7 +436,7 @@ rollout SPmanageScripts "½Å±¾¹ÜÀí" width:350 height:350
 		------
 	)
 	fn getnohome =
-	(	--ÊÕ¼¯¡°ÎÞ¼Ò¿É¹é¡±½Å±¾
+	(	--ï¿½Õ¼ï¿½ï¿½ï¿½ï¿½Þ¼Ò¿É¹é¡±ï¿½Å±ï¿½
 		num=7
 		for i in btns do i.checked=false
 			nohome.checked=true
@@ -455,20 +454,20 @@ rollout SPmanageScripts "½Å±¾¹ÜÀí" width:350 height:350
 		if s>6 then (getnohome();return OK)
 		for i in btns do i.checked=false
 		btns[s-1].checked=true
-		--¶ÁÈ¡½Å±¾ÎÄ¼þÂ·¾¶
+		--ï¿½ï¿½È¡ï¿½Å±ï¿½ï¿½Ä¼ï¿½Â·ï¿½ï¿½
 		itemsFile=#()
 		itemsTxtArr=getinisetting spIniCategory ("S"+s as string)
 		for j in itemsTxtArr do (
 		temp=getinisetting spIniCategory ("S"+s as string) j
-			if temp=="undefined" then temp="--------ÕâÀïÊÇ¿ÕÐÐ"
+			if temp=="undefined" then temp="--------ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½"
 		append itemsFile temp
 		)--end for
 		mt.items=itemsFile
 	)
 
 	on SPmanageScripts open do
-	(	str="³ýÁË 'ÖØÃüÃû' ' ÉÏÒÆ ' ' ÏÂÒÆ ' ÒÔÍâ,ÆäËû¾ù¿É¶àÑ¡;'ÎÞ¼Ò¿É¹é' \nÖ¸LibÎÄ¼þ¼ÐÏÂÓÐ´Ë½Å±¾,"
-		str+="µ«ÊÇÃ»ÓÐÌí¼Óµ½³¡¾°ÖúÊÖÖÐÀ´\nµÚÒ»ÆÁµÄ°´Å¥»á¸ù¾Ý³¡¾°¶¯Ì¬´´½¨£¬²»Ìá¹©¹ÜÀí¡£"
+	(	str="ï¿½ï¿½ï¿½ï¿½ 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½' ' ï¿½ï¿½ï¿½ï¿½ ' ' ï¿½ï¿½ï¿½ï¿½ ' ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¶ï¿½Ñ¡;'ï¿½Þ¼Ò¿É¹ï¿½' \nÖ¸Libï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´Ë½Å±ï¿½,"
+		str+="ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ä°ï¿½Å¥ï¿½ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 		hy1.text=str
 		)
 	on btn2 changed state do
@@ -522,7 +521,7 @@ rollout SPmanageScripts "½Å±¾¹ÜÀí" width:350 height:350
 		if sel.count==1 then 
 		(	if num<7 then
 			(	if mt.items[sel[1]]!=ScenePromoter4Rol.sepStrs then CGplusplusFunc.renamebtn num sel[1]
-				else CGplusplusFunc.msgbox "ÎÒÊÇ·Ö¸ôÏß,ÐÐ²»¸ÄÃû,×ø²»¸ÄÐÕ!"
+				else CGplusplusFunc.msgbox "ï¿½ï¿½ï¿½Ç·Ö¸ï¿½ï¿½ï¿½,ï¿½Ð²ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½!"
 			)
 			else (CGplusplusFunc.renamescript mt.items[sel[1]])
 		)
@@ -594,15 +593,15 @@ rollout SPmanageScripts "½Å±¾¹ÜÀí" width:350 height:350
 	)
 )
 
---¿ì½Ý·½Ê½
-rollout SPlinkmanage "¿ì½Ý·½Ê½¹ÜÀí" width:350 height:293
+--ï¿½ï¿½Ý·ï¿½Ê½
+rollout SPlinkmanage "ï¿½ï¿½Ý·ï¿½Ê½ï¿½ï¿½ï¿½ï¿½" width:350 height:293
 (
-	multiListBox mt "¿ì½Ý·½Ê½ÁÐ±í:" pos:[5,5] width:242 height:15
-	button del "É¾³ýÑ¡Ôñ" pos:[257,84] width:80 height:18
-	button refesh "Ë¢ÐÂÁÐ±í" pos:[257,62] width:80 height:18
+	multiListBox mt "ï¿½ï¿½Ý·ï¿½Ê½ï¿½Ð±ï¿½:" pos:[5,5] width:242 height:15
+	button del "É¾ï¿½ï¿½Ñ¡ï¿½ï¿½" pos:[257,84] width:80 height:18
+	button refesh "Ë¢ï¿½ï¿½ï¿½Ð±ï¿½" pos:[257,62] width:80 height:18
 	label hy "label" pos:[29,225] width:316 height:30
-	button help "Ëµ Ã÷" pos:[257,106] width:80 height:18
-	button cls "ÍË ³ö" pos:[257,128] width:80 height:18
+	button help "Ëµ ï¿½ï¿½" pos:[257,106] width:80 height:18
+	button cls "ï¿½ï¿½ ï¿½ï¿½" pos:[257,128] width:80 height:18
 	local thefiles=#(),thetxts=#()
 	fn getLinks =
 	(
@@ -618,7 +617,7 @@ rollout SPlinkmanage "¿ì½Ý·½Ê½¹ÜÀí" width:350 height:293
 	)
 
 	on SPlinkmanage open do
-	(	str="´Ë´¦µÄ¿ì½Ý·½Ê½¾ùÓÉ³¡¾°ÖúÊÖ×Ô¶¯Éú³É, É¾³ýºó, Çëµ½\n³¡¾°ÖúÊÖ-->Ñ¡Ïî-->ÖØÆôMAXºóÉúÐ§."
+	(	str="ï¿½Ë´ï¿½ï¿½Ä¿ï¿½Ý·ï¿½Ê½ï¿½ï¿½ï¿½É³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½, É¾ï¿½ï¿½ï¿½ï¿½, ï¿½ëµ½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-->Ñ¡ï¿½ï¿½-->ï¿½ï¿½ï¿½ï¿½MAXï¿½ï¿½ï¿½ï¿½Ð§."
 		hy.text=str
 		getLinks()
 	)
@@ -634,7 +633,7 @@ rollout SPlinkmanage "¿ì½Ý·½Ê½¹ÜÀí" width:350 height:293
 		mt.selection=0
 		getLinks()
 		)
-		else CGplusplusFunc.msgbox "ÇëÑ¡ÔñÒ»¸ö¿ì½Ý·½Ê½ÏÈ:)"
+		else CGplusplusFunc.msgbox "ï¿½ï¿½Ñ¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ý·ï¿½Ê½ï¿½ï¿½:)"
 	)
 	on refesh pressed do
 		getLinks()
@@ -645,14 +644,14 @@ rollout SPlinkmanage "¿ì½Ý·½Ê½¹ÜÀí" width:350 height:293
 	on cls pressed do
 		destroydialog SPlinkmanage
 )
---Êý¾ÝÍ¬²½
-rollout SPdataSync "³¡¾°ÖúÊÖÊý¾ÝÍ¬²½" width:432 height:210
+--ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½
+rollout SPdataSync "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½" width:432 height:210
 (
-	multiListBox lb "±¾»úÉÏ3ds Max°²×°Â·¾¶ÁÐ±í:" pos:[7,9] width:419 height:6
-	button addFolder "Ìí¼ÓÂ·¾¶" pos:[6,120] width:100 height:20
-	button delfolder "É¾³ýÂ·¾¶" pos:[111,120] width:100 height:20
-	button syncNow "ÂíÉÏÍ¬²½" pos:[216,120] width:100 height:20
-	button cls "ÍË³ö" pos:[322,119] width:100 height:20
+	multiListBox lb "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3ds Maxï¿½ï¿½×°Â·ï¿½ï¿½ï¿½Ð±ï¿½:" pos:[7,9] width:419 height:6
+	button addFolder "ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½" pos:[6,120] width:100 height:20
+	button delfolder "É¾ï¿½ï¿½Â·ï¿½ï¿½" pos:[111,120] width:100 height:20
+	button syncNow "ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½" pos:[216,120] width:100 height:20
+	button cls "ï¿½Ë³ï¿½" pos:[322,119] width:100 height:20
 	label lbl1 "Label" pos:[7,150] width:415 height:60
 	fn setPathINI arr =
 	(	sort arr
@@ -666,16 +665,16 @@ rollout SPdataSync "³¡¾°ÖúÊÖÊý¾ÝÍ¬²½" width:432 height:210
 		items01=getinisetting spInifilepath "Path"
 		items02=for i in items01 collect (getinisetting spInifilepath "Path" i)
 		curPath=CGplusplusFunc.slashConvert (getdir #maxroot)
-		curPath=substring curPath 1 (curPath.count-1) --È¥µô×îºóÃæÄÇ¸ö·´Ð±¸Ü\
+		curPath=substring curPath 1 (curPath.count-1) --È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½Ð±ï¿½ï¿½\
 		if finditem items02 curPath == 0 then append items02 curPath
 		setPathINI items02
 		
-		str="µ¥»÷ 'ÂíÉÏÍ¬²½' °´Å¥ºó£¬±¾ Max ÏÂÃæµÄ³¡¾°ÖúÊÖ»á±»¸´ÖÆµ½Â·¾¶ÁÐ±íÖÐÆäËû Max µÄ¶ÔÓ¦Â·¾¶£¬ÄãµÄµçÄÔÉÏÆäËûµÄ Max µÄ³¡¾°ÖúÊÖÎÞÐè°²×°£¬ÇÒÅäÖÃ¸ú±¾ Max Ò»Ä£Ò»Ñù¡£"
+		str="ï¿½ï¿½ï¿½ï¿½ 'ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½' ï¿½ï¿½Å¥ï¿½ó£¬±ï¿½ Max ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»á±»ï¿½ï¿½ï¿½Æµï¿½Â·ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Max ï¿½Ä¶ï¿½Ó¦Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Max ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è°²×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½ï¿½ Max Ò»Ä£Ò»ï¿½ï¿½ï¿½ï¿½"
 		lbl1.text=str
 	)
 	on addFolder pressed do
 	(
-		f=getsavepath caption:"ÇëÑ¡ÔñÆäËûmax°²×°Ä¿Â¼"
+		f=getsavepath caption:"ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½maxï¿½ï¿½×°Ä¿Â¼"
 		if f!=undefined then (
 			f=CGplusplusFunc.slashConvert f
 			if doesfileexist (f+"/3dsmax.exe") then (
@@ -683,7 +682,7 @@ rollout SPdataSync "³¡¾°ÖúÊÖÊý¾ÝÍ¬²½" width:432 height:210
 				if finditem theitems f==0 then append theitems f
 				setPathINI theitems
 			)--end if
-			else CGplusplusFunc.msgbox "Õâ¸öÎÄ¼þ¼ÐÏÂÃ»ÓÐ3dsmax.exeÄØ ,ÄãÍæÎÒµÄ°É ?"
+			else CGplusplusFunc.msgbox "ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½3dsmax.exeï¿½ï¿½ ,ï¿½ï¿½ï¿½ï¿½ï¿½ÒµÄ°ï¿½ ?"
 		)--end if
 	)
 	on delfolder pressed do
@@ -703,16 +702,16 @@ rollout SPdataSync "³¡¾°ÖúÊÖÊý¾ÝÍ¬²½" width:432 height:210
 		destroydialog SPdataSync
 )
 
---Éú³É¿ì½Ý·½Ê½ÌáÊ¾
-rollout SPLinkHint "³¡¾°ÖúÊÖÌáÊ¾" width:302 height:96
+--ï¿½ï¿½ï¿½É¿ï¿½Ý·ï¿½Ê½ï¿½ï¿½Ê¾
+rollout SPLinkHint "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾" width:302 height:96
 (
-	button btn1 "ÎÒÖªµÀÀ²!" pos:[50,71] width:77 height:18
-	checkbox chk1 "ÒÔºó²»ÔÙÏÔÊ¾" pos:[155,71] width:130 height:18
+	button btn1 "ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½!" pos:[50,71] width:77 height:18
+	checkbox chk1 "ï¿½Ôºï¿½ï¿½ï¿½ï¿½ï¿½Ê¾" pos:[155,71] width:130 height:18
 	label lbl1 "Label" pos:[13,9] width:277 height:55
 	on SPLinkHint open do
 	(
-		str="¿ì½Ý·½Ê½Éú³Éºó,Äã¿ÉÒÔÔÚ'Customize-->Customize User Interface...-->Category'ÁÐ±íµÄFeilangToolsÏÂÃæÕÒµ½Ëü."
-		str+="ÄãÒ²¿ÉÒÔµ½'³¡¾°ÖúÊÖ-->Ñ¡Ïî-->¿ì½Ý·½Ê½'É¾³ýËü."
+		str="ï¿½ï¿½Ý·ï¿½Ê½ï¿½ï¿½ï¿½Éºï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½'Customize-->Customize User Interface...-->Category'ï¿½Ð±ï¿½ï¿½ï¿½FeilangToolsï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½."
+		str+="ï¿½ï¿½Ò²ï¿½ï¿½ï¿½Ôµï¿½'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-->Ñ¡ï¿½ï¿½-->ï¿½ï¿½Ý·ï¿½Ê½'É¾ï¿½ï¿½ï¿½ï¿½."
 		lbl1.text=str
 		spCreateLinkHint=try execute (getinisetting spInifilepath "Main" "Linkhint") catch true
 		chk1.checked=not spCreateLinkHint
@@ -725,36 +724,36 @@ rollout SPLinkHint "³¡¾°ÖúÊÖÌáÊ¾" width:302 height:96
 			else setinisetting spInifilepath "Main" "Linkhint" "true"
 	)
 )
---Ö÷½çÃæÉèÖÃ
-rollout SPmainRolSet "Ö÷½çÃæÉèÖÃ" width:278 height:323
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+rollout SPmainRolSet "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" width:278 height:323
 (
 	local spRolHeight=execute (getinisetting spInifilepath "Main" "Height")
 	local spRolWidth=execute (getinisetting spInifilepath "Main" "Width")
 	local size=sysInfo.DesktopSize
 	local idx = (getinisetting spInifilepath "Color" "Index") as integer
 	local total = (getinisetting spInifilepath "Color" "Total") as integer
-	local tempName = "×Ô¶¨Òå"+localtime
+	local tempName = "ï¿½Ô¶ï¿½ï¿½ï¿½"+localtime
 	local oldColors = for i in 1 to 4 collect ScenePromoter4Rol.theColors[i]
 	
-	spinner hh "¸ß¶È:" pos:[22,28] width:100 height:16 range:[100,800,500] type:#integer
-	spinner ww "¿í¶È:" pos:[22,52] width:100 height:16 range:[160,1280,160] type:#integer
-	GroupBox grp1 "ÉèÖÃÐü¸¡×´Ì¬Ö÷½çÃæ²ÎÊý" pos:[8,8] width:260 height:67
-	button gogo "È·¶¨" pos:[127,28] width:48 height:40
-	checkbox chk1 "Ö÷½çÃæËæMax×Ô¶¯Æô¶¯" pos:[51,250] width:184 height:18
-	button btnClose "¹Ø ±Õ" pos:[83,292] width:116 height:25
-	button def "Ä¬ÈÏ³ß´ç" pos:[181,27] width:80 height:18
-	button defPos "Ä¬ÈÏÎ»ÖÃ" pos:[181,50] width:80 height:18
---	checkbox childui "×ÓÃæ°å½ô¿¿Ö÷½çÃæ" pos:[51,271] width:184 height:20
-	GroupBox grp4 "½çÃæÑÕÉ«" pos:[8,82] width:260 height:163
-	colorPicker colNav "µ¼º½±³¾°" pos:[20,99] width:150 height:20
-	colorPicker colBG "±³¾°ÑÕÉ«" pos:[20,123] width:150 height:20
-	colorPicker colLink "Á´½ÓÑÕÉ«" pos:[20,148] width:150 height:20
-	colorPicker colTxt "ÎÄ±¾ÑÕÉ«" pos:[20,173] width:150 height:20
-	dropdownList ddl1 "Ñ¡ÔñÅäÉ«·½°¸:" pos:[22,197] width:147 height:41 items:#("Ä¬ÈÏ")
-	button btnOldCol "»¹Ô­" pos:[179,191] width:80 height:18
-	button RenameCol "ÖØÃüÃû·½°¸" pos:[179,216] width:80 height:18
-	button DelCol "É¾³ý·½°¸" pos:[179,98] width:80 height:18
-	button SaveCol "±£´æ·½°¸" pos:[179,120] width:80 height:18
+	spinner hh "ï¿½ß¶ï¿½:" pos:[22,28] width:100 height:16 range:[100,800,500] type:#integer
+	spinner ww "ï¿½ï¿½ï¿½ï¿½:" pos:[22,52] width:100 height:16 range:[160,1280,160] type:#integer
+	GroupBox grp1 "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[8,8] width:260 height:67
+	button gogo "È·ï¿½ï¿½" pos:[127,28] width:48 height:40
+	checkbox chk1 "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Maxï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[51,250] width:184 height:18
+	button btnClose "ï¿½ï¿½ ï¿½ï¿½" pos:[83,292] width:116 height:25
+	button def "Ä¬ï¿½Ï³ß´ï¿½" pos:[181,27] width:80 height:18
+	button defPos "Ä¬ï¿½ï¿½Î»ï¿½ï¿½" pos:[181,50] width:80 height:18
+--	checkbox childui "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[51,271] width:184 height:20
+	GroupBox grp4 "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«" pos:[8,82] width:260 height:163
+	colorPicker colNav "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[20,99] width:150 height:20
+	colorPicker colBG "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«" pos:[20,123] width:150 height:20
+	colorPicker colLink "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«" pos:[20,148] width:150 height:20
+	colorPicker colTxt "ï¿½Ä±ï¿½ï¿½ï¿½É«" pos:[20,173] width:150 height:20
+	dropdownList ddl1 "Ñ¡ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½:" pos:[22,197] width:147 height:41 items:#("Ä¬ï¿½ï¿½")
+	button btnOldCol "ï¿½ï¿½Ô­" pos:[179,191] width:80 height:18
+	button RenameCol "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[179,216] width:80 height:18
+	button DelCol "É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[179,98] width:80 height:18
+	button SaveCol "ï¿½ï¿½ï¿½æ·½ï¿½ï¿½" pos:[179,120] width:80 height:18
 	
 	fn setPreset =
 	(
@@ -791,7 +790,7 @@ rollout SPmainRolSet "Ö÷½çÃæÉèÖÃ" width:278 height:323
 			setinisetting spInifilepath "Color" ("Color"+str) colstr
 			total = idx
 		)
-		tempName = "×Ô¶¨Òå"+localtime
+		tempName = "ï¿½Ô¶ï¿½ï¿½ï¿½"+localtime
 		--else idx = ddl1.selection - 1
 	)
 	fn refeshList =
@@ -799,7 +798,7 @@ rollout SPmainRolSet "Ö÷½çÃæÉèÖÃ" width:278 height:323
 		idx = (getinisetting spInifilepath "Color" "Index") as integer
 		total = (getinisetting spInifilepath "Color" "Total") as integer
 		names = for i in 1 to total collect (getinisetting spInifilepath "Color" ("Name" + i as string))
-		items = #("Ä¬ÈÏ")
+		items = #("Ä¬ï¿½ï¿½")
 		if names != 0 then 
 		(
 			join items names
@@ -808,13 +807,13 @@ rollout SPmainRolSet "Ö÷½çÃæÉèÖÃ" width:278 height:323
 		ddl1.selection = idx + 1 
 		
 		cols = CGplusplusFunc.getUIcol()
-		--Á´½Ó×ÖµÄÑÕÉ«
+		--ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½É«
 		colLink.color = cols[1]
-		--±³¾°É«
+		--ï¿½ï¿½ï¿½ï¿½É«
 		colBG.color = cols[2]
-		--ÎÄ±¾ÑÕÉ«
+		--ï¿½Ä±ï¿½ï¿½ï¿½É«
 		colTxt.color = cols[3]
-		--µ¼º½±³¾°
+		--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		colNav.color = cols[4]
 		ScenePromoter4Rol.theColors = cols
 	)
@@ -904,10 +903,10 @@ rollout SPmainRolSet "Ö÷½çÃæÉèÖÃ" width:278 height:323
 	(
 		if ddl1.selection != 1 then 
 		(
-			rollout renameTemp "ÖØÃüÃû·½°¸" width:221 height:32
+			rollout renameTemp "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" width:221 height:32
 			(
 				editText edt1 "" pos:[7,5] width:163 height:21
-				button rename "È·¶¨" pos:[178,5] width:40 height:20
+				button rename "È·ï¿½ï¿½" pos:[178,5] width:40 height:20
 				on rename pressed  do
 				(
 					if edt1.text != "" then
@@ -921,7 +920,7 @@ rollout SPmainRolSet "Ö÷½çÃæÉèÖÃ" width:278 height:323
 			)
 			createdialog renameTemp
 		)
-		else messagebox "Ä¬ÈÏ·½°¸»¹ÊÇ²»Òª¸ÄÃûµÄºÃ~~~" title:"³¡¾°ÖúÊÖÌáÊ¾"
+		else messagebox "Ä¬ï¿½Ï·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç²ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Äºï¿½~~~" title:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾"
 	)
 	on DelCol pressed  do
 	(
@@ -952,27 +951,27 @@ rollout SPmainRolSet "Ö÷½çÃæÉèÖÃ" width:278 height:323
 			ScenePromoter4Rol.refeshUIColor()
 			ScenePromoter4Rol.refreshNav()
 		)
-		else messagebox "Ä¬ÈÏ·½°¸»¹ÊÇÁô×ÅµÄºÃ~~~" title:"³¡¾°ÖúÊÖÌáÊ¾"
+		else messagebox "Ä¬ï¿½Ï·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÅµÄºï¿½~~~" title:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾"
 	)
 )
 
---¹¤¾ßÀ¸ÉèÖÃ
-rollout SPmtoolbarRolSet "¹¤¾ßÀ¸ÉèÖÃ" width:277 height:119
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+rollout SPmtoolbarRolSet "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" width:277 height:119
 (
 	local spRolHeight=execute (getinisetting spInifilepath "Main" "Height")
 	local spRolWidth=execute (getinisetting spInifilepath "Main" "Width")
 	local size=sysInfo.DesktopSize
 	local idx = (getinisetting spInifilepath "Color" "Index") as integer
 	local total = (getinisetting spInifilepath "Color" "Total") as integer
-	local tempName = "×Ô¶¨Òå"+localtime
+	local tempName = "ï¿½Ô¶ï¿½ï¿½ï¿½"+localtime
 	local oldColors = for i in 1 to 4 collect ScenePromoter4Rol.theColors[i]
 	
-	spinner hh "¸ß¶È:" pos:[22,28] width:100 height:16 range:[0,999,0] type:#integer
-	spinner ww "¿í¶È:" pos:[22,52] width:100 height:16 range:[0,999,0] type:#integer
-	GroupBox grp1 "ÉèÖÃ¹¤¾ßÀ¸°´Å¥³¤¿íÔö¼Ó¶àÉÙÏñËØ" pos:[8,8] width:260 height:67
-	button gogo "È·¶¨" pos:[127,28] width:48 height:40
-	button btnClose "¹Ø ±Õ" pos:[80,84] width:116 height:25
-	button def "Ä¬ÈÏ³É0" pos:[181,29] width:80 height:38
+	spinner hh "ï¿½ß¶ï¿½:" pos:[22,28] width:100 height:16 range:[0,999,0] type:#integer
+	spinner ww "ï¿½ï¿½ï¿½ï¿½:" pos:[22,52] width:100 height:16 range:[0,999,0] type:#integer
+	GroupBox grp1 "ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[8,8] width:260 height:67
+	button gogo "È·ï¿½ï¿½" pos:[127,28] width:48 height:40
+	button btnClose "ï¿½ï¿½ ï¿½ï¿½" pos:[80,84] width:116 height:25
+	button def "Ä¬ï¿½Ï³ï¿½0" pos:[181,29] width:80 height:38
 	
 	on SPmtoolbarRolSet open do
 	(
@@ -994,35 +993,35 @@ rollout SPmtoolbarRolSet "¹¤¾ßÀ¸ÉèÖÃ" width:277 height:119
 		SPmtoolbarRolSet.gogo.pressed()
 	)
 )
---¸öÐÔ»¯
-rollout SPmyPersTitle "¸öÐÔ»¯Max" width:347 height:318
+--ï¿½ï¿½ï¿½Ô»ï¿½
+rollout SPmyPersTitle "ï¿½ï¿½ï¿½Ô»ï¿½Max" width:347 height:318
 (
-	GroupBox grp1 "¸öÐÔ»¯±êÌâÀ¸" pos:[10,10] width:195 height:176
-	checkbox isOpen "ÆôÓÃ¸öÐÔ»¯±êÌâÀ¸" pos:[23,158] width:150 height:18
-	checkbox filen "ÎÄ¼þÃû" pos:[23,30] width:120 height:20
-	checkbox filep "ÎÄ¼þÂ·¾¶" pos:[23,50] width:120 height:18
-	checkbox size "ÎÄ¼þ´óÐ¡" pos:[23,70] width:120 height:20
-	checkbox creDate "ÎÄ¼þ´´½¨Ê±¼ä" pos:[23,90] width:120 height:20
-	checkbox modDate "×îºóÐÞ¸ÄÊ±¼ä" pos:[23,110] width:120 height:18
-	checkbox ver "Max°æ±¾" pos:[23,130] width:120 height:18
-	GroupBox grp_display "ÏÔÊ¾/Òþ²Ø" pos:[219,10] width:117 height:108
-	checkbox chk_slider "»¬¶¯Ìõ" pos:[235,30] width:90 height:18
-	checkbox chk_frame "¶¯»­Ö¡" pos:[235,50] width:90 height:21
-	checkbox chk_status "×´Ì¬À¸" pos:[235,70] width:90 height:18
-	checkbox chk_modify "ÐÞ¸ÄÃæ°å" pos:[235,90] width:90 height:17
-	radiobuttons rdo1 "Ñ¡Ôñ¿òµÄÑùÊ½" pos:[215,129] width:163 height:46 labels:#("Max 9¼°Ö®Ç°      ", "Max 2008¼°Ö®ºó      ") default:1 columns:1
+	GroupBox grp1 "ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[10,10] width:195 height:176
+	checkbox isOpen "ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[23,158] width:150 height:18
+	checkbox filen "ï¿½Ä¼ï¿½ï¿½ï¿½" pos:[23,30] width:120 height:20
+	checkbox filep "ï¿½Ä¼ï¿½Â·ï¿½ï¿½" pos:[23,50] width:120 height:18
+	checkbox size "ï¿½Ä¼ï¿½ï¿½ï¿½Ð¡" pos:[23,70] width:120 height:20
+	checkbox creDate "ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½" pos:[23,90] width:120 height:20
+	checkbox modDate "ï¿½ï¿½ï¿½ï¿½Þ¸ï¿½Ê±ï¿½ï¿½" pos:[23,110] width:120 height:18
+	checkbox ver "Maxï¿½æ±¾" pos:[23,130] width:120 height:18
+	GroupBox grp_display "ï¿½ï¿½Ê¾/ï¿½ï¿½ï¿½ï¿½" pos:[219,10] width:117 height:108
+	checkbox chk_slider "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[235,30] width:90 height:18
+	checkbox chk_frame "ï¿½ï¿½ï¿½ï¿½Ö¡" pos:[235,50] width:90 height:21
+	checkbox chk_status "×´Ì¬ï¿½ï¿½" pos:[235,70] width:90 height:18
+	checkbox chk_modify "ï¿½Þ¸ï¿½ï¿½ï¿½ï¿½" pos:[235,90] width:90 height:17
+	radiobuttons rdo1 "Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½" pos:[215,129] width:163 height:46 labels:#("Max 9ï¿½ï¿½Ö®Ç°      ", "Max 2008ï¿½ï¿½Ö®ï¿½ï¿½      ") default:1 columns:1
 	label lbl1 "Label" pos:[12,231] width:330 height:46
-	button btnClose "¹Ø ±Õ" pos:[124,282] width:111 height:27
-	radiobuttons meditui "²ÄÖÊ±à¼­Æ÷ÑùÊ½(Max 2011²ÅÓÃ)" pos:[23,193] width:328 height:30 labels:#("Max 2010¼°Ö®Ç°        ", "Max 2011        ") columns:2
+	button btnClose "ï¿½ï¿½ ï¿½ï¿½" pos:[124,282] width:111 height:27
+	radiobuttons meditui "ï¿½ï¿½ï¿½Ê±à¼­ï¿½ï¿½ï¿½ï¿½Ê½(Max 2011ï¿½ï¿½ï¿½ï¿½)" pos:[23,193] width:328 height:30 labels:#("Max 2010ï¿½ï¿½Ö®Ç°        ", "Max 2011        ") columns:2
 	local cont=#(filen,filep,size,creDate,modDate,ver)
 	local tit=""
-	--»ñÈ¡MAX°æ±¾
+	--ï¿½ï¿½È¡MAXï¿½æ±¾
 	fn getVer =
 	(	v=(maxversion())[1]/1000
 		if v<=9 then return v
 		else return (2008+v-10)
 	)
-	--ÉèÖÃ±êÌâ
+	--ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½
 	fn getStr n =
 	(	filename=maxfilename
 		filepath=CGplusplusFunc.SlashConvert maxfilepath
@@ -1034,19 +1033,19 @@ rollout SPmyPersTitle "¸öÐÔ»¯Max" width:347 height:318
 		case n of
 		(	1 : filename
 			2 : filepath
-			3 : (	thestr="´óÐ¡:"
+			3 : (	thestr="ï¿½ï¿½Ð¡:"
 					fs=getFileSize file
 					ss=fs/1024
 					if ss < 1024 then thestr+=ss as string + " KB"
 					else thestr+=(fs/1048576) as string + " MB"
 					thestr
 				)
-			4 : ( 	s01="´´½¨:"
-					if not doesfileexist file then s01+="Î´´´½¨" else s01+=getFileCreateDate file
+			4 : ( 	s01="ï¿½ï¿½ï¿½ï¿½:"
+					if not doesfileexist file then s01+="Î´ï¿½ï¿½ï¿½ï¿½" else s01+=getFileCreateDate file
 					s01
 				)
-			5 : (	s01="ÐÞ¸Ä:"
-					if not doesfileexist file then s01+="Î´ÐÞ¸Ä" else s01+=getFileModDate file
+			5 : (	s01="ï¿½Þ¸ï¿½:"
+					if not doesfileexist file then s01+="Î´ï¿½Þ¸ï¿½" else s01+=getFileModDate file
 					s01
 				)
 			6 : "3ds Max "+(getVer()) as string
@@ -1060,15 +1059,15 @@ rollout SPmyPersTitle "¸öÐÔ»¯Max" width:347 height:318
 		(	str+=getStr idx
 			for t in idx+1 to 6 where content[t]!=undefined and content[t]!="0" do str+="  -  " + getStr t
 		)
-		if str.count==0 then str="ÇëÔÚ³¡¾°ÖúÊÖ-->Ñ¡Ïî-->¸öÐÔ»¯Max ÖÐ¶¨ÖÆ´Ë´¦±êÌâ"
+		if str.count==0 then str="ï¿½ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-->Ñ¡ï¿½ï¿½-->ï¿½ï¿½ï¿½Ô»ï¿½Max ï¿½Ð¶ï¿½ï¿½Æ´Ë´ï¿½ï¿½ï¿½ï¿½ï¿½"
 		cui.setAppTitle str
 	)
-	--¶¨ÖÆ±êÌâÀ¸
+	--ï¿½ï¿½ï¿½Æ±ï¿½ï¿½ï¿½ï¿½ï¿½
 	fn setTheTitle =
 	(	tit=getinisetting spInifilepath "Main" "PerTitle"
 		SPmyPersTitle.setTitle content:tit
 	)
-	--¿ª¹Ø
+	--ï¿½ï¿½ï¿½ï¿½
 	fn switchTitle state:false =
 	(	callbacks.removeScripts id:#setThePersTitle
 		if state then
@@ -1081,7 +1080,7 @@ rollout SPmyPersTitle "¸öÐÔ»¯Max" width:347 height:318
 		)
 		else ()
 	)
-	--ÅäÖÃÎÄ¼þÂ·¾¶
+	--ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Â·ï¿½ï¿½
 	fn getINIpath = 
 	(	
 		thepath = getFilenamePath (getmaxinifile())+"defaults\\*"
@@ -1101,8 +1100,8 @@ rollout SPmyPersTitle "¸öÐÔ»¯Max" width:347 height:318
 		""
 	)
 	on SPmyPersTitle open do
-	(	str="ÆôÓÃ¸öÐÔ»¯±êÌâÀ¸ºó£¬Max±êÌâÀ¸½«°´ÕÕÖ¸¶¨ÄÚÈÝ½øÐÐÏÔÊ¾£¬\nÒ»Ö±ÉúÐ§¡£"
-		str+="¹Ø±Õ¸öÐÔ»¯±êÌâÀ¸ºó£¬ÐÂ½¨Max£¬ÖØÖÃMax»òÕß´ò¿ª\nÒ»¸öMaxÎÄ¼þºó»¹Ô­¡£"
+	(	str="ï¿½ï¿½ï¿½Ã¸ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Maxï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½\nÒ»Ö±ï¿½ï¿½Ð§ï¿½ï¿½"
+		str+="ï¿½Ø±Õ¸ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â½ï¿½Maxï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Maxï¿½ï¿½ï¿½ß´ï¿½\nÒ»ï¿½ï¿½Maxï¿½Ä¼ï¿½ï¿½ï¿½Ô­ï¿½ï¿½"
 		lbl1.text=str
 		
 		if timeSlider.isVisible() then chk_slider.checked = true else chk_slider.checked = false
@@ -1211,20 +1210,20 @@ rollout SPmyPersTitle "¸öÐÔ»¯Max" width:347 height:318
 		else ()
 	)
 )
-rollout SPabtRol "¹ØÓÚ³¡¾°ÖúÊÖ" width:319 height:262
+rollout SPabtRol "ï¿½ï¿½ï¿½Ú³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" width:319 height:262
 (
 	imgtag img "" bitmap:(openbitmap (spRootPath+"\\images\\logo.gif")) pos:[200,25]
 	label lbl1 "Label" pos:[38,30] width:150 height:70
 	label lbl2 "Label" pos:[38,120] width:250 height:70
 
-	HyperLink hy1 "¹«ÖÚºÅ£ºÉ½Ò½ÃüÏó²·ÏÂÔØÐÂ½Å±¾" pos:[38,180] width:150 height:15 address:"http://mp.weixin.qq.com/mp/homepage?__biz=MzA4NjQ2MDYzMA==&hid=1&sn=bb2531d86a7d41ca361cca9081151faa&scene=18#wechat_redirect" color:(color 0 128 128) hovercolor:(color 128 0 255) visitedcolor:(color 0 128 128)
-	button okok "È· ¶¨" pos:[205,214] width:80 height:18
+	HyperLink hy1 "ï¿½ï¿½ï¿½ÚºÅ£ï¿½É½Ò½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â½Å±ï¿½" pos:[38,180] width:150 height:15 address:"http://mp.weixin.qq.com/mp/homepage?__biz=MzA4NjQ2MDYzMA==&hid=1&sn=bb2531d86a7d41ca361cca9081151faa&scene=18#wechat_redirect" color:(color 0 128 128) hovercolor:(color 128 0 255) visitedcolor:(color 0 128 128)
+	button okok "È· ï¿½ï¿½" pos:[205,214] width:80 height:18
 	on SPabtRol open do
 	(	
 		ver="4.1.10"--getinisetting spInifilepath "Main" "Version"
-		str="³¡¾°ÖúÊÖ\n\n°æ±¾: "+ver+"\n×÷Õß: É½Ò½ÃüÏà²·\nQQÈº: 756653752"
+		str="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\n\nï¿½æ±¾: "+ver+"\nï¿½ï¿½ï¿½ï¿½: É½Ò½ï¿½ï¿½ï¿½à²·\nQQÈº: 756653752"
 		lbl1.text=str
-		lbl2.text = "±¾°æ±¾ÊÊÓÃÓÚ3dmax9-2028.ÏµÍ³Ö§³Ö32Î».64Î»,WinXP/Win7~11."
+		lbl2.text = "ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3dmax9-2028.ÏµÍ³Ö§ï¿½ï¿½32Î».64Î»,WinXP/Win7~11."
 	)
 	on okok pressed do
 	(

@@ -1,17 +1,16 @@
---×÷Õß£º·ÉÀË
+--ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½ï¿½
 --Author:Feilang
---www.cgplusplus.com
 --------------------------------------------------
---»¶Ó­Ê¹ÓÃ³¡¾°ÖúÊÖ4.0 
+--ï¿½ï¿½Ó­Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0 
 
-----¿ªÔ´·îÏ×----
+----ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½----
 
 ---------------------------------------------------
---³¡¾°ÖúÊÖ4.0		2011-04-01
---³¡¾°ÖúÊÖ3.0		2009-08-01
---³¡¾°ÖúÊÖ2.6		2009-03-30
---³¡¾°ÖúÊÖ2.0		2008-08-06
---³¡¾°ÖúÊÖ1.0		2008-05-27
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0		2011-04-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3.0		2009-08-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.6		2009-03-30
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.0		2008-08-06
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1.0		2008-05-27
 
 try destroydialog SPrandomSelect catch() 
 
@@ -42,12 +41,12 @@ try destroydialog SPrandomSelect catch()
 		)--end off open
 	*/
 		on selectHelp picked do
-		(	tips = "1¡¢Èç¹ûÃ»ÓĞÑ¡ÔñÎïÌå£¬Ôò¡°Ñ¡ÔñÎïÌå¡±°´ÕÕÊÓÍ¼ÖĞÎïÌåµÄ°Ù·Ö±ÈÑ¡ÔñÎïÌå¡£\n"
-			tips += "2¡¢Èç¹ûÑ¡ÔñÎïÌå¸öÊı´óÓÚ1£¬Ôò°´Ñ¡ÔñÎïÌå°Ù·Ö±ÈÑ¡ÔñÎïÌå¡£\n"
-			tips += "3¡¢Èç¹ûÑ¡ÔñÁËÒ»¸öEPoly£¬Ôò¡°µã¡±£¬¡°Ïß¡±£¬¡°Ãæ¡±£¬¡°ÔªËØ¡±°´ÕÕµã¡¢Ïß¡¢Ãæ¡¢ÔªËØµÄ°Ù·Ö±ÈÑ¡Ôñ¡£\n"
-			tips += "      ¡°×ÜÁ¿¡±ÏÔÊ¾µã£¬Ïß£¬Ãæ»òÔªËØµÄ×Ü¸öÊı£¬¡°Ñ¡Ôñ¡±ÏÔÊ¾Ñ¡Ôñµã£¬Ïß£¬Ãæ»òÔªËØµÄ¸öÊı¡£\n"
-			tips += "4¡¢µ¥»÷Ë¢ĞÂ¿ÉÏÔÊ¾³¡¾°ÎïÌå»òµ¥¸öEPolyµÄ×Ó²ã¼¶¸öÊı¡£"
-			messagebox tips title:("Ëæ»úÑ¡Ôñ") beep:off
+		(	tips = "1ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½å£¬ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½å¡±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä°Ù·Ö±ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½å¡£\n"
+			tips += "2ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù·Ö±ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½å¡£\n"
+			tips += "3ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½EPolyï¿½ï¿½ï¿½ò¡°µã¡±ï¿½ï¿½ï¿½ï¿½ï¿½ß¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ¡±ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¡ï¿½ï¿½ï¿½ï¿½Õµã¡¢ï¿½ß¡ï¿½ï¿½æ¡¢Ôªï¿½ØµÄ°Ù·Ö±ï¿½Ñ¡ï¿½ï¿½\n"
+			tips += "      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ã£¬ï¿½ß£ï¿½ï¿½ï¿½ï¿½Ôªï¿½Øµï¿½ï¿½Ü¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½Ê¾Ñ¡ï¿½ï¿½ã£¬ï¿½ß£ï¿½ï¿½ï¿½ï¿½Ôªï¿½ØµÄ¸ï¿½ï¿½ï¿½ï¿½ï¿½\n"
+			tips += "4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¢ï¿½Â¿ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½òµ¥¸ï¿½EPolyï¿½ï¿½ï¿½Ó²ã¼¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+			messagebox tips title:("ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½") beep:off
 		)
 		on selectVertex picked do
 		(	subobjectLevel = 1
@@ -70,36 +69,36 @@ try destroydialog SPrandomSelect catch()
 			SPrandomSelect.btn_refesh.pressed()
 		)	
 	)
-rollout SPrandomSelect "Ëæ»ú²Ù×÷" width:240 height:241
+rollout SPrandomSelect "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" width:240 height:241
 (
-	GroupBox grp_sublevel "Ëæ»úÑ¡Ôñ" pos:[3,5] width:232 height:83
-	spinner spn_percent "°Ù·Ö±È£º " pos:[34,23] width:80 height:16 range:[0,100,30]
-	edittext edt_total "×ÜÁ¿£º" pos:[103,45] width:122 height:16 readOnly:true
-	edittext edt_select "Ñ¡Ôñ£º" pos:[103,64] width:122 height:16 readOnly:true
-	button btn_refesh "Ë¢ĞÂ" pos:[177,23] width:32 height:16 toolTip:"ÖØĞÂ¼ÆËãÑ¡ÔñÎïÌå¸öÊı»òµãÏßÃæÌåÊıÁ¿"
-	GroupBox grp_randomTransform "Ëæ»ú±äĞÎ" pos:[3,88] width:232 height:87
-	GroupBox grp_minAndMax "×îĞ¡£º    ×î´ó£º" pos:[12,107] width:148 height:62
+	GroupBox grp_sublevel "ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½" pos:[3,5] width:232 height:83
+	spinner spn_percent "ï¿½Ù·Ö±È£ï¿½ " pos:[34,23] width:80 height:16 range:[0,100,30]
+	edittext edt_total "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[103,45] width:122 height:16 readOnly:true
+	edittext edt_select "Ñ¡ï¿½ï¿½" pos:[103,64] width:122 height:16 readOnly:true
+	button btn_refesh "Ë¢ï¿½ï¿½" pos:[177,23] width:32 height:16 toolTip:"ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+	GroupBox grp_randomTransform "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[3,88] width:232 height:87
+	GroupBox grp_minAndMax "ï¿½ï¿½Ğ¡ï¿½ï¿½    ï¿½ï¿½ï¿½" pos:[12,107] width:148 height:62
 	spinner spn_scaleMin "%" pos:[26,124] width:55 height:16 range:[0,500,80]
 	spinner spn_scaleMax "%" pos:[99,124] width:55 height:16 range:[0,500,120]
-	spinner spn_rotateMin "¶È" pos:[24,145] width:57 height:16 range:[-180,180,-180]
-	spinner spn_rotateMax "¶È" pos:[97,145] width:57 height:16 range:[-180,180,180]
-	button btn_randomScale "Ëõ·Å" pos:[170,125] width:55 height:16 toolTip:"Ñ¡ÔñÎïÌåÕûÌåËæ»úËõ·Å,ÓÒ¼ü¹éÎ»"
-	button btn_randomRotate "Ğı×ª" pos:[170,148] width:55 height:16 toolTip:"Ñ¡ÔñÎïÌåÑØZÖáËæ»úĞı×ª,ÓÒ¼ü¹éÎ»"
-	GroupBox grp7 "ÖáĞÄ±ä»»" pos:[3,178] width:232 height:58
-	button btn_centerPivot "ÖáĞÄ¹éÖĞ" pos:[8,196] width:68 height:16 toolTip:"½«ÎïÌåÖáĞÄÒÆµ½ÎïÌåÖĞĞÄ"
-	button btn_bottomPivot "ÖáĞÄ¹éµ×" pos:[79,196] width:68 height:16 toolTip:"½«ÎïÌåÖáĞÄÒÆµ½ÎïÌåÕıµ×²¿"
-	button btn_centerObject "¹é×ø±êÖĞĞÄ" pos:[150,196] width:80 height:16 toolTip:"½«ÎïÌåÒÆ¶¯µ½ÖáĞÄÎ»ÖÃ"
-	button btn_zeroMin "×îµÍµã¹éÁã" pos:[8,216] width:90 height:16 toolTip:"½«ÎïÌåµÄ×îµÍµãZÖá×ø±ê¹é0"
-	checkbox chk_groupFirst "´ò×éÎïÌåÓÅÏÈ" pos:[105,217] width:110 height:16
-	button btn_selectObj "Ñ¡ÔñÎïÌå" pos:[120,23] width:55 height:16 toolTip:"Ëæ»úÑ¡ÔñÎïÌå"
-	button btn_vertex "µã" pos:[18,45] width:35 height:16 toolTip:"Ëæ»úÑ¡Ôñµã"
-	button btn_edge "Ïß" pos:[58,44] width:35 height:16 toolTip:"Ëæ»úÑ¡ÔñÏß"
-	button btn_polygen "Ãæ" pos:[18,64] width:35 height:16 toolTip:"Ëæ»úÑ¡ÔñÃæ"
-	button btn_element "ÔªËØ" pos:[58,64] width:35 height:16 toolTip:"Ëæ»úÑ¡ÔñÔªËØ"
+	spinner spn_rotateMin "ï¿½ï¿½" pos:[24,145] width:57 height:16 range:[-180,180,-180]
+	spinner spn_rotateMax "ï¿½ï¿½" pos:[97,145] width:57 height:16 range:[-180,180,180]
+	button btn_randomScale "ï¿½ï¿½ï¿½ï¿½" pos:[170,125] width:55 height:16 toolTip:"Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½Ò¼ï¿½ï¿½ï¿½Î»"
+	button btn_randomRotate "ï¿½ï¿½×ª" pos:[170,148] width:55 height:16 toolTip:"Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ª,ï¿½Ò¼ï¿½ï¿½ï¿½Î»"
+	GroupBox grp7 "ï¿½ï¿½ï¿½Ä±ä»»" pos:[3,178] width:232 height:58
+	button btn_centerPivot "ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½" pos:[8,196] width:68 height:16 toolTip:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+	button btn_bottomPivot "ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½" pos:[79,196] width:68 height:16 toolTip:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×²ï¿½"
+	button btn_centerObject "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[150,196] width:80 height:16 toolTip:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½"
+	button btn_zeroMin "ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½" pos:[8,216] width:90 height:16 toolTip:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½Zï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0"
+	checkbox chk_groupFirst "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[105,217] width:110 height:16
+	button btn_selectObj "Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[120,23] width:55 height:16 toolTip:"ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+	button btn_vertex "ï¿½ï¿½" pos:[18,45] width:35 height:16 toolTip:"ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½"
+	button btn_edge "ï¿½ï¿½" pos:[58,44] width:35 height:16 toolTip:"ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½"
+	button btn_polygen "ï¿½ï¿½" pos:[18,64] width:35 height:16 toolTip:"ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½"
+	button btn_element "Ôªï¿½ï¿½" pos:[58,64] width:35 height:16 toolTip:"ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Ôªï¿½ï¿½"
 	button btn_help "?" pos:[210,23] width:15 height:16
 	button btn_scaleHelp "?" pos:[208,103] width:15 height:16
 	button btn15 "?" pos:[214,216] width:15 height:16
-	local fl_tips01="³¡¾°ÖúÊÖÌáÊ¾"
+	local fl_tips01="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾"
 	--Judge the number of selection
 fn fl_JudgeTheSelection = 
 (	local type
@@ -118,7 +117,7 @@ fn fl_ifSelectPoly =
 	(
 		if fl_JudgeTheSelection() == 1 then return true
 		else (
-		messagebox "ÇëÑ¡ÔñÒ»¸öEPolyÎïÌå²¢ÉèÖÃµ±Ç°ĞŞ¸ÄÆ÷ÔÚEditable PolyÏÂ£¡" title:fl_tips01 beep:off
+		messagebox "ï¿½ï¿½Ñ¡ï¿½ï¿½Ò»ï¿½ï¿½EPolyï¿½ï¿½ï¿½å²¢ï¿½ï¿½ï¿½Ãµï¿½Ç°ï¿½Ş¸ï¿½ï¿½ï¿½ï¿½ï¿½Editable Polyï¿½Â£ï¿½" title:fl_tips01 beep:off
 		return false
 		)
 	)
@@ -164,7 +163,7 @@ fn fl_ifSelectPoly =
 				) --end while
 				select sObj
 			)
-			else messagebox "µ±Ç°ÊÓÍ¼ÖĞÃ»ÓĞ¿´µÃ¼ûµÄÎïÌå:)" title:fl_tips01
+			else messagebox "ï¿½ï¿½Ç°ï¿½ï¿½Í¼ï¿½ï¿½Ã»ï¿½Ğ¿ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:)" title:fl_tips01
 		)
 		else if objNum > 0 then --If there are objects selected
 		(
@@ -387,7 +386,7 @@ fn fl_ifSelectPoly =
 		) --end undo on
 	)
 	on btn_centerPivot pressed do
-	(	if selection.count == 0 then messagebox "ÇëÏÈÑ¡ÔñÎïÌå£¡" title:fl_tips01
+	(	if selection.count == 0 then messagebox "ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½å£¡" title:fl_tips01
 		else 
 		(	
 			undo on (
@@ -399,7 +398,7 @@ fn fl_ifSelectPoly =
 		)
 	)
 	on btn_bottomPivot pressed do
-	(	if selection.count == 0 then messagebox "ÇëÏÈÑ¡ÔñÎïÌå£¡" title:fl_tips01
+	(	if selection.count == 0 then messagebox "ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½å£¡" title:fl_tips01
 		else 
 		(	undo on(
 			if chk_groupFirst.checked then
@@ -413,7 +412,7 @@ fn fl_ifSelectPoly =
 		)
 	)
 	on btn_centerObject pressed do
-	(	if selection.count == 0 then messagebox "ÇëÏÈÑ¡ÔñÎïÌå£¡" title:fl_tips01
+	(	if selection.count == 0 then messagebox "ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½å£¡" title:fl_tips01
 		else 
 		(	if chk_groupFirst.checked then
 				selectObj = for j in selection where not isGroupMember j collect j
@@ -425,7 +424,7 @@ fn fl_ifSelectPoly =
 		)
 	)
 	on btn_zeroMin pressed do
-	(	if selection.count == 0 then messagebox "ÇëÏÈÑ¡ÔñÎïÌå£¡" title:fl_tips01
+	(	if selection.count == 0 then messagebox "ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½å£¡" title:fl_tips01
 		else 
 		(	undo on(
 			if chk_groupFirst.checked then
@@ -485,19 +484,19 @@ fn fl_ifSelectPoly =
 		)
 	on btn_scaleHelp pressed do
 	(
-		tips = "1¡¢Ëõ·Å°´ÕÕÔ­ÎïÌåµÄ°Ù·Ö±È½øĞĞ£¬Ã¿¸öÎïÌåËõ·Å´óĞ¡È¡×î´óÓë×îĞ¡°Ù·Ö\n      ±ÈÒ»¸öËæ»úÖµ£¬µ¥»÷ÓÒ¼ü¿É½«Ñ¡ÔñÎïÌå¶¼µ÷µ½Ô­Ê¼´óĞ¡£¬¿É³·Ïú£¡\n"
-		tips += "2¡¢Ğı×ª°´Ô­Ê¼·½Ïò½øĞĞ£¬Ã¿¸öÎïÌåĞı×ª½Ç¶ÈÈ¡×î´ó×îĞ¡½Ç¶ÈÒ»¸öËæ»úÖµ£¬\n      µ¥»÷ÓÒ¼ü¿É½«Ñ¡ÔñÎïÌå½Ç¶È¶¼µ÷µ½Ô­Ê¼½Ç¶È£¬¿É³·Ïú£¡"
+		tips = "1ï¿½ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½Ä°Ù·Ö±È½ï¿½ï¿½Ğ£ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å´ï¿½Ğ¡È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¡ï¿½Ù·ï¿½\n      ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò¼ï¿½ï¿½É½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½å¶¼ï¿½ï¿½ï¿½ï¿½Ô­Ê¼ï¿½ï¿½Ğ¡ï¿½ï¿½ï¿½É³ï¿½ï¿½ï¿½ï¿½ï¿½\n"
+		tips += "2ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Ô­Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ£ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½Ç¶ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¡ï¿½Ç¶ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½\n      ï¿½ï¿½ï¿½ï¿½ï¿½Ò¼ï¿½ï¿½É½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶È¶ï¿½ï¿½ï¿½ï¿½ï¿½Ô­Ê¼ï¿½Ç¶È£ï¿½ï¿½É³ï¿½ï¿½ï¿½ï¿½ï¿½"
 		messagebox tips title: fl_tips01 beep:off
 	)
 	on btn15 pressed  do
 	(
-		str = "ÖáĞÄ¹éÖĞ£º½«Ñ¡ÔñµÄÎïÌåÖáĞÄ¹éÖĞ£¬Ïàµ±ÓÚHierarchyÃæ°åµÄPivot/Affect Pivot Only -\n"
-		str +="Center to Object¡£×ñÑ­¡°´ò×éÎïÌåÓÅÏÈ¡±¡£\n"
-		str +="ÖáĞÄ¹éµ×£º½«Ñ¡ÔñµÄÎïÌåÖáĞÄ¹éµ½µ×²¿ÖĞĞÄÎ»ÖÃ¡£×ñÑ­¡°´ò×éÎïÌåÓÅÏÈ¡±¡£\n"
-		str +="¹é×ø±êÖĞĞÄ£º½«ÎïÌåÒÆµ½ÖáĞÄÎ»ÖÃ£¬Ïàµ±ÓÚHierarchyÃæ°åµÄPivot/Affect Object Only - \n"
-		str +="Center to Pivot.×ñÑ­¡°´ò×éÎïÌåÓÅÏÈ¡±¡£\n"
-		str +="×îµÍµã¹éÁã£º½«Ñ¡ÔñÎïÌåÒÔ×îµÍµãÎª×¼ÒÆµ½X£¬YÖáË®Æ½ÃæÉÏ¡£×ñÑ­¡°´ò×éÎïÌåÓÅÏÈ¡±¡£\n"
-		str +="´ò×éÎïÌåÓÅÏÈ£ºÈç¹û¹´Ñ¡£¬Ö»¶Ô´ò×éÎïÌåµÄ×îÍâ²ã×é±ğ½øĞĞÖáĞÄ²Ù×÷£¬²»¹´Ñ¡¶ÔÑ¡Ôñ\nÎïÌåËùÓĞ×ÓÎïÌå²Ù×÷¡£"
+		str = "ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½Ğ£ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½Ğ£ï¿½ï¿½àµ±ï¿½ï¿½Hierarchyï¿½ï¿½ï¿½ï¿½Pivot/Affect Pivot Only -\n"
+		str +="Center to Objectï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½\n"
+		str +="ï¿½ï¿½ï¿½Ä¹ï¿½×£ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹éµ½ï¿½×²ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ã¡ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½\n"
+		str +="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ã£ï¿½ï¿½àµ±ï¿½ï¿½Hierarchyï¿½ï¿½ï¿½ï¿½Pivot/Affect Object Only - \n"
+		str +="Center to Pivot.ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½\n"
+		str +="ï¿½ï¿½Íµï¿½ï¿½ï¿½ã£ºï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½Îª×¼ï¿½Æµï¿½Xï¿½ï¿½Yï¿½ï¿½Ë®Æ½ï¿½ï¿½ï¿½Ï¡ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½\n"
+		str +="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Ö»ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Ñ¡ï¿½ï¿½\nï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 		messagebox str title: fl_tips01 beep:off
 	)
 	on SPrandomSelect moved pp do

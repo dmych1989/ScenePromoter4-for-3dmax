@@ -2,20 +2,19 @@
 --by:feilang
 --2008-07-30
 
---×÷Õß£º·ÉÀË
+--ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½ï¿½
 --Author:Feilang
---www.cgplusplus.com
 --------------------------------------------------
---»¶Ó­Ê¹ÓÃ³¡¾°ÖúÊÖ4.0 
+--ï¿½ï¿½Ó­Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0 
 
-----¿ªÔ´·îÏ×----
+----ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½----
 
 ---------------------------------------------------
---³¡¾°ÖúÊÖ4.0		2011-04-01
---³¡¾°ÖúÊÖ3.0		2009-08-01
---³¡¾°ÖúÊÖ2.6		2009-03-30
---³¡¾°ÖúÊÖ2.0		2008-08-06
---³¡¾°ÖúÊÖ1.0		2008-05-27
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0		2011-04-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3.0		2009-08-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.6		2009-03-30
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.0		2008-08-06
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1.0		2008-05-27
 
 try destroydialog fl_modifyVrayMtl catch()
 rollout fl_modifyVrayMtl "VRayMtl Modification" width:166 height:189
@@ -481,9 +480,9 @@ fn fl_refrInterOff origMtl =
 	)
 	on btn21 pressed  do
 	(
-		tips =  "³¡¾°VRayMtlÐÞ¸Ä£¬¶Ô³¡¾°VRayMtl²ÄÖÊÕûÌåµÄ¿ØÖÆ£¬¿ÉÒÔÑ¡ÔñWhole£¨Õû¸ö³¡¾°ËùÓÐ²ÄÖÊ£©\nºÍMtlEditor£¨²ÄÖÊ±à¼­Æ÷£©Á½ÖÖ·¶Î§£¬ÄÜ¹»ÐÞ¸ÄµÄ¸´ºÏ²ÄÖÊ°üÀ¨£º"
-		tips += "Blend,Composite,Double Dided,\nMulti/sub-Object,Shell Material,TopBottom,VRay2SidedMtl,VRayBlendMtl,VRayMtlWrapper,VRayOverrideMtl£¬\n"
-		messagebox tips title:("²ÄÖÊ×ª»»") beep:off
+		tips =  "ï¿½ï¿½ï¿½ï¿½VRayMtlï¿½Þ¸Ä£ï¿½ï¿½Ô³ï¿½ï¿½ï¿½VRayMtlï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Wholeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½Ê£ï¿½\nï¿½ï¿½MtlEditorï¿½ï¿½ï¿½ï¿½ï¿½Ê±à¼­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½Î§ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½Þ¸ÄµÄ¸ï¿½ï¿½Ï²ï¿½ï¿½Ê°ï¿½ï¿½ï¿½ï¿½ï¿½"
+		tips += "Blend,Composite,Double Dided,\nMulti/sub-Object,Shell Material,TopBottom,VRay2SidedMtl,VRayBlendMtl,VRayMtlWrapper,VRayOverrideMtlï¿½ï¿½\n"
+		messagebox tips title:("ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½") beep:off
 	)
 	on fl_modifyVrayMtl moved pp do
 	(

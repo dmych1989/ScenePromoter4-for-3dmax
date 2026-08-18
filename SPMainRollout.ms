@@ -1,31 +1,30 @@
---³¡¾°ÖúÊÖ4.1.00
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.1.00
 
---×÷Õß£º·ÉÀË
+--ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½ï¿½
 --Author:Feilang
---www.cgplusplus.com
 --------------------------------------------------
---»¶Ó­Ê¹ÓÃ³¡¾°ÖúÊÖ4.0 
+--ï¿½ï¿½Ó­Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0 
 
-----¿ªÔ´·îÏ×----
+----ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½----
 
 ---------------------------------------------------
---³¡¾°ÖúÊÖ4.1 	2012-02-01
---³¡¾°ÖúÊÖ4.0		2011-04-01
---³¡¾°ÖúÊÖ3.0		2009-08-01
---³¡¾°ÖúÊÖ2.6		2009-03-30
---³¡¾°ÖúÊÖ2.0		2008-08-06
---³¡¾°ÖúÊÖ1.0		2008-05-27
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.1 	2012-02-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0		2011-04-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3.0		2009-08-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.6		2009-03-30
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.0		2008-08-06
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1.0		2008-05-27
 
 global spRolHeight=execute (getinisetting spInifilepath "Main" "Height")
 global spRolWidth=execute (getinisetting spInifilepath "Main" "Width")
 
 --main ui
-rollout ScenePromoter4Rol "³¡¾°ÖúÊÖ" width:160 height:500
+rollout ScenePromoter4Rol "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" width:160 height:500
 (
 	local bmpPath = spRootPath+"\\images"
-	local tit="³¡¾°ÖúÊÖÌáÊ¾",sepStrs=""
+	local tit="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾",sepStrs=""
 	local listID = (getinisetting spInifilepath "Main" "listid") as integer
-	--²ÄÖÊ·ÖÀà´æ´¢
+	--ï¿½ï¿½ï¿½Ê·ï¿½ï¿½ï¿½æ´¢
 	local sepcMatCt=#(),sepcMat=#()
 	--Treeview datas
 	local theColors = CGplusplusFunc.getUIcol()
@@ -41,18 +40,17 @@ rollout ScenePromoter4Rol "³¡¾°ÖúÊÖ" width:160 height:500
 	local circleBmp = CGplusplusFunc.divideIconBM (CGplusplusFunc.changeBackColor circleBmpF theColors[4]) 3
 	local minMaxBmp = #(btnmapsNM[3],btnmapsNM[3])
 	
-	ImgTag setbtn "" pos:[120,0] width:20 height:20 bitmap:(btnmapsNM[1]) tooltip:"Ñ¡Ïî"
-	ImgTag linkbbs "" pos:[100,0] width:20 height:20 bitmap:(btnmapsNM[2]) tooltip:"¹«ÖÚºÅ£ºÉ½Ò½ÃüÏó²·"
-	ImgTag minMax "" pos:[140,0] width:20 height:20 bitmap:(minMaxBmp[1]) tooltip:"ÊÕËõÃæ°å"
-	ImgTag hl1 "" pos:[0,0] width:20 height:20 bitmap:circleBmp[1] tooltip:"µÚÒ»ÆÁ"
-	ImgTag hl2 "" pos:[20,0] width:20 height:20 bitmap:circleBmp[3] tooltip:"µÚ¶şÆÁ"
-	ImgTag hl3 "" pos:[40,0] width:20 height:20 bitmap:circleBmp[1] tooltip:"µÚÈıÆÁ"
-	ImgTag hl4 "" pos:[60,0] width:20 height:20 bitmap:circleBmp[1] tooltip:"µÚËÄÆÁ"
-	ImgTag hl5 "" pos:[80,0] width:20 height:20 bitmap:circleBmp[1] tooltip:"µÚÎåÆÁ"
-	-- ActiveXControl lk "http://www.cgplusplus.com/mini/sp4001.html" [disabled: dead domain causes script error] pos:[0,0] width:0 height:0
+	ImgTag setbtn "" pos:[120,0] width:20 height:20 bitmap:(btnmapsNM[1]) tooltip:"Ñ¡ï¿½ï¿½"
+	ImgTag linkbbs "" pos:[100,0] width:20 height:20 bitmap:(btnmapsNM[2]) tooltip:"ï¿½ï¿½ï¿½ÚºÅ£ï¿½É½Ò½ï¿½ï¿½ï¿½ï¿½"
+	ImgTag minMax "" pos:[140,0] width:20 height:20 bitmap:(minMaxBmp[1]) tooltip:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+	ImgTag hl1 "" pos:[0,0] width:20 height:20 bitmap:circleBmp[1] tooltip:"ï¿½ï¿½Ò»ï¿½ï¿½"
+	ImgTag hl2 "" pos:[20,0] width:20 height:20 bitmap:circleBmp[3] tooltip:"ï¿½Ú¶ï¿½ï¿½ï¿½"
+	ImgTag hl3 "" pos:[40,0] width:20 height:20 bitmap:circleBmp[1] tooltip:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+	ImgTag hl4 "" pos:[60,0] width:20 height:20 bitmap:circleBmp[1] tooltip:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+	ImgTag hl5 "" pos:[80,0] width:20 height:20 bitmap:circleBmp[1] tooltip:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 
 	local hls=#(hl1,hl2,hl3,hl4,hl5)
-	--ÑÕÉ«×ª»»
+	--ï¿½ï¿½É«×ªï¿½ï¿½
 	fn getColFromArgb clr =
 	(
 		(DotnetClass "System.Drawing.Color").FromArgb 255 clr.r clr.g clr.b
@@ -73,45 +71,45 @@ rollout ScenePromoter4Rol "³¡¾°ÖúÊÖ" width:160 height:500
 		)
 	)
 	
-	--³õÊ¼»¯ÁĞ±í
+	--ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ğ±ï¿½
 	fn initTreeView =
 	(
-		--ÊÇ·ñÏÔÊ¾×ó±ßµÄ²ã¼¶Ïß
+		--ï¿½Ç·ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ßµÄ²ã¼¶ï¿½ï¿½
 		tv.ShowLines = false
-		--Á´½Ó×ÖµÄÑÕÉ«
+		--ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½É«
 		tv.ForeColor = getColFromArgb theColors[1]	
-		--±³¾°É«
+		--ï¿½ï¿½ï¿½ï¿½É«
 		tv.BackColor = getColFromArgb theColors[2]	
 		
 		tv.Height = ScenePromoter4Rol.height - 20
 		tv.Width = ScenePromoter4Rol.width
-		--°´Å¥ÎÄ±¾¸ß¶È
+		--ï¿½ï¿½Å¥ï¿½Ä±ï¿½ï¿½ß¶ï¿½
 		tv.ItemHeight = 16 
-		--×ó±ßËõ½ø
+		--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		tv.Indent=12 
-		--±ß¿òĞÎÊ½£¬¿ÉÒÔ°Ñ None ¸Ä³É Fixed3D »òÕß FixedSingle
+		--ï¿½ß¿ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Ô°ï¿½ None ï¿½Ä³ï¿½ Fixed3D ï¿½ï¿½ï¿½ï¿½ FixedSingle
 		tv.BorderStyle=(dotNetClass "System.Windows.Forms.BorderStyle").None 
 	)
-	--ÉèÖÃÎÄ±¾ÑÕÉ«
+	--ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½É«
 	fn refeshColor = if textNodes.count!=0 then for t in textNodes do t.ForeColor =getColFromArgb theColors[3]
-	--ÓÃÓÚÖ÷½çÃæÉèÖÃ£­£­ÑÕÉ«ÉèÖÃÏî
+	--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	fn refeshUIColor =
 	(
-		--Á´½Ó×ÖµÄÑÕÉ«
+		--ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½É«
 		tv.ForeColor = getColFromArgb theColors[1]
 		tv.BackColor = getColFromArgb theColors[2]
 		refeshColor()
 	)
 	fn refeshInfo =
-	(	--Ë¢ĞÂ³¡¾°ĞÅÏ¢
+	(	--Ë¢ï¿½Â³ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 		timestart=timestamp()
 		tv.Nodes.Clear()
 		tv.BeginUpdate()
 		tv.Nodes.add ""
-		tv.Nodes.add "Ë¢ĞÂ³¡¾°ĞÅÏ¢"
+		tv.Nodes.add "Ë¢ï¿½Â³ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢"
 		tv.Nodes.add sepStrs
 		textNodes=#()
-		--ÎïÌåĞÅÏ¢
+		--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 		objs_num=objects.count;s_num=selection.count
 		all_poly=0;s_poly=0
 			for i=1 to objs_num do
@@ -119,18 +117,18 @@ rollout ScenePromoter4Rol "³¡¾°ÖúÊÖ" width:160 height:500
 				tempNum=(getPolygonCount objects[i])[1]
 				all_poly+=tempNum
 			)
-		newNode = tv.Nodes.add ("×ÜÃæÊı:"+CGplusplusFunc.commaNumbers (all_poly as string))
+		newNode = tv.Nodes.add ("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:"+CGplusplusFunc.commaNumbers (all_poly as string))
 		append textNodes newNode
 		for j=1 to s_num do
 		(
 			tempNum=(getPolygonCount selection[j])[1]
 			s_poly+=tempNum
 		)
-		newNode = tv.Nodes.add ("Ñ¡ÔñÃæÊı:"+CGplusplusFunc.commaNumbers (s_poly as string))
+		newNode = tv.Nodes.add ("Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:"+CGplusplusFunc.commaNumbers (s_poly as string))
 		append textNodes newNode
-		newNode = tv.Nodes.add ("ËùÓĞÎïÌå:"+CGplusplusFunc.commaNumbers (objs_num as string))
+		newNode = tv.Nodes.add ("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:"+CGplusplusFunc.commaNumbers (objs_num as string))
 		append textNodes newNode
-		newNode = tv.Nodes.add ("Ñ¡ÔñÎïÌå:"+CGplusplusFunc.commaNumbers (s_num as string))
+		newNode = tv.Nodes.add ("Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:"+CGplusplusFunc.commaNumbers (s_num as string))
 		append textNodes newNode
 		noMtlObjsNum=0
 		for i in objects do -- collect no materail objects
@@ -140,26 +138,26 @@ rollout ScenePromoter4Rol "³¡¾°ÖúÊÖ" width:160 height:500
 				else try if (isKindof i shape)  then ( if i.render_renderable then noMtlObjsNum+=1) catch()
 			)
 		)
-		tv.Nodes.add ("Ã»²ÄÖÊÎïÌå:"+CGplusplusFunc.commaNumbers (noMtlObjsNum as string))
-		--²ÄÖÊĞÅÏ¢
+		tv.Nodes.add ("Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:"+CGplusplusFunc.commaNumbers (noMtlObjsNum as string))
+		--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 		allMtls = for i in sceneMaterials collect i.name	--collect all the name of scene mat
 		allMtlsNum = allMtls.count
 		sameMtls=(CGplusplusFunc.sameItemNum allMtls)[1]
-		tv.Nodes.add sepStrs--¿ÕĞĞ
-		tv.Nodes.add ("ËùÓĞ²ÄÖÊ:"+CGplusplusFunc.commaNumbers (allMtlsNum as string))
-		selectedMtls=#()--Ñ¡ÔñÎïÌå²ÄÖÊ
+		tv.Nodes.add sepStrs--ï¿½ï¿½ï¿½ï¿½
+		tv.Nodes.add ("ï¿½ï¿½ï¿½Ğ²ï¿½ï¿½ï¿½:"+CGplusplusFunc.commaNumbers (allMtlsNum as string))
+		selectedMtls=#()--Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		for i in selection do
 			if i.material!=undefined then
 				if  (findItem selectedMtls i.material)==0 then
 					append selectedMtls i.material	--collect mat of seleted objects
-		tv.Nodes.add ("Ñ¡ÔñÎïÌå²ÄÖÊ:"+CGplusplusFunc.commaNumbers (selectedMtls.count as string))
-		tv.Nodes.add ("Í¬Ãû²ÄÖÊ:"+CGplusplusFunc.commaNumbers (sameMtls as string))
-		tv.Nodes.add ("²ÄÖÊ¿â:"+CGplusplusFunc.commaNumbers (currentMaterialLibrary.count as string))
+		tv.Nodes.add ("Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:"+CGplusplusFunc.commaNumbers (selectedMtls.count as string))
+		tv.Nodes.add ("Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:"+CGplusplusFunc.commaNumbers (sameMtls as string))
+		tv.Nodes.add ("ï¿½ï¿½ï¿½Ê¿ï¿½:"+CGplusplusFunc.commaNumbers (currentMaterialLibrary.count as string))
 		missmapmats = (CGplusplusFunc.getMissingmapMats()).count
-		tv.Nodes.add ("¶ªÊ§ÌùÍ¼:"+CGplusplusFunc.commaNumbers (missmapmats as string))
-		--¾ßÌå²ÄÖÊÀàĞÍ
+		tv.Nodes.add ("ï¿½ï¿½Ê§ï¿½ï¿½Í¼:"+CGplusplusFunc.commaNumbers (missmapmats as string))
+		--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		if allMtlsNum!=0 then (
-			tv.Nodes.add sepStrs  --¿ÕĞĞ
+			tv.Nodes.add sepStrs  --ï¿½ï¿½ï¿½ï¿½
 			matTypes=CGplusplusFunc.getSceneMats()
 			for s in matTypes do
 			(
@@ -169,8 +167,8 @@ rollout ScenePromoter4Rol "³¡¾°ÖúÊÖ" width:160 height:500
 			)
 		)
 		timeend=timestamp()
-		tv.Nodes.add sepStrs --¿ÕĞĞ
-		newNode = tv.Nodes.add ("ÓÃÊ±"+((timeend-timestart)/1000.0) as string+"Ãë")
+		tv.Nodes.add sepStrs --ï¿½ï¿½ï¿½ï¿½
+		newNode = tv.Nodes.add ("ï¿½ï¿½Ê±"+((timeend-timestart)/1000.0) as string+"ï¿½ï¿½")
 		append textNodes newNode
 		refeshColor()
 		tv.EndUpdate()
@@ -185,7 +183,7 @@ rollout ScenePromoter4Rol "³¡¾°ÖúÊÖ" width:160 height:500
 		)
 	)
 	fn resetUI s =
-	(	--ÖØĞÂ²¼ÖÃUI,SÎªµÚ¼¸ÆÁ
+	(	--ï¿½ï¿½ï¿½Â²ï¿½ï¿½ï¿½UI,SÎªï¿½Ú¼ï¿½ï¿½ï¿½
 		secStr="";itemsFile=#(undefined)
 		for i in hls do i.bitmap = circleBmp[1]
 		hls[s].bitmap = circleBmp[3]
@@ -207,12 +205,12 @@ rollout ScenePromoter4Rol "³¡¾°ÖúÊÖ" width:160 height:500
 		if secStr!="" then
 		(	tv.Nodes.Clear()
 			tv.Nodes.Add ""
-			--¶ÁÈ¡½Å±¾ÎÄ¼şÂ·¾¶
+			--ï¿½ï¿½È¡ï¿½Å±ï¿½ï¿½Ä¼ï¿½Â·ï¿½ï¿½
 			itemsTxt=#()
 			itemsTxtArr=getinisetting spIniCategory secStr
 			for s in itemsTxtArr do (
 				temp=getinisetting spIniCategory secStr s
-				if temp!="undefined" then (	--Èç¹ûÊÇundefined¼´Éú³É¼ä¸ôÏß¡®--------¡¯
+				if temp!="undefined" then (	--ï¿½ï¿½ï¿½ï¿½ï¿½undefinedï¿½ï¿½ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½ß¡ï¿½--------ï¿½ï¿½
 					append itemsTxt (getFilenameFile temp)
 					append itemsFile temp
 				)
@@ -224,8 +222,8 @@ rollout ScenePromoter4Rol "³¡¾°ÖúÊÖ" width:160 height:500
 			) --end for
 			if itemsTxt.count == 0 then
 			(
-				strArr = #("Äã¿ÉÒÔÔÚ´ËÌí¼ÓÆäËû","ms»òÕßmse¸ñÊ½½Å±¾","","»òÕßÌí¼ÓÒ»¸öexeÎÄ¼ş", \
-					"µÄ¿ì½İ·½Ê½¡£","","µ¥»÷ÓÒÉÏ½ÇµÄ°âÊÖ","--Ìí¼Ó¼´¿É¡£")
+				strArr = #("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½","msï¿½ï¿½ï¿½ï¿½mseï¿½ï¿½Ê½ï¿½Å±ï¿½","","ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½exeï¿½Ä¼ï¿½", \
+					"ï¿½Ä¿ï¿½İ·ï¿½Ê½ï¿½ï¿½","","ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï½ÇµÄ°ï¿½ï¿½ï¿½","--ï¿½ï¿½ï¿½Ó¼ï¿½ï¿½É¡ï¿½")
 				textNodes=#()
 				for s in 1 to strArr.count do
 				(
@@ -244,7 +242,7 @@ rollout ScenePromoter4Rol "³¡¾°ÖúÊÖ" width:160 height:500
 			minMax.bitmap = btnmapsNM[3]
 		)
 	)--end resetUI
-	--ÓÃÓÚÖ÷½çÃæÉèÖÃ£­£­µ¼º½±³¾°É«ĞŞ¸Ä
+	--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½Ş¸ï¿½
 	fn refreshNav =
 	(
 		btnmapsNM = CGplusplusFunc.divideIconBM (CGplusplusFunc.changeBackColor btnmap theColors[4]) 4
@@ -259,20 +257,20 @@ rollout ScenePromoter4Rol "³¡¾°ÖúÊÖ" width:160 height:500
 		SetDialogBitmap ScenePromoter4Rol (CGplusplusFunc.changeNavBG theColors[4])
 	)
 	fn pressLink s nd =
-	(	--µ¥»÷µÚSÆÁµÚidx¸öÁ´½Ó
+	(	--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Sï¿½ï¿½ï¿½ï¿½idxï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		idx=nd.index+1
 		case s of
 		(	1: 
 			(	case idx of 
 				(	1: ()
 					2: refeshInfo()
-					8: CGplusplusFunc.matAndObjOps 1 --Ñ¡ÔñÃ»ÓĞ²ÄÖÊµÄÎïÌå
-					10: CGplusplusFunc.matAndObjOps 2 --µ¼ÈëËùÓĞ²ÄÖÊ
-					11: CGplusplusFunc.matAndObjOps 3 --µ¼ÈëÑ¡Ôñ²ÄÖÊ
-					12: CGplusplusFunc.matAndObjOps 4 --µ¼ÈëÍ¬Ãû²ÄÖÊ
-					13: CGplusplusFunc.matAndObjOps 5 --µ¼Èë²ÄÖÊ¿â²ÄÖÊ
-					14: CGplusplusFunc.matAndObjOps 6 --µ¼Èë¶ªÊ§²ÄÖÊ
-					default: --µ¼ÈëÌØ¶¨²ÄÖÊ
+					8: CGplusplusFunc.matAndObjOps 1 --Ñ¡ï¿½ï¿½Ã»ï¿½Ğ²ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½
+					10: CGplusplusFunc.matAndObjOps 2 --ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ²ï¿½ï¿½ï¿½
+					11: CGplusplusFunc.matAndObjOps 3 --ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½
+					12: CGplusplusFunc.matAndObjOps 4 --ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+					13: CGplusplusFunc.matAndObjOps 5 --ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¿ï¿½ï¿½ï¿½ï¿½
+					14: CGplusplusFunc.matAndObjOps 6 --ï¿½ï¿½ï¿½ë¶ªÊ§ï¿½ï¿½ï¿½ï¿½
+					default: --ï¿½ï¿½ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½ï¿½ï¿½
 					(	totalId=tv.nodes.count
 						if idx >=16 and idx <= totalId-2 then
 						(	str=nd.text
@@ -331,7 +329,7 @@ rollout ScenePromoter4Rol "³¡¾°ÖúÊÖ" width:160 height:500
 	)
 	on ScenePromoter4Rol resized p do
 	(
-		--¼ì²âÊÇ·ñÍ£¿¿£¬Èç¹ûÍ£¿¿Ôò¹Ø±ÕËõ·Å
+		--ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½
 		spDockState=execute (getinisetting spInifilepath "Main" "DockState")
 		if spDockState == #float then
 		(
@@ -398,7 +396,7 @@ rollout ScenePromoter4Rol "³¡¾°ÖúÊÖ" width:160 height:500
 	on minMax mouseout do minMax.bitmap = minMaxBmp[1]
 	on minMax click do 
 	(
-		--¼ì²âÊÇ·ñÍ£¿¿£¬Èç¹ûÍ£¿¿Ôò¹Ø±ÕËõ·Å
+		--ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½
 		spDockState=execute (getinisetting spInifilepath "Main" "DockState")
 		if spDockState == #float then
 		(

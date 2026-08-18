@@ -1,42 +1,41 @@
--- VRay´úÀí¹ÜÀí2.0
--- ×÷Õß£º·ÉÀË 
+-- VRayï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.0
+-- ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½ï¿½ 
 -- 2011.04.06
---http://www.cgplusplus.com/
 
---VRay´úÀí¹ÜÀíÆ÷1.0
---×÷Õß£º·ÉÀË 
+--VRayï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1.0
+--ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½ï¿½ 
 --2008-11-3
 
 --------------------------------------------------
---»¶Ó­Ê¹ÓÃ³¡¾°ÖúÊÖ4.0 
+--ï¿½ï¿½Ó­Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0 
 
-----¿ªÔ´·îÏ×----
+----ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½----
 
 ---------------------------------------------------
---³¡¾°ÖúÊÖ4.0		2011-04-01
---³¡¾°ÖúÊÖ3.0		2009-08-01
---³¡¾°ÖúÊÖ2.6		2009-03-30
---³¡¾°ÖúÊÖ2.0		2008-08-06
---³¡¾°ÖúÊÖ1.0		2008-05-27
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0		2011-04-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3.0		2009-08-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.6		2009-03-30
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.0		2008-08-06
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1.0		2008-05-27
 
 try destroydialog fl_vrayproxyMgr2 catch()
 global fl_vrayproxyMgr2,fl_collectVRayProxies
-rollout fl_vrayproxyMgr2 "VRay´úÀí¹ÜÀí2.0" width:457 height:396
+rollout fl_vrayproxyMgr2 "VRayï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.0" width:457 height:396
 (
-	multiListBox lbx_vrayProxyPaths "VRay´úÀíÂ·¾¶ÁÐ±í£º" pos:[4,65] width:450 height:12
-	radiobuttons rdo_area "ÏÔÊ¾³¡¾°ÖÐ" pos:[8,5] width:135 height:46 labels:#("ËùÓÐVRay´úÀí    ", "¶ªÊ§VRay´úÀí    ") default:1 columns:1
-	button btn_setPath "ÉèÖÃÂ·¾¶" pos:[5,252] width:95 height:18
-	radiobuttons rdo_display "Display (Ñ¡ÖÐ´úÀíµÄÏÔÊ¾ÐÎÊ½)£º" pos:[176,3] width:408 height:62 labels:#("bounding box(±ß½ç¿ò)                  ", "preview from file(´ÓÎÄ¼þÔ¤ÀÀ)                          ", "point(µã)           ") columns:1
-	button btn_select "Ñ¡Ôñ´úÀíÎïÌå" pos:[106,252] width:95 height:18
+	multiListBox lbx_vrayProxyPaths "VRayï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½" pos:[4,65] width:450 height:12
+	radiobuttons rdo_area "ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[8,5] width:135 height:46 labels:#("ï¿½ï¿½ï¿½ï¿½VRayï¿½ï¿½ï¿½ï¿½    ", "ï¿½ï¿½Ê§VRayï¿½ï¿½ï¿½ï¿½    ") default:1 columns:1
+	button btn_setPath "ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½" pos:[5,252] width:95 height:18
+	radiobuttons rdo_display "Display (Ñ¡ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê½)ï¿½ï¿½" pos:[176,3] width:408 height:62 labels:#("bounding box(ï¿½ß½ï¿½ï¿½)                  ", "preview from file(ï¿½ï¿½ï¿½Ä¼ï¿½Ô¤ï¿½ï¿½)                          ", "point(ï¿½ï¿½)           ") columns:1
+	button btn_select "Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[106,252] width:95 height:18
 
-	GroupBox grp1 "´ò°üÁÐ±íÑ¡ÔñµÄ´úÀí" pos:[4,279] width:447 height:108
-	edittext edt_output "´ò°üÂ·¾¶£º" pos:[14,298] width:365 height:20 
-	button btn_begin "¿ªÊ¼´ò°ü" pos:[320,335] width:126 height:40 
-	button btn_browse "Ñ¡Ôñ" pos:[387,299] width:60 height:18
-	checkbox colmap "Ë³±ã´ò°ü´úÀíËùÓÃµ½µÄÌùÍ¼" pos:[15,343] width:209 height:18 checked:true
-	checkbox updvr "¸üÐÂVRay´úÀíÂ·¾¶" pos:[15,322] width:133 height:16 checked:true
-	checkbox updmap "¸üÐÂ´úÀíËùÓÃÌùÍ¼Â·¾¶" pos:[15,362] width:197 height:18 checked:true
-	--ÊÕ¼¯ËùÓÐVRay´úÀí
+	GroupBox grp1 "ï¿½ï¿½ï¿½ï¿½Ð±ï¿½Ñ¡ï¿½ï¿½Ä´ï¿½ï¿½ï¿½" pos:[4,279] width:447 height:108
+	edittext edt_output "ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½" pos:[14,298] width:365 height:20 
+	button btn_begin "ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½" pos:[320,335] width:126 height:40 
+	button btn_browse "Ñ¡ï¿½ï¿½" pos:[387,299] width:60 height:18
+	checkbox colmap "Ë³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½Í¼" pos:[15,343] width:209 height:18 checked:true
+	checkbox updvr "ï¿½ï¿½ï¿½ï¿½VRayï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½" pos:[15,322] width:133 height:16 checked:true
+	checkbox updmap "ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Â·ï¿½ï¿½" pos:[15,362] width:197 height:18 checked:true
+	--ï¿½Õ¼ï¿½ï¿½ï¿½ï¿½ï¿½VRayï¿½ï¿½ï¿½ï¿½
 	fn fl_collectAllVrayProxies = 
 	(	allVP = #()
 		for i in geometry where classof i == VRayProxy do
@@ -45,9 +44,9 @@ rollout fl_vrayproxyMgr2 "VRay´úÀí¹ÜÀí2.0" width:457 height:396
 			if findItem allVP f == 0 then append allVP f
 		)
 		if allVP.count != 0 then lbx_vrayProxyPaths.items = allVP --Defined the listbox
-		else lbx_vrayProxyPaths.items =#( "Ã»ÓÐÕÒµ½VRay´úÀí")
+		else lbx_vrayProxyPaths.items =#( "Ã»ï¿½ï¿½ï¿½Òµï¿½VRayï¿½ï¿½ï¿½ï¿½")
 	)
-	--ÊÕ¼¯¶ªÊ§VRay´úÀí
+	--ï¿½Õ¼ï¿½ï¿½ï¿½Ê§VRayï¿½ï¿½ï¿½ï¿½
 	fn fl_collectMissVrayProxies =
 	(
 		missVP = #()
@@ -57,9 +56,9 @@ rollout fl_vrayproxyMgr2 "VRay´úÀí¹ÜÀí2.0" width:457 height:396
 			if findItem missVP f == 0 and not doesfileexist f then append missVP f
 		)
 		if missVP.count != 0 then lbx_vrayProxyPaths.items = missVP --Defined the listbox
-		else lbx_vrayProxyPaths.items = #( "Ã»ÓÐÕÒµ½¶ªÊ§VRay´úÀí")
+		else lbx_vrayProxyPaths.items = #( "Ã»ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½Ê§VRayï¿½ï¿½ï¿½ï¿½")
 	)
-	--¸ù¾ÝËù¸øÂ·¾¶ÊÕ¼¯VRay´úÀí
+	--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½Õ¼ï¿½VRayï¿½ï¿½ï¿½ï¿½
 	fn fl_collectGivenVP arr =
 	(	colVP = #()
 		for i in geometry while not isDeleted i where classof i == VRayProxy do
@@ -69,7 +68,7 @@ rollout fl_vrayproxyMgr2 "VRay´úÀí¹ÜÀí2.0" width:457 height:396
 		)
 		colVP
 	)
-	--ÅÐ¶ÏÎÄ¼þÃû
+	--ï¿½Ð¶ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
 	fn fl_ifVrmesh thepath = if getFilenameType thepath == ".vrmesh" then return true else return false
 	fn fl_getTheInstanceVP thepath =
 	(	local tempObj=#();i = 1
@@ -82,7 +81,7 @@ rollout fl_vrayproxyMgr2 "VRay´úÀí¹ÜÀí2.0" width:457 height:396
 		)
 		tempObj
 	)
-	--ÁÐ±íµ¥¸öÂ·¾¶µÄÏÔÊ¾·½Ê½
+	--ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê½
 	fn fl_firstDisplay =
 	(
 		s=lbx_vrayProxyPaths.selection as array
@@ -91,27 +90,27 @@ rollout fl_vrayproxyMgr2 "VRay´úÀí¹ÜÀí2.0" width:457 height:396
 		tempState = 1
  		obj = fl_getTheInstanceVP thepath
 		if obj[1] != undefined then tempState = obj[1].display + 1
-		rdo_display.state = tempState --ÉèÖÃÏÔÊ¾·½Ê½
+		rdo_display.state = tempState --ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê½
 		)
 	)
-	--Ë¢ÐÂÁÐ±í
+	--Ë¢ï¿½ï¿½ï¿½Ð±ï¿½
 	fn fl_refeshListbox stat =
 	(
 		case stat of
 		(
-			1: (		fl_collectAllVrayProxies() --ÏÔÊ¾ËùÓÐVRay´úÀí
-					fl_firstDisplay() --µÚÒ»¸öµÄÏÔÊ¾·½Ê½
+			1: (		fl_collectAllVrayProxies() --ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½VRayï¿½ï¿½ï¿½ï¿½
+					fl_firstDisplay() --ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê½
 				)
-			2: (		fl_collectMissVrayProxies() --ÏÔÊ¾¶ªÊ§VRay´úÀí
-					fl_firstDisplay() --µÚÒ»¸öµÄÏÔÊ¾·½Ê½
+			2: (		fl_collectMissVrayProxies() --ï¿½ï¿½Ê¾ï¿½ï¿½Ê§VRayï¿½ï¿½ï¿½ï¿½
+					fl_firstDisplay() --ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê½
 				)
 		)
 	)
-	--´ò°ü
+	--ï¿½ï¿½ï¿½
 	fn fl_copyVP arr newDir colmap:true updvr:true updmap:true =
-	(	--arr ,´úÀíÂ·¾¶
+	(	--arr ,ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
  		for a in arr do (
-			--´ò°ü´úÀí
+			--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			colVP = fl_getTheInstanceVP a
 			if colVP[1] != undefined then
 			(	
@@ -119,12 +118,12 @@ rollout fl_vrayproxyMgr2 "VRay´úÀí¹ÜÀí2.0" width:457 height:396
 				newFilename = newDir + "\\" + getfilenamefile VPfileName + getfilenametype VPfileName
 				copyFile VPfileName newFilename
 			)
-			--¸üÐÂ´úÀíÂ·¾¶
+			--ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½Â·ï¿½ï¿½
 			if updvr then 
 			(
 				for c in colVP do c.filename = newDir + "\\" + getfilenamefile c.filename + getfilenametype c.filename
 			)
-			--´ò°üÌùÍ¼
+			--ï¿½ï¿½ï¿½ï¿½ï¿½Í¼
 			themaps=#()
 			for c in colVP where c.material!=undefined do
 			(	temp=getclassinstances bitmaptexture target:c.material
@@ -138,12 +137,12 @@ rollout fl_vrayproxyMgr2 "VRay´úÀí¹ÜÀí2.0" width:457 height:396
 					copyFile oldName newName
 				)
 			)
-			--¸üÐÂÌùÍ¼Â·¾¶
+			--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Â·ï¿½ï¿½
 			if updmap then for b in themaps do b.filename = newDir + "\\" + getfilenamefile b.filename + getfilenametype b.filename
 		)--end for
 	)
 
-	--ÊÕ¼¯Ã»ÓÐ¶ªÊ§µÄVRay´úÀí
+	--ï¿½Õ¼ï¿½Ã»ï¿½Ð¶ï¿½Ê§ï¿½ï¿½VRayï¿½ï¿½ï¿½ï¿½
 	fn fl_notMissingFile =
 	(
 		allVP = #()
@@ -170,19 +169,19 @@ rollout fl_vrayproxyMgr2 "VRay´úÀí¹ÜÀí2.0" width:457 height:396
 	)
 	on btn_setPath pressed do
 	(
-		newPath = getsavepath caption:"ÉèÖÃVRay´úÀíÂ·¾¶"
+		newPath = getsavepath caption:"ï¿½ï¿½ï¿½ï¿½VRayï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½"
 		if newPath != undefined then
-		(	--ÉèÖÃÐÂÂ·¾¶
+		(	--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
 		ids = lbx_vrayProxyPaths.selection as array
 		selPath = for i in ids collect lbx_vrayProxyPaths.items[i]
 			colVP = fl_collectGivenVP selPath
 			undo on (
 				if colVP.count != 0 then for v in colVP do
 				(	v.filename = newPath + "\\" + getfilenamefile v.filename + getfilenametype v.filename
-			--		CenterObject v --ÖáÐÄ¹é×ø±êÖÐÐÄ
+			--		CenterObject v --ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				)
 			) --end undo on
-			--Ë¢ÐÂÏÔÊ¾·½Ê½
+			--Ë¢ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê½
 			fl_refeshListbox rdo_area.state
 		) --end if
 	)
@@ -212,12 +211,12 @@ rollout fl_vrayproxyMgr2 "VRay´úÀí¹ÜÀí2.0" width:457 height:396
 		if edt_output.text!="" then (
 		fl_copyVP lbx_vrayProxyPaths.items edt_output.text colmap:colmap.checked updvr:updvr.checked updmap:updmap.checked
 		)
-		else messagebox "ÇëÏÈÑ¡ÔñÂ·¾¶!"
+		else messagebox "ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Â·ï¿½ï¿½!"
 		max views redraw
 	)
 	on btn_browse pressed do
 	(
-		collectPath = getSavePath caption: "Ñ¡Ôñ±£´æÂ·¾¶"
+		collectPath = getSavePath caption: "Ñ¡ï¿½ñ±£´ï¿½Â·ï¿½ï¿½"
 		if collectPath != undefined then	edt_output.text = collectPath
 	)
 	on fl_vrayproxyMgr2 moved pp do

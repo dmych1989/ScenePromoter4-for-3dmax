@@ -1,17 +1,16 @@
---×÷Õß£º·ÉÀË
+--ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½ï¿½
 --Author:Feilang
---www.cgplusplus.com
 --------------------------------------------------
---»¶Ó­Ê¹ÓÃ³¡¾°ÖúÊÖ4.0 
+--ï¿½ï¿½Ó­Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0 
 
-----¿ªÔ´·îÏ×----
+----ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½----
 
 ---------------------------------------------------
---³¡¾°ÖúÊÖ4.0		2011-04-01
---³¡¾°ÖúÊÖ3.0		2009-08-01
---³¡¾°ÖúÊÖ2.6		2009-03-30
---³¡¾°ÖúÊÖ2.0		2008-08-06
---³¡¾°ÖúÊÖ1.0		2008-05-27
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0		2011-04-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3.0		2009-08-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.6		2009-03-30
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.0		2008-08-06
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1.0		2008-05-27
 
 --minus the first array from the second
 fn fl_minusArr arrAll arrExclude  =
@@ -32,7 +31,7 @@ fn fl_getRandomcolor  =
 	local randomcolor = random black white
 	randomcolor
 )
-	(	ifcontinue=queryBox "´Ë²Ù×÷½«³¡¾°ËùÓÐ²ÄÖÊ×ªÎª²ÊÉ«Í¨µÀ£¬²¢ÇÒ²»¿ÉÄæ£¬ÊÇ·ñ¼ÌÐø£¿" title:"ÖúÊÖÌáÊ¾"	
+	(	ifcontinue=queryBox "ï¿½Ë²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½×ªÎªï¿½ï¿½É«Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½æ£¬ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" title:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾"	
 		if ifcontinue then (
 		sceneObjs=#();s=sceneMaterials.count
 		sceneObjs=for i in objects where i.material!=undefiend collect i
@@ -40,7 +39,7 @@ fn fl_getRandomcolor  =
 		(		max create mode
 				with redraw off
 				timestart=timestamp()
-				format "%\n" "ÕýÔÚ×ª²ÄÖÊ..." 
+				format "%\n" "ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½..." 
 				randomColor=fl_getRandomcolor()
 				temp_Mtl=standardmaterial()
 				temp_Mtl.name=sceneMaterials[1].name
@@ -96,11 +95,11 @@ fn fl_getRandomcolor  =
 				)--end for i=2 to s
 				max views redraw
 				timeend=timestamp()
-				format "%%Ãë\n" "²ÄÖÊ×ª»¯ÓÃÊ±" ((timeend-timestart)/1000.0)
+				format "%%ï¿½ï¿½\n" "ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½Ê±" ((timeend-timestart)/1000.0)
 		)--end if sceneObjs.count!=0
 		else 
-		(	format "%\n" "³¡¾°ÖÐÃ»ÓÐ²ÄÖÊ£¡"
-			messagebox "³¡¾°ÖÐÃ»ÓÐ²ÄÖÊ£¡"
+		(	format "%\n" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð²ï¿½ï¿½Ê£ï¿½"
+			messagebox "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð²ï¿½ï¿½Ê£ï¿½"
 		)
 		)--end if continue
 	)	--end colorMtl 

@@ -1,26 +1,25 @@
---×÷Õß£º·ÉÀË
+--ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½ï¿½
 --Author:Feilang
---www.cgplusplus.com
 --------------------------------------------------
---»¶Ó­Ê¹ÓÃ³¡¾°ÖúÊÖ4.0 
+--ï¿½ï¿½Ó­Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0 
 
-----¿ªÔ´·îÏ×----
+----ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½----
 
 ---------------------------------------------------
---³¡¾°ÖúÊÖ4.0		2011-04-01
---³¡¾°ÖúÊÖ3.0		2009-08-01
---³¡¾°ÖúÊÖ2.6		2009-03-30
---³¡¾°ÖúÊÖ2.0		2008-08-06
---³¡¾°ÖúÊÖ1.0		2008-05-27
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0		2011-04-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3.0		2009-08-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.6		2009-03-30
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.0		2008-08-06
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1.0		2008-05-27
 try destroydialog SP4mtlConverter catch() 
-rollout SP4mtlConverter "²ÄÖÊ×ª»»" width:132 height:110
+rollout SP4mtlConverter "ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½" width:132 height:110
 (
 	local clickStdmat=0,clickVraymat=0,clickSpemat=0,sceneObjs=#(),selectedMtls=#()
-	button btn_standard_2_vraymtl "Standard--->>VRayMtl" pos:[5,4] width:120 height:18 toolTip:"½«Standard²ÄÖÊ×ªÎªVRayMtl"
-	button btn_vraymtl_2_standard "VRayMtl--->>Standard" pos:[5,28] width:120 height:18 toolTip:"½«VRayMtl²ÄÖÊ×ªÎªStandard"
-	radiobuttons rdo_convertScale "²ÄÖÊ·¶Î§£º" pos:[12,52] width:93 height:46 labels:#("³¡¾°ËùÓÐ  ", "±à¼­Æ÷  ") default:1 columns:1
+	button btn_standard_2_vraymtl "Standard--->>VRayMtl" pos:[5,4] width:120 height:18 toolTip:"ï¿½ï¿½Standardï¿½ï¿½ï¿½ï¿½×ªÎªVRayMtl"
+	button btn_vraymtl_2_standard "VRayMtl--->>Standard" pos:[5,28] width:120 height:18 toolTip:"ï¿½ï¿½VRayMtlï¿½ï¿½ï¿½ï¿½×ªÎªStandard"
+	radiobuttons rdo_convertScale "ï¿½ï¿½ï¿½Ê·ï¿½Î§ï¿½ï¿½" pos:[12,52] width:93 height:46 labels:#("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ", "ï¿½à¼­ï¿½ï¿½  ") default:1 columns:1
 	button btn29 "?" pos:[108,88] width:20 height:18
-	local fl_friendllytips="³¡¾°ÖúÊÖÌáÊ¾"
+	local fl_friendllytips="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾"
 	--modify vraymtl
 	--Judge if it is VRay renderer
 	fn fl_ifVRayRenderer =
@@ -177,7 +176,7 @@ fn fl_AllStandardToVraymtl convertobjs mtlLibrary =
 						(
 							fl_AllStandardToVraymtl sceneObjs mtlslib
 						)
-						else messagebox "³¡¾°ÖÐÃ»ÓÐ²ÄÖÊ£¡" title:fl_friendllytips
+						else messagebox "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð²ï¿½ï¿½Ê£ï¿½" title:fl_friendllytips
 					)
 				2: 	(	sceneObjs=for i in objects where i.material!=undefiend collect i
 						mtlslib = #();mtlNum = #()
@@ -199,7 +198,7 @@ fn fl_AllStandardToVraymtl convertobjs mtlLibrary =
 					)
 			)-- end case
 		)
-		else messagebox "µ±Ç°äÖÈ¾Æ÷²»ÊÇVRayäÖÈ¾Æ÷£¬Çëµ÷ÕûÏÂÏÈ£¡"
+		else messagebox "ï¿½ï¿½Ç°ï¿½ï¿½È¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½VRayï¿½ï¿½È¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½"
 	)
 	on btn_vraymtl_2_standard pressed do
 	(	
@@ -211,7 +210,7 @@ fn fl_AllStandardToVraymtl convertobjs mtlLibrary =
 						(
 							fl_AllVrayMtlsToStandard sceneObjs mtlslib
 						)
-						else messagebox "³¡¾°ÖÐÃ»ÓÐ²ÄÖÊ£¡" title:fl_friendllytips
+						else messagebox "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð²ï¿½ï¿½Ê£ï¿½" title:fl_friendllytips
 					)
 				2: 	(	sceneObjs=for i in objects where i.material!=undefiend collect i
 						mtlslib = #();mtlNum = #()
@@ -233,12 +232,12 @@ fn fl_AllStandardToVraymtl convertobjs mtlLibrary =
 					)
 			)-- end case
 		)
-		else messagebox "µ±Ç°äÖÈ¾Æ÷²»ÊÇVRayäÖÈ¾Æ÷£¬Çëµ÷ÕûÏÂÏÈ£¡"
+		else messagebox "ï¿½ï¿½Ç°ï¿½ï¿½È¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½VRayï¿½ï¿½È¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È£ï¿½"
 	)
 	on btn29 pressed do
 	(
-		tips= "×ª»»²ÄÖÊ¹¦ÄÜÖ»ÊÊÓÃÓÚ£ºStandard, VRayMtl, Muti/Sub-Object"
-		messagebox tips title:("²ÄÖÊ×ª»»") beep:off
+		tips= "×ªï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½Standard, VRayMtl, Muti/Sub-Object"
+		messagebox tips title:("ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½") beep:off
 	)
 	on SP4mtlConverter moved pp do
 	(

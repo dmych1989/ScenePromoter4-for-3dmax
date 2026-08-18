@@ -4,21 +4,19 @@
 --by Marc Lorenz
 --http://plugins.angstraum.at
 
---------------------------------ĞŞ¸Ä·Ö¸îÏß------------------------------------------
+--------------------------------ï¿½Ş¸Ä·Ö¸ï¿½ï¿½ï¿½------------------------------------------
 --2011.3.31
---½çÃæµ÷Õû
---»¶Ó­Ê¹ÓÃ³¡¾°ÖúÊÖ4.0
---ÏÂÔØµØÖ·: http://www.cgplusplus.com/bbs
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+--ï¿½ï¿½Ó­Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0
 
---°æÈ¨¹éÔ­×÷ÕßËùÓĞ,¸ĞĞ»ÆäÎŞË½·îÏ×
---ĞŞ¸ÄÄÚÈİ£º
---1.Ôö¼ÓÁËstandardµÄAO²ÄÖÊ£¬Ô­À´Ä¬ÈÏÊÇÓÃVrayLightMtl
---2.Ôö¼ÓÁËvraydirtºÍ¿¹¾â³İ¿É¿Ø²ÎÊı£¬½çÃæµ÷Õû
---3.Ä¬ÈÏ²ÎÊıÊÇÍøÉÏ½Ì³ÌÀïäÖÊÒÄÚAOµÄÓùÓÃ²ÎÊı£ºD
---4.ĞŞÕıÁËäÖµ¥Ãæ³öÎÊÌâµÄBUG
---ĞŞ¸Ä×÷Õß:·ÉÀË 2008.4.8
---Ïë¶Ô´ËĞŞ¸Ä·¢±íÌÖÂÛ,ÇëÀ´ÕâÀï:
---http://www.cgplusplus.com/bbs
+--ï¿½ï¿½È¨ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½Ğ»ï¿½ï¿½ï¿½ï¿½Ë½ï¿½ï¿½ï¿½ï¿½
+--ï¿½Ş¸ï¿½ï¿½ï¿½ï¿½İ£ï¿½
+--1.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½standardï¿½ï¿½AOï¿½ï¿½ï¿½Ê£ï¿½Ô­ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½VrayLightMtl
+--2.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vraydirtï¿½Í¿ï¿½ï¿½ï¿½İ¿É¿Ø²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+--3.Ä¬ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï½Ì³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½AOï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½D
+--4.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½BUG
+--ï¿½Ş¸ï¿½ï¿½ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ 2008.4.8
+--ï¿½ï¿½Ô´ï¿½ï¿½Ş¸Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:
 -------------------------------------modification-----------------------------------------
 --Copyright reserved by the original author Marc Lorenz,thanks for his sharing
 --Modified contents:
@@ -28,7 +26,6 @@
 --4.Correct the bug for the single plane rendering mistake
 --Modified by Feilang  2008.4.8
 --For more discussing,plz click here:
---http://www.cgplusplus.com/bbs
 
 ------------------------------------------------------------------------------------------
 
@@ -56,7 +53,7 @@ fn isLoadedVray targetslot assign:false=
 			(
 			if assign then 
 				(
-				if (queryBox "VRay ²»ÊÇµ±Ç°äÖÈ¾Æ÷¡£   \nÊÇ·ñ¼ÌĞø£¿" title:"¾¯¸æ") then
+				if (queryBox "VRay ï¿½ï¿½ï¿½Çµï¿½Ç°ï¿½ï¿½È¾ï¿½ï¿½ï¿½ï¿½   \nï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" title:"ï¿½ï¿½ï¿½ï¿½") then
 					(
 					--store current
 					--dumb maxscript can only assign to currently avtive renderer slots
@@ -120,9 +117,9 @@ rollout ro_vrayao "Vray AO render" width:260 height:552
 	dropdownList anti_filter "Antialiasing filter" pos:[38,372] width:134 height:41 items:#("Area", "Mitchell-Netravali", "Catmull-Rom", "VRayLanczosFilter") selection:3
 	checkbox filter_checkbox "Checkbox" pos:[181,394] width:13 height:15 checked:true
 	spinner spn_vrlight "Subdivs" pos:[61,282] width:126 height:16 enabled:false range:[1,1000,16]
-	label lbl2 "±¾°æÊÊºÏVRayÓ¢ÎÄ°æ±¾" pos:[63,524] width:194 height:18
+	label lbl2 "ï¿½ï¿½ï¿½ï¿½ï¿½Êºï¿½VRayÓ¢ï¿½Ä°æ±¾" pos:[63,524] width:194 height:18
 	
-	--choose mateial type Ñ¡Ôñ²ÄÖÊÀàĞÍ
+	--choose mateial type Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 	on btn_render pressed do
 	(
@@ -130,13 +127,13 @@ rollout ro_vrayao "Vray AO render" width:260 height:552
 	
 	--version checking
 		err=undefined
-		if findString (vray() as string) "VRay_Adv_1_0" != undefined then err="³ö´íÀ²£¬ÒªÇóVray 1.5¼°ÒÔÉÏ°æ±¾£¡\nonly works with Vray 1.5 or higher."
-		if findString (vray() as string) "VRay_Adv_1_45" != undefined then err="³ö´íÀ²£¬ÒªÇóVray 1.5¼°ÒÔÉÏ°æ±¾£¡\nonly works with Vray 1.5 or higher."
-		if findString (vray() as string) "VRay_Adv_1_46" != undefined then err="³ö´íÀ²£¬ÒªÇóVray 1.5¼°ÒÔÉÏ°æ±¾£¡\nonly works with Vray 1.5 or higher."
+		if findString (vray() as string) "VRay_Adv_1_0" != undefined then err="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Vray 1.5ï¿½ï¿½ï¿½ï¿½ï¿½Ï°æ±¾ï¿½ï¿½\nonly works with Vray 1.5 or higher."
+		if findString (vray() as string) "VRay_Adv_1_45" != undefined then err="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Vray 1.5ï¿½ï¿½ï¿½ï¿½ï¿½Ï°æ±¾ï¿½ï¿½\nonly works with Vray 1.5 or higher."
+		if findString (vray() as string) "VRay_Adv_1_46" != undefined then err="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Vray 1.5ï¿½ï¿½ï¿½ï¿½ï¿½Ï°æ±¾ï¿½ï¿½\nonly works with Vray 1.5 or higher."
 	
-		if (isLoadedVray 1)==false then err="µ±Ç°äÖÈ¾Æ÷²»ÊÇVray£¬ÇëÉèÖÃ³ÉVrayÏÈ£¡\nPlease assign VRay as the current renderer!"
+		if (isLoadedVray 1)==false then err="ï¿½ï¿½Ç°ï¿½ï¿½È¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Vrayï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã³ï¿½Vrayï¿½È£ï¿½\nPlease assign VRay as the current renderer!"
 		
-		if err != undefined then messageBox err title:"³ö´í£¡Error!"
+		if err != undefined then messageBox err title:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Error!"
 	
 		else(
 		local hcoverride=#()

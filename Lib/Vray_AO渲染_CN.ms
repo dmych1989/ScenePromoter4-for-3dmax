@@ -4,23 +4,22 @@
 --by Marc Lorenz
 --http://plugins.angstraum.at
 
---------------------------------ÐÞ¸Ä·Ö¸îÏß------------------------------------------
---°æÈ¨¹éÔ­×÷ÕßËùÓÐ,¸ÐÐ»ÆäÎÞË½·îÏ×
---ÐÞ¸ÄÄÚÈÝ£º
---1.Ôö¼ÓÁËstandardµÄAO²ÄÖÊ£¬Ô­À´Ä¬ÈÏÊÇÓÃVrayLightMtl
---2.Ôö¼ÓÁËvraydirtºÍ¿¹¾â³Ý¿É¿Ø²ÎÊý£¬½çÃæµ÷Õû
---3.Ä¬ÈÏ²ÎÊýÊÇÍøÉÏ½Ì³ÌÀïäÖÊÒÄÚAOµÄÓùÓÃ²ÎÊý£ºD
---4.ÐÞÕýÁËäÖµ¥Ãæ³öÎÊÌâµÄBUG
---ÐÞ¸Ä×÷Õß:·ÉÀË 2008.4.8
---Ïë¶Ô´ËÐÞ¸Ä·¢±íÌÖÂÛ,ÇëÀ´ÕâÀï:
---http://www.cgplusplus.com/bbs
+--------------------------------ï¿½Þ¸Ä·Ö¸ï¿½ï¿½ï¿½------------------------------------------
+--ï¿½ï¿½È¨ï¿½ï¿½Ô­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½Ë½ï¿½ï¿½ï¿½ï¿½
+--ï¿½Þ¸ï¿½ï¿½ï¿½ï¿½Ý£ï¿½
+--1.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½standardï¿½ï¿½AOï¿½ï¿½ï¿½Ê£ï¿½Ô­ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½VrayLightMtl
+--2.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½vraydirtï¿½Í¿ï¿½ï¿½ï¿½Ý¿É¿Ø²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+--3.Ä¬ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï½Ì³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½AOï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½D
+--4.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½BUG
+--ï¿½Þ¸ï¿½ï¿½ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ 2008.4.8
+--ï¿½ï¿½Ô´ï¿½ï¿½Þ¸Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:
 ------------------------------------------------------------------------------------
 
 global ml_dirtmaterial
 global fl_dirtmaterial
 global mtl_switch=1
 global vrayDirtmapSetting
-try vrayDirtmapSetting=VRÎÛ¹¸() catch ( try vrayDirtmapSetting=VR»Ò³¾() catch undefined)
+try vrayDirtmapSetting=VRï¿½Û¹ï¿½() catch ( try vrayDirtmapSetting=VRï¿½Ò³ï¿½() catch undefined)
 fn isLoadedVray targetslot assign:false=
 	(
 	try
@@ -39,7 +38,7 @@ fn isLoadedVray targetslot assign:false=
 			(
 			if assign then 
 				(
-				if (queryBox "VRay ²»ÊÇµ±Ç°äÖÈ¾Æ÷¡£   \nÊÇ·ñ¼ÌÐø£¿" title:"¾¯¸æ") then
+				if (queryBox "VRay ï¿½ï¿½ï¿½Çµï¿½Ç°ï¿½ï¿½È¾ï¿½ï¿½ï¿½ï¿½   \nï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" title:"ï¿½ï¿½ï¿½ï¿½") then
 					(
 					--store current
 					--dumb maxscript can only assign to currently avtive renderer slots
@@ -83,29 +82,29 @@ else
 	)
 global ro_vrayao
 global version
-global aoFloater=newRolloutFloater "AO²å¼þ2.1ÖÐÎÄVRay" 260 570 
-rollout ro_vrayao "Vray AO äÖÈ¾" width:260 height:596
+global aoFloater=newRolloutFloater "AOï¿½ï¿½ï¿½2.1ï¿½ï¿½ï¿½ï¿½VRay" 260 570 
+rollout ro_vrayao "Vray AO ï¿½ï¿½È¾" width:260 height:596
 (
-	GroupBox grp2 "Í¼Ïñ²ÉÑù¸²¸Ç" pos:[25,434] width:195 height:46
-	button btn_render "äÖÈ¾" pos:[67,485] width:113 height:26
-	checkbox chk_override "ÓÅ»¯µÄrQMC²ÉÑù" pos:[41,455] width:160 height:15 checked:true
-	spinner spn_subdivs "Ï¸·Ö..............." pos:[50,205] width:156 height:16 range:[1,1000,16] type:#integer
-	GroupBox grp_sky "Ìì¹âÑ¡Ïî" pos:[25,238] width:195 height:67 enabled:false
-	radiobuttons rdo_skytype "" pos:[48,258] width:142 height:16 enabled:false labels:#("ÇòÌå         ", "ñ·¶¥") columns:2
-	GroupBox grp25 "äÖÈ¾·½·¨" pos:[25,13] width:195 height:41
-	radiobuttons option_method "" pos:[45,31] width:152 height:16 labels:#("ÎÛ¹¸ÌùÍ¼    ", "Ìì¹â") columns:2
-	GroupBox grp_dirt "VRÎÛ¹¸Ñ¡Ïî" pos:[25,118] width:195 height:113
-	spinner spn_dirtradius "°ë¾¶................" pos:[50,139] width:156 height:16 range:[0,100000,800] type:#worldunits
-	GroupBox grp31 "AO ²ÄÖÊÇòÀàÐÍ" pos:[25,61] width:195 height:49
-	radiobuttons grp_mtl "" pos:[45,83] width:191 height:16 labels:#("Standard      ", "VRµÆ²ÄÖÊ") default:1 columns:2
-	spinner spn_distribution "·Ö²¼................" pos:[51,161] width:155 height:16 range:[0,10000,1]
-	spinner spn_folloff "Ë¥¼õ................" pos:[49,183] width:157 height:16 range:[0,10000,1]
-	GroupBox grp12 "Í¼Ïñ²ÉÑù(¿¹¾â³Ý)" pos:[25,311] width:195 height:115
-	dropdownList imagesampler "Í¼Ïñ²ÉÑùÆ÷ÀàÐÍ" pos:[38,328] width:165 height:41 items:#("¹Ì¶¨", "×ÔÊÊÓ¦×¼ÃÉÌØ¿¨Âå", "×ÔÊÊÓ¦Ï¸·Ö") selection:2
-	dropdownList anti_filter "¿¹¾â³Ý¹ýÂËÆ÷" pos:[38,374] width:134 height:41 items:#("Area", "Mitchell-Netravali", "Catmull-Rom", "VRayLanczosFilter") selection:3
+	GroupBox grp2 "Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[25,434] width:195 height:46
+	button btn_render "ï¿½ï¿½È¾" pos:[67,485] width:113 height:26
+	checkbox chk_override "ï¿½Å»ï¿½ï¿½ï¿½rQMCï¿½ï¿½ï¿½ï¿½" pos:[41,455] width:160 height:15 checked:true
+	spinner spn_subdivs "Ï¸ï¿½ï¿½..............." pos:[50,205] width:156 height:16 range:[1,1000,16] type:#integer
+	GroupBox grp_sky "ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½" pos:[25,238] width:195 height:67 enabled:false
+	radiobuttons rdo_skytype "" pos:[48,258] width:142 height:16 enabled:false labels:#("ï¿½ï¿½ï¿½ï¿½         ", "ñ·¶¥") columns:2
+	GroupBox grp25 "ï¿½ï¿½È¾ï¿½ï¿½ï¿½ï¿½" pos:[25,13] width:195 height:41
+	radiobuttons option_method "" pos:[45,31] width:152 height:16 labels:#("ï¿½Û¹ï¿½ï¿½ï¿½Í¼    ", "ï¿½ï¿½ï¿½") columns:2
+	GroupBox grp_dirt "VRï¿½Û¹ï¿½Ñ¡ï¿½ï¿½" pos:[25,118] width:195 height:113
+	spinner spn_dirtradius "ï¿½ë¾¶................" pos:[50,139] width:156 height:16 range:[0,100000,800] type:#worldunits
+	GroupBox grp31 "AO ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[25,61] width:195 height:49
+	radiobuttons grp_mtl "" pos:[45,83] width:191 height:16 labels:#("Standard      ", "VRï¿½Æ²ï¿½ï¿½ï¿½") default:1 columns:2
+	spinner spn_distribution "ï¿½Ö²ï¿½................" pos:[51,161] width:155 height:16 range:[0,10000,1]
+	spinner spn_folloff "Ë¥ï¿½ï¿½................" pos:[49,183] width:157 height:16 range:[0,10000,1]
+	GroupBox grp12 "Í¼ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½)" pos:[25,311] width:195 height:115
+	dropdownList imagesampler "Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[38,328] width:165 height:41 items:#("ï¿½Ì¶ï¿½", "ï¿½ï¿½ï¿½ï¿½Ó¦×¼ï¿½ï¿½ï¿½Ø¿ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½Ó¦Ï¸ï¿½ï¿½") selection:2
+	dropdownList anti_filter "ï¿½ï¿½ï¿½ï¿½Ý¹ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[38,374] width:134 height:41 items:#("Area", "Mitchell-Netravali", "Catmull-Rom", "VRayLanczosFilter") selection:3
 	checkbox filter_checkbox "Checkbox" pos:[181,396] width:13 height:15 checked:true
-	spinner spn_vrlight "µÆ¹âÏ¸·Ö" pos:[62,281] width:135 height:16 enabled:false range:[1,1000,16]
-	--choose mateial type Ñ¡Ôñ²ÄÖÊÀàÐÍ
+	spinner spn_vrlight "ï¿½Æ¹ï¿½Ï¸ï¿½ï¿½" pos:[62,281] width:135 height:16 enabled:false range:[1,1000,16]
+	--choose mateial type Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 	on btn_render pressed do
 	(
@@ -113,13 +112,13 @@ rollout ro_vrayao "Vray AO äÖÈ¾" width:260 height:596
 	
 	--version checking
 		err=undefined
-		if findString (vray() as string) "VRay_Adv_1_0" != undefined then err="³ö´íÀ²£¬ÒªÇóVray 1.5¼°ÒÔÉÏ°æ±¾£¡"
-		if findString (vray() as string) "VRay_Adv_1_45" != undefined then err="³ö´íÀ²£¬ÒªÇóVray 1.5¼°ÒÔÉÏ°æ±¾£¡"
-		if findString (vray() as string) "VRay_Adv_1_46" != undefined then err="³ö´íÀ²£¬ÒªÇóVray 1.5¼°ÒÔÉÏ°æ±¾£¡"
+		if findString (vray() as string) "VRay_Adv_1_0" != undefined then err="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Vray 1.5ï¿½ï¿½ï¿½ï¿½ï¿½Ï°æ±¾ï¿½ï¿½"
+		if findString (vray() as string) "VRay_Adv_1_45" != undefined then err="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Vray 1.5ï¿½ï¿½ï¿½ï¿½ï¿½Ï°æ±¾ï¿½ï¿½"
+		if findString (vray() as string) "VRay_Adv_1_46" != undefined then err="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Vray 1.5ï¿½ï¿½ï¿½ï¿½ï¿½Ï°æ±¾ï¿½ï¿½"
 	
-		if (isLoadedVray 1)==false then err="µ±Ç°äÖÈ¾Æ÷²»ÊÇVray£¬ÇëÉèÖÃ³ÉVrayÏÈ£¡"
+		if (isLoadedVray 1)==false then err="ï¿½ï¿½Ç°ï¿½ï¿½È¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Vrayï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã³ï¿½Vrayï¿½È£ï¿½"
 		
-		if err != undefined then messageBox err title:"³ö´í£¡"
+		if err != undefined then messageBox err title:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 	
 		else(
 		local hcoverride=#()
@@ -148,22 +147,22 @@ rollout ro_vrayao "Vray AO äÖÈ¾" width:260 height:596
 						fl_dirtmaterial.ambient = color 255 255 255
 						fl_dirtmaterial.SelfIllumAmount = 100
 						fl_dirtmaterial.diffuseMap=vrayDirtmapSetting
-						fl_dirtmaterial.diffuseMap.°ë¾¶=spn_dirtradius.value
-						fl_dirtmaterial.diffuseMap.Ï¸·Ö=spn_subdivs.value
-						fl_dirtmaterial.diffuseMap.·Ö²¼ =spn_distribution.value
-						fl_dirtmaterial.diffuseMap.Ë¥¼õ=spn_folloff.value
+						fl_dirtmaterial.diffuseMap.ï¿½ë¾¶=spn_dirtradius.value
+						fl_dirtmaterial.diffuseMap.Ï¸ï¿½ï¿½=spn_subdivs.value
+						fl_dirtmaterial.diffuseMap.ï¿½Ö²ï¿½ =spn_distribution.value
+						fl_dirtmaterial.diffuseMap.Ë¥ï¿½ï¿½=spn_folloff.value
 						append hcoverride "options_overrideMtl_mtl=fl_dirtmaterial"
 				)
 			else
 				(
-						ml_dirtmaterial=VRµÆ¹â²ÄÖÊ ()
+						ml_dirtmaterial=VRï¿½Æ¹ï¿½ï¿½ï¿½ï¿½ ()
 						ml_dirtmaterial.twoSided =on
 						ml_dirtmaterial.color=(color 255 255 255)
 						ml_dirtmaterial.texmap=vrayDirtmapSetting
-						ml_dirtmaterial.texmap.°ë¾¶=spn_dirtradius.value
-						ml_dirtmaterial.texmap.Ï¸·Ö=spn_subdivs.value
-						ml_dirtmaterial.texmap.·Ö²¼ =spn_distribution.value
-						ml_dirtmaterial.texmap.Ë¥¼õ=spn_folloff.value
+						ml_dirtmaterial.texmap.ï¿½ë¾¶=spn_dirtradius.value
+						ml_dirtmaterial.texmap.Ï¸ï¿½ï¿½=spn_subdivs.value
+						ml_dirtmaterial.texmap.ï¿½Ö²ï¿½ =spn_distribution.value
+						ml_dirtmaterial.texmap.Ë¥ï¿½ï¿½=spn_folloff.value
 						append hcoverride "options_overrideMtl_mtl=ml_dirtmaterial"
 				)
 		)	
@@ -230,14 +229,14 @@ rollout ro_vrayao "Vray AO äÖÈ¾" width:260 height:596
 				if rdo_skytype.state==2 then
 					(
 					--dome
-					ml_dome=VRµÆ¹â dome_spherical:off size0:0 size1:0 type:1 multiplier:1 on:on invisible:on subdivs:spn_vrlight.value
+					ml_dome=VRï¿½Æ¹ï¿½ dome_spherical:off size0:0 size1:0 type:1 multiplier:1 on:on invisible:on subdivs:spn_vrlight.value
 					fl_vrayao_render()
 					delete ml_dome
 				)
 				else
 					(
 					--sphere
-					ml_dome=VRµÆ¹â dome_spherical:on size0:0 size1:0 type:1 multiplier:1 on:on invisible:on subdivs:spn_vrlight.value
+					ml_dome=VRï¿½Æ¹ï¿½ dome_spherical:on size0:0 size1:0 type:1 multiplier:1 on:on invisible:on subdivs:spn_vrlight.value
 					fl_vrayao_render()
 					delete ml_dome
 				)
@@ -315,9 +314,9 @@ rollout ro_vrayao "Vray AO äÖÈ¾" width:260 height:596
 			)
 		)
 )
-rollout version "Ïà¹ØËµÃ÷" width:250 height:400
+rollout version "ï¿½ï¿½ï¿½Ëµï¿½ï¿½" width:250 height:400
 (
-	label lbl11 "±¾°æÊÊºÏVRayÖÐÎÄ°æ¸÷°æ±¾£¬ÈçÓÐÒâ¼û»ò½¨Òé£¬Çëµ½ÕâÀï£º" pos:[22,7] width:207 height:28
+	label lbl11 "ï¿½ï¿½ï¿½ï¿½ï¿½Êºï¿½VRayï¿½ï¿½ï¿½Ä°ï¿½ï¿½ï¿½æ±¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ëµ½ï¿½ï¿½ï¿½ï£º" pos:[22,7] width:207 height:28
 	on version open do
 	(
 	link2.color=hyperlink_color

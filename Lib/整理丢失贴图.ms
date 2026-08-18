@@ -1,24 +1,23 @@
---×÷Õß£º·ÉÀË
+--ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½ï¿½
 --Author:Feilang
---www.cgplusplus.com
 --------------------------------------------------
---»¶Ó­Ê¹ÓÃ³¡¾°ÖúÊÖ4.0
+--ï¿½ï¿½Ó­Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0
 
-----¿ªÔ´·îÏ×----
+----ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½----
 
 ---------------------------------------------------
---³¡¾°ÖúÊÖ4.0		2011-04-01
---³¡¾°ÖúÊÖ3.0		2009-08-01
---³¡¾°ÖúÊÖ2.6		2009-03-30
---³¡¾°ÖúÊÖ2.0		2008-08-06
---³¡¾°ÖúÊÖ1.0		2008-05-27
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0		2011-04-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3.0		2009-08-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.6		2009-03-30
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.0		2008-08-06
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1.0		2008-05-27
 
---¸üĞÂÌùÍ¼
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼
 --2008-06-17
 
 global SP4AddQuickPathRlt,SP4relinkmapRlt,SP4relinkmapDlg
 global pathsToSearch = #()
-global fl_friendllytips="³¡¾°ÖúÊÖÌáÊ¾"
+global fl_friendllytips="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾"
 global spRootPath=getdir #scripts +"\\ScenePromoter4"
 global spInifilepath=spRootPath+"\\ScenePromoter4.ini"
 
@@ -26,12 +25,12 @@ try destroydialog SP4missingMap catch()
 
 fn SP4searchDialog =
 (
-	SP4relinkmapDlg = newRolloutFloater "Ö¸¶¨ÌùÍ¼" 330 291
+	SP4relinkmapDlg = newRolloutFloater "Ö¸ï¿½ï¿½ï¿½ï¿½Í¼" 330 291
 	SP4relinkmapDlg.pos = GetDialogPos SP4missingMap + [SP4missingMap.width+8,0]
 	addrollout SP4relinkmapRlt SP4relinkmapDlg
 )
 fn filenameFromPathNew p = getfilenamefile p + getfilenametype p 
-rollout SP4missingMap "²é¿´¶ªÊ§ÌùÍ¼ºÍ¹âÓòÍøÎÄ¼ş" width:460 height:285
+rollout SP4missingMap "ï¿½é¿´ï¿½ï¿½Ê§ï¿½ï¿½Í¼ï¿½Í¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½" width:460 height:285
 (
 	local Objs,missMaps,missingMapsTemp,missingMapsObjs
 	local tempWidth = 460 ,tempHeight = 280
@@ -154,18 +153,18 @@ rollout SP4missingMap "²é¿´¶ªÊ§ÌùÍ¼ºÍ¹âÓòÍøÎÄ¼ş" width:460 height:285
 				append objsNamesString Objs[s][n+1].name
 				SP4missingMap.edt_missingmapObjs.text = objsNamesString 
 			) 
-			else SP4missingMap.edt_missingmapObjs.text = "Ã»ÓĞÕÒµ½Ê¹ÓÃ¸ÃÌùÍ¼µÄÎïÌå£¡"
+			else SP4missingMap.edt_missingmapObjs.text = "Ã»ï¿½ï¿½ï¿½Òµï¿½Ê¹ï¿½Ã¸ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½å£¡"
 		)
 	)
-	multiListBox lbx_missingMaps "¶ªÊ§ÌùÍ¼Â·¾¶:" pos:[5,27] width:450 height:10 
-	button btn_refeshMaps "Ë¢ĞÂ" pos:[350,14] width:85 height:25 toolTip:"ÖØĞÂ¼ÆËã¶ªÊ§ÌùÍ¼²¢ÏÔÊ¾ÔÚÏÂÃæÁĞ±í"
-	button btn_missMapObjs "Ñ¡ÔñÎïÌå" pos:[258,14] width:85 height:25 toolTip:"Ñ¡ÔñÊ¹ÓÃÁĞ±íÖĞÑ¡ÖĞÌùÍ¼µÄÎïÌå"
-	button btn_closeMissmap "ÍË³ö" pos:[170,184] width:85 height:25 toolTip:"¹Ø±Õ´Ë¶Ô»°¿ò"
-	button btn_printTxt "µ¼³ö¶ªÊ§ĞÅÏ¢" pos:[260,184] width:85 height:25 toolTip:"¹Ø±Õ´Ë¶Ô»°¿ò"
-	edittext edt_missingmapObjs "Ê¹ÓÃ¸ÃÌùÍ¼µÄÎïÌå£º" pos:[5,210] width:450 height:20 readOnly:true labelOnTop:true
-	button btn_relinkDialog "Ö¸¶¨ÌùÍ¼" pos:[351,184] width:85 height:25 toolTip:"´ò¿ª/¹Ø±ÕÖ¸¶¨ÌùÍ¼¶Ô»°¿ò"
-	button btn_delSelectedMaps "Çå³ıÑ¡ÔñÌùÍ¼" pos:[166,14] width:85 height:25 toolTip:"¹âÓòÍøÎÄ¼şÇëÊÖ¶¯Çå³ı"
-	label lbl "¿ÉËõ·Å" pos:[416,258] width:59 height:16 enabled:false
+	multiListBox lbx_missingMaps "ï¿½ï¿½Ê§ï¿½ï¿½Í¼Â·ï¿½ï¿½:" pos:[5,27] width:450 height:10 
+	button btn_refeshMaps "Ë¢ï¿½ï¿½" pos:[350,14] width:85 height:25 toolTip:"ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ã¶ªÊ§ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½"
+	button btn_missMapObjs "Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[258,14] width:85 height:25 toolTip:"Ñ¡ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ğ±ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
+	button btn_closeMissmap "ï¿½Ë³ï¿½" pos:[170,184] width:85 height:25 toolTip:"ï¿½Ø±Õ´Ë¶Ô»ï¿½ï¿½ï¿½"
+	button btn_printTxt "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½Ï¢" pos:[260,184] width:85 height:25 toolTip:"ï¿½Ø±Õ´Ë¶Ô»ï¿½ï¿½ï¿½"
+	edittext edt_missingmapObjs "Ê¹ï¿½Ã¸ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½å£º" pos:[5,210] width:450 height:20 readOnly:true labelOnTop:true
+	button btn_relinkDialog "Ö¸ï¿½ï¿½ï¿½ï¿½Í¼" pos:[351,184] width:85 height:25 toolTip:"ï¿½ï¿½/ï¿½Ø±ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Í¼ï¿½Ô»ï¿½ï¿½ï¿½"
+	button btn_delSelectedMaps "ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½Í¼" pos:[166,14] width:85 height:25 toolTip:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½"
+	label lbl "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[416,258] width:59 height:16 enabled:false
 	on SP4missingMap open do	--Initialize this dialog
 		btn_refeshMaps.pressed()
 	on SP4missingMap close do
@@ -238,7 +237,7 @@ rollout SP4missingMap "²é¿´¶ªÊ§ÌùÍ¼ºÍ¹âÓòÍøÎÄ¼ş" width:460 height:285
 	(	missMaps = getMissingMaps()
 		if missMaps[1] == undefiend then
 		(	lbx_missingMaps.items = #()
-			edt_missingmapObjs.text = "Ã»ÓĞÕÒµ½¶ªÊ§ÌùÍ¼£¡"
+			edt_missingmapObjs.text = "Ã»ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½Ê§ï¿½ï¿½Í¼ï¿½ï¿½"
 		)
 		else
 		(	lbx_missingMaps.items = missMaps
@@ -253,25 +252,25 @@ rollout SP4missingMap "²é¿´¶ªÊ§ÌùÍ¼ºÍ¹âÓòÍøÎÄ¼ş" width:460 height:285
 	(	index = (lbx_missingMaps.selection as array)[1]
 		if index != undefiend then
 			if missMaps[index] != "" then
-			(	if Objs[index].count != 0 then try select Objs[index] catch messagebox "¿ÉÄÜÊ¹ÓÃ¸ÃÌùÍ¼µÄÎïÌåÒÑ±»É¾³ı£¬ÇëË¢ĞÂÖØÊÔ£¡" title:fl_friendllytips beep:off
-				else messagebox "³¡¾°ÖĞÃ»ÓĞÊ¹ÓÃ¸ÃÌùÍ¼µÄÎïÌå£¬ÇëË¢ĞÂ²ÄÖÊÇò£¬»ò²é¿´»·¾³ÌùÍ¼ºÍ±³¾°ÌùÍ¼£¡" title:fl_friendllytips beep:off
+			(	if Objs[index].count != 0 then try select Objs[index] catch messagebox "ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã¸ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ±ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¢ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½" title:fl_friendllytips beep:off
+				else messagebox "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ê¹ï¿½Ã¸ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½å£¬ï¿½ï¿½Ë¢ï¿½Â²ï¿½ï¿½ï¿½ï¿½ò£¬»ï¿½é¿´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½Í±ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½" title:fl_friendllytips beep:off
 			)
 	)
 	on btn_printTxt pressed do
 	(
 		if lbx_missingMaps.items.count != 0 then
 		(
-			str = "MaxÎÄ¼şÂ·¾¶£º\n"+ maxfilepath + maxfilename
-			str += "\nÕûÀíÊ±¼ä£º" + localtime
-			str += "\n¶ªÊ§ÌùÍ¼ĞÅÏ¢£º\n"
+			str = "Maxï¿½Ä¼ï¿½Â·ï¿½ï¿½ï¿½ï¿½\n"+ maxfilepath + maxfilename
+			str += "\nï¿½ï¿½ï¿½ï¿½Ê±ï¿½ä£º" + localtime
+			str += "\nï¿½ï¿½Ê§ï¿½ï¿½Í¼ï¿½ï¿½Ï¢ï¿½ï¿½\n"
 			for i in lbx_missingMaps.items do str +=i + "\n"
 			s = newscript()
 			format "%" str to:s
 		)
-		else messagebox "ÁĞ±íÊÇ¿ÕµÄ~~~"
+		else messagebox "ï¿½Ğ±ï¿½ï¿½Ç¿Õµï¿½~~~"
 	)
 	on btn_missMapObjs rightClick do
-		messagebox "ËµÃ÷£ºµ¥»÷Ñ¡ÔñÎïÌå»òÕßË«»÷ÁĞ±íÖĞµÄÄ³Ò»Ïî£¬¾ù¿ÉÑ¡ÔñÊ¹ÓÃ¸ÃÌùÍ¼µÄÎïÌå¡£\nAsset Tracking ÀïÃæÏÔÊ¾Îª Found µÄÌùÍ¼²»ÄÜÑ¡ÔñÎïÌå¡£" title:fl_friendllytips beep:off
+		messagebox "Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë«ï¿½ï¿½ï¿½Ğ±ï¿½ï¿½Ğµï¿½Ä³Ò»ï¿½î£¬ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½Ê¹ï¿½Ã¸ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½å¡£\nAsset Tracking ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾Îª Found ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½å¡£" title:fl_friendllytips beep:off
 	on btn_closeMissmap pressed do
 	(	try closeRolloutFloater SP4relinkmapDlg catch()
 		destroyDialog SP4missingMap
@@ -288,18 +287,18 @@ rollout SP4missingMap "²é¿´¶ªÊ§ÌùÍ¼ºÍ¹âÓòÍøÎÄ¼ş" width:460 height:285
 
 
 
-rollout SP4relinkmapRlt "Ö¸¶¨ÌùÍ¼" width:320 height:260
+rollout SP4relinkmapRlt "Ö¸ï¿½ï¿½ï¿½ï¿½Í¼" width:320 height:260
 (
 	local tempSelPaths
-	edittext edt_filepath "Ö¸¶¨ÌùÍ¼Â·¾¶£º" pos:[12,7] width:264 height:20 labelOnTop:true
+	edittext edt_filepath "Ö¸ï¿½ï¿½ï¿½ï¿½Í¼Â·ï¿½ï¿½ï¿½ï¿½" pos:[12,7] width:264 height:20 labelOnTop:true
 	button btn_browsemappath "..." pos:[278,25] width:29 height:20
-	button btn_relinkmap "Ö¸¶¨ÌùÍ¼" pos:[20,52] width:100 height:20 enabled:false
-	multiListBox mut_savedpath "Ä¬ÈÏÌùÍ¼Â·¾¶:" pos:[10,79] width:302 height:10
-	button btn_deletePath "É¾³ı" pos:[272,235] width:40 height:20
+	button btn_relinkmap "Ö¸ï¿½ï¿½ï¿½ï¿½Í¼" pos:[20,52] width:100 height:20 enabled:false
+	multiListBox mut_savedpath "Ä¬ï¿½ï¿½ï¿½ï¿½Í¼Â·ï¿½ï¿½:" pos:[10,79] width:302 height:10
+	button btn_deletePath "É¾ï¿½ï¿½" pos:[272,235] width:40 height:20
 	checkbox chk_selAll "È«Ñ¡" pos:[18,235] width:48 height:20
-	button btn_clearSel "Çå³ıÑ¡Ôñ" pos:[77,235] width:60 height:18
-	button btn_addPaths "Ôö¼Ó" pos:[227,235] width:40 height:20
-	checkbox chk_includeSubDir "°üÀ¨ËùÓĞ×ÓÄ¿Â¼(²»ÍÆ¼ö)" pos:[135,53] width:175 height:20 checked:false
+	button btn_clearSel "ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½" pos:[77,235] width:60 height:18
+	button btn_addPaths "ï¿½ï¿½ï¿½ï¿½" pos:[227,235] width:40 height:20
+	checkbox chk_includeSubDir "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼(ï¿½ï¿½ï¿½Æ¼ï¿½)" pos:[135,53] width:175 height:20 checked:false
 	
 	
 	fn updateSavedPaths = (
@@ -440,7 +439,7 @@ rollout SP4relinkmapRlt "Ö¸¶¨ÌùÍ¼" width:320 height:260
 	
 	)
 	on btn_browsemappath pressed do
-	(	local browseDirectory = getSavePath "Ö¸¶¨Â·¾¶"
+	(	local browseDirectory = getSavePath "Ö¸ï¿½ï¿½Â·ï¿½ï¿½"
 		if browseDirectory != undefined and browseDirectory != "" then (
 			edt_filepath.text = browseDirectory
 			btn_relinkmap.enabled = true
@@ -489,7 +488,7 @@ rollout SP4relinkmapRlt "Ö¸¶¨ÌùÍ¼" width:320 height:260
 )
 
 
-rollout SP4AddQuickPathRlt "Ôö¼ÓÄ¬ÈÏÂ·¾¶" width:320 height:37
+rollout SP4AddQuickPathRlt "ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½Â·ï¿½ï¿½" width:320 height:37
 (
 	edittext edt_AddQuickPath "" pos:[4,9] width:274 height:20
 	button btn_browseAddQuickPaths "..." pos:[287,10] width:24 height:20
@@ -502,7 +501,7 @@ rollout SP4AddQuickPathRlt "Ôö¼ÓÄ¬ÈÏÂ·¾¶" width:320 height:37
 	)
 	on btn_browseAddQuickPaths pressed do
 	(
-			local browseDirectory = getSavePath "Ö¸¶¨Â·¾¶"
+			local browseDirectory = getSavePath "Ö¸ï¿½ï¿½Â·ï¿½ï¿½"
 			if browseDirectory != undefined then (
 				edt_AddQuickPath.text = browseDirectory
 			)

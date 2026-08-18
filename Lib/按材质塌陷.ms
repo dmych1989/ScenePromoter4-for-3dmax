@@ -1,17 +1,16 @@
---×÷Õß£º·ÉÀË
+--ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½ï¿½
 --Author:Feilang
---www.cgplusplus.com
 --------------------------------------------------
---»¶Ó­Ê¹ÓÃ³¡¾°ÖúÊÖ4.0 
+--ï¿½ï¿½Ó­Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0 
 
-----¿ªÔ´·îÏ×----
+----ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½----
 
 ---------------------------------------------------
---³¡¾°ÖúÊÖ4.0		2011-04-01
---³¡¾°ÖúÊÖ3.0		2009-08-01
---³¡¾°ÖúÊÖ2.6		2009-03-30
---³¡¾°ÖúÊÖ2.0		2008-08-06
---³¡¾°ÖúÊÖ1.0		2008-05-27
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0		2011-04-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3.0		2009-08-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.6		2009-03-30
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.0		2008-08-06
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1.0		2008-05-27
 
 	--minus the first array from the second
 	fn fl_minusArr arrAll arrExclude  =
@@ -35,7 +34,7 @@
 	--collapse objects
 	fn fl_collapseobjs sceneObjs =
 	(
-		fl_tips01="ÖúÊÖÌáÊ¾"
+		fl_tips01="ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾"
 		tempObjs=#()
 		try 
 		(	for i in sceneObjs do
@@ -67,45 +66,45 @@
 						tempObjs=#()
 					)
 				)
-				messagebox "ËúÏİ³É¹¦£¡" title:fl_tips01
+				messagebox "ï¿½ï¿½ï¿½İ³É¹ï¿½ï¿½ï¿½" title:fl_tips01
 		)
-		else messagebox "Ã»ÓĞ¿ÉËúÏİµÄÎïÌå£¡" title:fl_tips01
+		else messagebox "Ã»ï¿½Ğ¿ï¿½ï¿½ï¿½ï¿½İµï¿½ï¿½ï¿½ï¿½å£¡" title:fl_tips01
 	)
 
 (	--collapse all objects
 		if selection.count == 0 then (	
-			ifcontinue=queryBox "ËúÏİËùÓĞ\n´Ë²Ù×÷½«³¡¾°ËùÓĞÎïÌå°´²ÄÖÊËúÏİ£¬²¢ÇÒ²»¿ÉÄæ£¬ÊÇ·ñ¼ÌĞø£¿" title:"ÓÑÇéÌáĞÑ - ËúÏİËùÓĞ" 
+			ifcontinue=queryBox "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\nï¿½Ë²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å°´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½æ£¬ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" title:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" 
 			if ifcontinue then (
 			max create mode
 			undo off(
 				with redraw off
 				timeStart=timestamp()
-				format "%\n" "ÕıÔÚËúÏİ..."
+				format "%\n" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½..."
 				sceneObjs=#()
 				--collect the nont material objects
 				sceneObjs = for i in objects where not isDeleted i and i.material!=undefined collect i
 				fl_collapseobjs sceneObjs
 				max views redraw
 				timeEnd=timestamp()
-				format "ËúÏİÓÃÊ±%Ãë\n" ((timeEnd-timeStart)/1000.0)
+				format "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±%ï¿½ï¿½\n" ((timeEnd-timeStart)/1000.0)
 				)--end undo off
 			)--end if continue
 		)--end collapse all
 		else (  --collapse selected
-			ifcontinue=queryBox "ËúÏİÑ¡Ôñ\n´Ë²Ù×÷½«³¡¾°ËùÓĞÑ¡ÔñµÄÎïÌå°´²ÄÖÊËúÏİ£¬²¢ÇÒ²»¿ÉÄæ£¬ÊÇ·ñ¼ÌĞø£¿" title:"ÓÑÇéÌáĞÑ - ËúÏİÑ¡Ôñ" 
+			ifcontinue=queryBox "ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½\nï¿½Ë²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å°´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½æ£¬ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" title:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ - ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½" 
 			if ifcontinue then (
 			max create mode
 			undo off(
 				with redraw off
 				timeStart=timestamp()
-				format "%\n" "ÕıÔÚËúÏİ..."
+				format "%\n" "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½..."
 				sceneObjs=#()
 				--collect the nont material objects
 				sceneObjs = for i in selection where not isDeleted i and i.material!=undefined collect i
 				fl_collapseobjs sceneObjs
 				max views redraw
 				timeEnd=timestamp()
-				format "ËúÏİÓÃÊ±%Ãë\n" ((timeEnd-timeStart)/1000.0)
+				format "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±%ï¿½ï¿½\n" ((timeEnd-timeStart)/1000.0)
 				)--end undo off
 			)--end if continue
 		)--end collapse selected

@@ -1,17 +1,16 @@
---×÷Õß£º·ÉÀË
+--ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½ï¿½
 --Author:Feilang
---www.cgplusplus.com
 --------------------------------------------------
---»¶Ó­Ê¹ÓÃ³¡¾°ÖúÊÖ4.0 
+--ï¿½ï¿½Ó­Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0 
 
-----¿ªÔ´·îÏ×----
+----ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½----
 
 ---------------------------------------------------
---³¡¾°ÖúÊÖ4.0		2011-04-01
---³¡¾°ÖúÊÖ3.0		2009-08-01
---³¡¾°ÖúÊÖ2.6		2009-03-30
---³¡¾°ÖúÊÖ2.0		2008-08-06
---³¡¾°ÖúÊÖ1.0		2008-05-27
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0		2011-04-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3.0		2009-08-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.6		2009-03-30
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.0		2008-08-06
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1.0		2008-05-27
 
 global SP4_rename,SP4_renameManager
 global spRootPath=getdir #scripts +"\\ScenePromoter4"
@@ -19,15 +18,15 @@ global spInifilepath=spRootPath+"\\ScenePromoter4.ini"
 
 try destroydialog SP4_rename catch() 
 try destroydialog SP4_renameManager catch() 
-rollout SP4_rename "ÖØÃüÃû" width:234 height:93
+rollout SP4_rename "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" width:234 height:93
 (
 	local renameScreenNum = 0
-	button btn_renameObj "ÖØÃüÃû" pos:[148,5] width:40 height:16 
+	button btn_renameObj "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[148,5] width:40 height:16 
 	edittext Obj_base_name "" pos:[2,5] width:141 height:16
-	radiobuttons rdo_mtlRenameScale "ÖØÃüÃû·¶Î§£º" pos:[108,42] width:128 height:46 enabled:false labels:#("³¡¾°ËùÓĞ²ÄÖÊ   ", "±à¼­Æ÷ÖĞ²ÄÖÊ   ") default:2 columns:1
-	radiobuttons rdo_renameMethod "ÖØÃüÃû·½Ê½£º" pos:[10,42] width:100 height:46 labels:#("È«²¿Ãû³Æ   ", "×÷ÎªÇ°×º   ") default:1 columns:1 
-	radiobuttons rdo_objORmtl "" pos:[9,25] width:228 height:16 labels:#("ÎïÌåÖØÃüÃû     ", "²ÄÖÊÖØÃüÃû   ") columns:2
-	button btn_manager "³£ÓÃÃû" pos:[191,5] width:40 height:16
+	radiobuttons rdo_mtlRenameScale "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§ï¿½ï¿½" pos:[108,42] width:128 height:46 enabled:false labels:#("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ²ï¿½ï¿½ï¿½   ", "ï¿½à¼­ï¿½ï¿½ï¿½Ğ²ï¿½ï¿½ï¿½   ") default:2 columns:1
+	radiobuttons rdo_renameMethod "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½" pos:[10,42] width:100 height:46 labels:#("È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   ", "ï¿½ï¿½ÎªÇ°×º   ") default:1 columns:1 
+	radiobuttons rdo_objORmtl "" pos:[9,25] width:228 height:16 labels:#("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½     ", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   ") columns:2
+	button btn_manager "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[191,5] width:40 height:16
 	button btn_help06 "?" pos:[213,25] width:15 height:16
 	on btn_renameObj pressed do		--rename selected objects
 	(	
@@ -65,7 +64,7 @@ rollout SP4_rename "ÖØÃüÃû" width:234 height:93
 					) -- end off rename in meditmaterials
 				)
 		)
-		else messagebox "ÇëÏÈÊäÈëÃû³Æ£¡" title:fl_tips01
+		else messagebox "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½" title:fl_tips01
 	)
 	on rdo_objORmtl changed stat do
 	(	
@@ -85,9 +84,9 @@ rollout SP4_rename "ÖØÃüÃû" width:234 height:93
 	)
 	on btn_help06 pressed do
 	(
-		tips = "1¡¢ÎïÌåÖØÃüÃû¶ÔÑ¡ÔñÎïÌåÖØÃüÃû¡£\n2¡¢²ÄÖÊÖØÃüÃû¶ÔËùÓĞ»òÕß±à¼­Æ÷ÖĞ²ÄÖÊÖØÃüÃû¡£\n"
-		tips += "3¡¢Äã¿ÉÒÔ×Ô¼ºÌí¼Ó»òÕßÉ¾³ı³£ÓÃÃû£¬³£ÓÃÃû¿ÉÒÔ×Ô¶¯±£´æ¡£"
-		messagebox tips title:(fl_fun_tips + " - ÖØÃüÃû") beep:off
+		tips = "1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\n2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ»ï¿½ï¿½ß±à¼­ï¿½ï¿½ï¿½Ğ²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\n"
+		tips += "3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½Ó»ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½æ¡£"
+		messagebox tips title:(fl_fun_tips + " - ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½") beep:off
 
 	)
 	on SP4_rename moved p do (
@@ -100,13 +99,13 @@ rollout SP4_rename "ÖØÃüÃû" width:234 height:93
 )
 
 
-rollout SP4_renameManager "³£ÓÃÃû¹ÜÀí" width:228 height:209
+rollout SP4_renameManager "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" width:228 height:209
 (
-	listbox lbx_pre "Ë«»÷Ñ¡Ôñ³£ÓÃÃû£º" pos:[7,4] width:216 height:10
+	listbox lbx_pre "Ë«ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" pos:[7,4] width:216 height:10
 	edittext edt3 "" pos:[5,165] width:175 height:16
-	button btn_add "Ìí¼Ó" pos:[188,165] width:36 height:17
-	button btn_delete "É¾³ıÑ¡Ôñ" pos:[49,185] width:60 height:20
-	button btn_exit "ÍË ³ö" pos:[122,185] width:60 height:20
+	button btn_add "ï¿½ï¿½ï¿½ï¿½" pos:[188,165] width:36 height:17
+	button btn_delete "É¾ï¿½ï¿½Ñ¡ï¿½ï¿½" pos:[49,185] width:60 height:20
+	button btn_exit "ï¿½ï¿½ ï¿½ï¿½" pos:[122,185] width:60 height:20
 	
 	--add rename preference
 	fn fl_addRenamePre str =
@@ -117,7 +116,7 @@ rollout SP4_renameManager "³£ÓÃÃû¹ÜÀí" width:228 height:209
 		(    append prenames str
 			setinisetting spInifilepath "Rename" "PreNames" (prenames as string)
 		)
-		else messagebox "´ËÃû³ÆÒÑ¾­´æÔÚ£¡"  title:fl_tips01 beep:off
+		else messagebox "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½Ú£ï¿½"  title:fl_tips01 beep:off
 	)
 	--delete rename preference
 	fn fl_deleteRenamePre idx =

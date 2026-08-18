@@ -1,26 +1,25 @@
---³¡¾°ÖúÊÖ4.1.00
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.1.00
 
---×÷Õß£º·ÉÀË
+--ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½ï¿½
 --Author:Feilang
---www.cgplusplus.com
 --------------------------------------------------
---»¶Ó­Ê¹ÓÃ³¡¾°ÖúÊÖ4.0 
+--ï¿½ï¿½Ó­Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0 
 
-----¿ªÔ´·îÏ×----
+----ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½----
 
 ---------------------------------------------------
---³¡¾°ÖúÊÖ4.1 	2012-02-01
---³¡¾°ÖúÊÖ4.0		2011-04-01
---³¡¾°ÖúÊÖ3.0		2009-08-01
---³¡¾°ÖúÊÖ2.6		2009-03-30
---³¡¾°ÖúÊÖ2.0		2008-08-06
---³¡¾°ÖúÊÖ1.0		2008-05-27
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.1 	2012-02-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4.0		2011-04-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3.0		2009-08-01
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.6		2009-03-30
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2.0		2008-08-06
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1.0		2008-05-27
 
 global defaultMtltype=true,CGppImportMatStr,CGppImportMat,CGppFuncStruct,CGplusplusFunc,sptoolbar, \
 SPmanageScripts,ScenePromoter4Rol,SPLinkHint,SPtoolbarBtn,SPlinkmanage,SPdataSync,SPabtRol, \
 SPsettingMenu,SPsettingMenuTB,SPmngAddto,SPmainRolSet,SPmyPersTitle,SPmtoolbarRolSet
 
---ÅäÖÃÎÄ¼þ
+--ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
 global spRootPath=getdir #scripts +"\\ScenePromoter4"
 global spLibPath=spRootPath+"\\Lib"
 global spInifilepath=spRootPath+"\\ScenePromoter4.ini"
@@ -37,7 +36,7 @@ global SPToolBarHeightOffset = execute( getinisetting spInifilepath "Main" "Tool
 global SPToolBarWidthOffset = execute( getinisetting spInifilepath "Main" "ToolBarWidthoffset")
 
 struct CGppImportMatStr 
-(	--store the data of importing mat  ¼ÇÂ¼µ¼Èë²ÄÖÊÊý¾Ý
+(	--store the data of importing mat  ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	allMatCt=0,
 	selMatCt=0,
 	missMatCt=0,
@@ -47,11 +46,11 @@ struct CGppImportMatStr
 CGppImportMat=CGppImportMatStr()
 
 --The functions of this scripts
---³¡¾°ÖúÊÖº¯Êý¼¯
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öºï¿½ï¿½ï¿½ï¿½ï¿½
 struct CGppFuncStruct
 (
 --minus the first array from the second
---´ÓÊý×éÒ»¼õÈ¥Êý×é¶þ
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½ï¿½
 fn minusArr arrAll arrExclude  =
 (	local a=arrAll.count
  	local b=arrExclude.count
@@ -289,15 +288,15 @@ fn divideIconBM obmp tn =
 --Judge if the node was hidden or frozen
 fn notHiddenOrFrozen obj = not (obj.isHidden or obj.isFrozen),
 fn saveEptScene =
-(	--refesh the materials ÕâÊÇMAXµÄÒ»¸öBUG£¬ÓÐÊ±ºò³¡¾°ÖÐ²ÄÖÊ²»»áË¢ÐÂ£¬¿ÉÒÔÓÃÕâ¸ö¸ã¶¨
+(	--refesh the materials ï¿½ï¿½ï¿½ï¿½MAXï¿½ï¿½Ò»ï¿½ï¿½BUGï¿½ï¿½ï¿½ï¿½Ê±ï¿½ò³¡¾ï¿½ï¿½Ð²ï¿½ï¿½Ê²ï¿½ï¿½ï¿½Ë¢ï¿½Â£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã¶¨
 	theFile = (GetDir #Scene + "\\feilangtool_temp.max") --define the file name
 	saveNodes #() theFile --save no objects in the file
 	deleteFile theFile --delete it again
 ),
-fn msgbox str = messagebox str title:"³¡¾°ÖúÊÖÌáÊ¾" beep:off,
+fn msgbox str = messagebox str title:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾" beep:off,
 fn matAndObjOps idx =
 (		case idx of 
-			(	1: (	--Ñ¡ÔñÃ»ÓÐ²ÄÖÊµÄÎïÌå
+			(	1: (	--Ñ¡ï¿½ï¿½Ã»ï¿½Ð²ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½
 					noMtlObjs=#()
 					for i in objects where notHiddenOrFrozen i do
 					(	if i.material==undefined then
@@ -309,33 +308,33 @@ fn matAndObjOps idx =
 					if noMtlObjs.count != 0 then
 					(	select noMtlObjs
 					)
-					else msgbox "Ã»ÓÐÕÒµ½·ûºÏÌõ¼þµÄÎïÌå £¡"
+					else msgbox "Ã»ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½"
 				)
-				2: --µ¼ÈëËùÓÐ²ÄÖÊ
+				2: --ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½
 				(	if sceneMaterials.count!=0 then (
 					MatEditor.Open()
 					CGppImportMat.allMatCt=CGplusplusFunc.importMtls sceneMaterials CGppImportMat.allMatCt
 					)
-					else msgbox "³¡¾°ÖÐÃ»ÓÐ²ÄÖÊ£¡"
+					else msgbox "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð²ï¿½ï¿½Ê£ï¿½"
 				)
-				3: --µ¼ÈëÑ¡Ôñ²ÄÖÊ
+				3: --ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½
 				(	selectedMtls=#()
 					for i in selection do
 						if i.material!=undefined then
 							if  (findItem selectedMtls i.material)==0 then
 								append selectedMtls i.material	--collect mat of seleted objects
-					if selectedMtls.count==0 then msgbox "Ã»ÓÐÑ¡ÔñÎïÌå»òÑ¡ÔñÎïÌåÃ»ÓÐ²ÄÖÊ£¡"
+					if selectedMtls.count==0 then msgbox "Ã»ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð²ï¿½ï¿½Ê£ï¿½"
 					else	
 					(	MatEditor.Open()
 						CGppImportMat.selMatCt=CGplusplusFunc.importMtls selectedMtls CGppImportMat.selMatCt
 					)
 				)
-				4:  --µ¼ÈëÍ¬Ãû²ÄÖÊ
+				4:  --ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				(
 					allMtls=for i in sceneMaterials  collect i.name	
 					theSameMtls=(CGplusplusFunc.sameItemNum allMtls)[2]
 					m=theSameMtls.count
-					if m==0 then msgbox "Ã»ÓÐÍ¬Ãû²ÄÖÊ£¡"
+					if m==0 then msgbox "Ã»ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½"
 					else
 					(	MatEditor.Open()
 						tempMtlLib=#()
@@ -346,7 +345,7 @@ fn matAndObjOps idx =
 					CGppImportMat.sameMatCt=CGplusplusFunc.importMtls tempMtlLib  CGppImportMat.sameMatCt
 					)
 				)
-				5: --µ¼Èë²ÄÖÊ¿â²ÄÖÊ
+				5: --ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¿ï¿½ï¿½ï¿½ï¿½
 				(	if currentMaterialLibrary.count!= 0 then 
 					(	MatEditor.Open()	
 						CGppImportMat.matLibCt=CGplusplusFunc.importMtls currentMaterialLibrary CGppImportMat.matLibCt
@@ -359,11 +358,11 @@ fn matAndObjOps idx =
 						)
 					)
 				)
-				6: (	--µ¼Èë¶ªÊ§²ÄÖÊ
+				6: (	--ï¿½ï¿½ï¿½ë¶ªÊ§ï¿½ï¿½ï¿½ï¿½
 					CGplusplusFunc.saveEptScene()
 					missmapmats=CGplusplusFunc.getMissingmapMats()
 					if missmapmats.count==0 then
-						msgbox "³¡¾°ÖÐÃ»ÓÐ¶ªÊ§ÌùÍ¼µÄ²ÄÖÊ£¡"
+						msgbox "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð¶ï¿½Ê§ï¿½ï¿½Í¼ï¿½Ä²ï¿½ï¿½Ê£ï¿½"
 					else 
 					(	MatEditor.Open()
 						CGppImportMat.missMatCt=CGplusplusFunc.importMtls missmapmats CGppImportMat.missMatCt
@@ -372,41 +371,41 @@ fn matAndObjOps idx =
 				default : OK
 			)
 ),
---Éú³É¿ì½Ý·½Ê½
+--ï¿½ï¿½ï¿½É¿ï¿½Ý·ï¿½Ê½
 fn createLink file =
 (	tempfile=CGplusplusFunc.SlashConvert file
 	txt=getfilenamefile tempfile
 	tempstr="SP_"+bit.intasHex (genclassID returnValue:true)[1]
 	str="macroScript "+tempstr+" category:\"FeilangTools\" "
 	str+="tooltip:\""+txt+"\" buttontext:\""+txt+"\"\n"
-	str+="(\ntry filein \""+tempfile+"\"\n catch messagebox \"´ò¿ª "+tempfile+" ³ö´í!\\nÇëÈ·¶¨Ô­½Å±¾ÊÇ·ñ´æÔÚ,»òÕßÔ­½Å±¾ÊÇ·ñÄÜÕý³£ÔËÐÐ!\" title:\"³¡¾°ÖúÊÖÌáÊ¾\"\n)"
+	str+="(\ntry filein \""+tempfile+"\"\n catch messagebox \"ï¿½ï¿½ "+tempfile+" ï¿½ï¿½ï¿½ï¿½!\\nï¿½ï¿½È·ï¿½ï¿½Ô­ï¿½Å±ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½Ô­ï¿½Å±ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½!\" title:\"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾\"\n)"
 	
 	thefile=getdir #ui+"\\macroscripts\\FeilangTools-"+tempstr+".mcr"
 	ff=createfile thefile
-	format "--³¡¾°ÖúÊÖ×Ô¶¯´´½¨¿ì½Ý·½Ê½\n--%\n%\n" localtime str to:ff
+	format "--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý·ï¿½Ê½\n--%\n%\n" localtime str to:ff
 	close ff
 	filein thefile
 )
 ,
---¸ü¸Ä±êÌâÀ¸Í¼±ê,for 3dmax 2008 and higher
+--ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½,for 3dmax 2008 and higher
 -- fn changeTitleIcon rol file =
--- (	--rolÎªrollout±äÁ¿£¬fileÎªÍ¼±êµÄÍêÕûÂ·¾¶£¬Í¼±êÎªico¸ñÊ½Í¼Æ¬
+-- (	--rolÎªrolloutï¿½ï¿½ï¿½ï¿½ï¿½ï¿½fileÎªÍ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½Îªicoï¿½ï¿½Ê½Í¼Æ¬
 -- 	d = (windows.getChildHWND 0 rol.title)[1]
 -- 	WM_SETICON = 0x0080
 -- 	ICON_SMALL = 0
 -- 	icon = dotnetobject "System.Drawing.Icon" file
 -- 	windows.SendMessage d WM_SETICON ICON_SMALL icon.handle
 -- ),
---½çÃæ²Ù×÷
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 fn refeshUIs =
-(	--Ë¢ÐÂËùÓÐ UI
+(	--Ë¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ UI
 	if ScenePromoter4Rol.open  then ScenePromoter4Rol.resetUI ScenePromoter4Rol.listId
 	if sptoolbar.open then CGplusplusFunc.createToolbar thetype:spToolbarType
 	if SPmanageScripts.open then SPmanageScripts.refeshList SPmanageScripts.num
 ),
---UI²Ù×÷ 4.1¸üÐÂ
+--UIï¿½ï¿½ï¿½ï¿½ 4.1ï¿½ï¿½ï¿½ï¿½
 
---Í¼±ê±³¾°É«
+--Í¼ï¿½ê±³ï¿½ï¿½É«
 fn changeBackColor sourceBmp col =
 (
 	tempBmp = bitmap sourceBmp.width sourceBmp.height
@@ -423,7 +422,7 @@ fn changeBackColor sourceBmp col =
 	)
 	tempBmp
 ),
---µ¼º½À¸±³¾°É«
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«
 fn changeNavBG col =
 (
 	bgBmp = bitmap 200 20 color:col
@@ -434,20 +433,20 @@ fn changeNavBG col =
 	)
 	bgBmp
 ),
---»ñÈ¡ÅäÉ«·½°¸
+--ï¿½ï¿½È¡ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½
 fn getUIcol = 
 (
 	spUIColors=#()
 	idx = getinisetting spInifilepath "Color" "Index"
 	if idx == "0" then
 	(
-		--Á´½Ó×Ö
+		--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		spUIColors[1] = color 155 200 122
-		--±³¾°É«
+		--ï¿½ï¿½ï¿½ï¿½É«
 		spUIColors[2] = color 32 32 45
-		--ÎÄ±¾ÑÕÉ«
+		--ï¿½Ä±ï¿½ï¿½ï¿½É«
 		spUIColors[3] = color 200 192 122
-		--µ¼º½µ×É«
+		--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«
 		spUIColors[4] = color 67 67 78
 	)
 	else 
@@ -469,7 +468,7 @@ fn getUIcol =
 	spUIColors
 )
 ,
---´´½¨Ö÷½çÃæ
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 fn createMainRlt =
 (	spRolHeight=execute (getinisetting spInifilepath "Main" "Height")
 	spRolWidth=execute (getinisetting spInifilepath "Main" "Width")
@@ -491,7 +490,7 @@ fn createMainRlt =
 		--if doesfileexist iconfile then CGplusplusFunc.changeTitleIcon ScenePromoter4Rol iconfile
 	)
 ),
---ÖØÆôÖ÷½çÃæ
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 fn restartMainRlt =
 (	spRolHeight=execute (getinisetting spInifilepath "Main" "Height")
 	spRolWidth=execute (getinisetting spInifilepath "Main" "Width")
@@ -515,9 +514,9 @@ fn restartMainRlt =
 
 ),
 fn getDockHeight type:undefined =
-(	--»ñÈ¡Í£¿¿×ó±ß»òÕßÓÒ±ßµÄ¸ß¶È
+(	--ï¿½ï¿½È¡Í£ï¿½ï¿½ï¿½ï¿½ß»ï¿½ï¿½ï¿½ï¿½Ò±ßµÄ¸ß¶ï¿½
 	global GetTollbarHeight
-	r=rolloutCreator "GetTollbarHeight" "ÕýÔÚ´´½¨Ö÷½çÃæ..."
+	r=rolloutCreator "GetTollbarHeight" "ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½..."
 	r.begin()
 	createdialog (r.end()) style:#(#style_titlebar, #style_border, #style_sysmenu,#style_toolwindow)
 	cui.RegisterDialogBar GetTollbarHeight maxSize:[200,sysInfo.desktopSize[2]] style:#(#cui_dock_vert, #cui_floatable, #cui_handles)
@@ -531,9 +530,9 @@ fn getDockHeight type:undefined =
 	h
 ),
 fn getDockWidth type:#top =
-(	--»ñÈ¡Í£¿¿ÉÏ±ß»òÕßÏÂ±ßµÄ¿í¶È
+(	--ï¿½ï¿½È¡Í£ï¿½ï¿½ï¿½Ï±ß»ï¿½ï¿½ï¿½ï¿½Â±ßµÄ¿ï¿½ï¿½ï¿½
 	global GetTollbarWidth
-	r=rolloutCreator "GetTollbarWidth" "ÕýÔÚ´´½¨¹¤¾ßÀ¸..."
+	r=rolloutCreator "GetTollbarWidth" "ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½..."
 	r.begin()
 	createdialog (r.end()) style:#(#style_titlebar, #style_border, #style_sysmenu,#style_toolwindow)
 	cui.RegisterDialogBar GetTollbarWidth style:#(#cui_dock_horz, #cui_floatable, #cui_handles,#cui_max_sized)
@@ -546,7 +545,7 @@ fn getDockWidth type:#top =
 	destroydialog GetTollbarWidth
 	w
 ),
---Ö÷½çÃæÍ£¿¿
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½
 fn dockMainRlt thetype:undefined =
 (	
 	thepos=getinisetting spInifilepath "Main" "Pos"
@@ -559,8 +558,8 @@ fn dockMainRlt thetype:undefined =
 
 	destroydialog ScenePromoter4Rol
 	dockSt=case thetype of
-	(	#left: #cui_dock_left	--×ó
-		#right: #cui_dock_right	--ÓÒ
+	(	#left: #cui_dock_left	--ï¿½ï¿½
+		#right: #cui_dock_right	--ï¿½ï¿½
 		default : undefined
 	)
 	setinisetting spInifilepath "Main" "DockState" ("#"+thetype as string)
@@ -582,7 +581,7 @@ fn dockMainRlt thetype:undefined =
 		CGplusplusFunc.createMainRlt()
 	)
 ),
---»ñÈ¡×ÓÃæ°åÏà¶ÔÎ»ÖÃ,ÉèÖÃÃæ°åupdate2012-03-09
+--ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½update2012-03-09
 fn createChild rol width:0 =
 (	mypos=[5,100]
 	--s1=getinisetting spInifilepath "Main" "ChildUIPos"
@@ -599,7 +598,7 @@ fn createChild rol width:0 =
 	)
 	createdialog rol pos:mypos fgcolor:SPtxtcolor --style:#(#style_titlebar, #style_border, #style_sysmenu,#style_toolwindow)
 ),
---»ñÈ¡½Å±¾¿âÖÐ½Å±¾µÄÎ»ÖÃ
+--ï¿½ï¿½È¡ï¿½Å±ï¿½ï¿½ï¿½ï¿½Ð½Å±ï¿½ï¿½ï¿½Î»ï¿½ï¿½
 fn createChildLib rol =
 (
 	pos0 = execute (getinisetting spInifilepath "Main" "childLibPos")
@@ -607,7 +606,7 @@ fn createChildLib rol =
 	createdialog rol pos:pos0 fgcolor:SPtxtcolor
 ),
 fn addBtn s files:#() =
-(	--Ìí¼Ó½Å±¾¸øµÚsÆÁ
+(	--ï¿½ï¿½ï¿½Ó½Å±ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½
 	if files[1]!=undefined then case s of
 	(	2: (
 			olditems=getinisetting spIniCategory "S2"
@@ -688,7 +687,7 @@ fn addBtn s files:#() =
 	CGplusplusFunc.refeshUIs()
 ),
 fn addExe s file =
-(	--Ìí¼ÓÖ´ÐÐÎÄ¼þ¸øµÚsÆÁ
+(	--ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½
 	ff=CGplusplusFunc.slashConvert file
 	keystr=case s of
 	(	2: "S2"
@@ -711,18 +710,18 @@ fn addExe s file =
 	CGplusplusFunc.refeshUIs()
 ),
 fn addEpt s defaulCode:false =
-(	--ÐÂ½¨½Å±¾Ìí¼Óµ½µÚsÆÁ,defaulCodeÈç¹ûÎªtrue,ÔòÐÂ½¨µÄ½Å±¾»áÄÚÖÃ½Å±¾´úÂë,¼ûÏÂÃæ´úÂë
+(	--ï¿½Â½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½sï¿½ï¿½,defaulCodeï¿½ï¿½ï¿½Îªtrue,ï¿½ï¿½ï¿½Â½ï¿½ï¿½Ä½Å±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã½Å±ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	i=1
-	while doesfileexist (spLibPath+"\\ÐÂ½¨½Å±¾"+i as string +".ms") do i+=1
+	while doesfileexist (spLibPath+"\\ï¿½Â½ï¿½ï¿½Å±ï¿½"+i as string +".ms") do i+=1
 	iStr=i as string
-	filename="ÐÂ½¨½Å±¾"+iStr +".ms"
+	filename="ï¿½Â½ï¿½ï¿½Å±ï¿½"+iStr +".ms"
 	spt=createFile (spLibPath+"\\"+filename)
 
 	if defaulCode then (
-		--ÐÂ½¨½Å±¾ÄÚÈÝ
-		theCodes="--³¡¾°ÖúÊÖ×Ô¶¯´´½¨\n--"+localtime
+		--ï¿½Â½ï¿½ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½
+		theCodes="--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½\n--"+localtime
 		theCodes+="\ntry destroydialog SPnewScript"+iStr+" catch()\n"
-		theCodes+="rollout SPnewScript"+iStr+" \"ÐÂ½¨½Å±¾"+iStr+"\" width:150 height:50\n"
+		theCodes+="rollout SPnewScript"+iStr+" \"ï¿½Â½ï¿½ï¿½Å±ï¿½"+iStr+"\" width:150 height:50\n"
 		theCodes+="(\n\tbutton btn1 \"Button\" pos:[25,11] width:100 height:26\n)\n"
 		theCodes+="createdialog SPnewScript"+iStr
 		format "%" theCodes to:spt
@@ -744,7 +743,7 @@ fn addEpt s defaulCode:false =
 	else SPmanageScripts.getnohome()
 ),
 fn delBtn s idx =
-(	--É¾³ýµÚsÆÁµÚidx¸ö°´Å¥
+(	--É¾ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½ï¿½ï¿½idxï¿½ï¿½ï¿½ï¿½Å¥
 	if s<7 then (
 	keystr="S"+s as string
 	oldItems=getinisetting spIniCategory keystr
@@ -758,12 +757,12 @@ fn delBtn s idx =
 	OK
 ),
 fn renamebtn s idx =
-(	--ÖØÃüÃûµÚSÆÁµÚidx¸ö°´Å¥
+(	--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Sï¿½ï¿½ï¿½ï¿½idxï¿½ï¿½ï¿½ï¿½Å¥
 	local renamerol
 	keystr="S"+s as string
 	oldItems=getinisetting spIniCategory keystr
 	oldFiles=for i in oldItems collect (getinisetting spIniCategory keystr i)
-	--ÆäËûÆÁÍ¬Ê±ÐÞ¸Ä
+	--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬Ê±ï¿½Þ¸ï¿½
 	items02=getinisetting spIniCategory "S2"
 	files02=for i in items02 collect (getinisetting spIniCategory "S2" i)
 	items03=getinisetting spIniCategory "S3"
@@ -777,9 +776,9 @@ fn renamebtn s idx =
 	if idx<=oldFiles.count then (
 		r=rolloutCreator "renamerol" (getfilenamefile oldFiles[idx])
 		r.begin()
-		r.addControl #edittext #newname "ÇëÊäÈëÐÂÃû³Æ:"  paramStr:"width:150 height:18 pos:[3,3] labelontop:true"
-		r.addControl #button #b1 "È·¶¨" paramStr:"width:50 height:18 pos:[30,44]"
-		r.addControl #button #b2 "È¡Ïû" paramStr:"width:50 height:18 pos:[83,44]"
+		r.addControl #edittext #newname "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:"  paramStr:"width:150 height:18 pos:[3,3] labelontop:true"
+		r.addControl #button #b1 "È·ï¿½ï¿½" paramStr:"width:50 height:18 pos:[30,44]"
+		r.addControl #button #b2 "È¡ï¿½ï¿½" paramStr:"width:50 height:18 pos:[83,44]"
 		str01="test = renamefile (spLibPath+@\\\\"+oldFiles[idx]+"@)"+" (spLibPath+@\\\\@+newname.text+@"+getfilenametype oldFiles[idx]+"@)\n"
 		str01+="if test then (\n"
 		if (id=finditem files02 oldFiles[idx]) !=0 then
@@ -792,7 +791,7 @@ fn renamebtn s idx =
 		str01+="setinisetting spIniCategory @"+"S5"+"@ @b" + id as string+"@ (newname.text+@"+getfilenametype oldFiles[idx]+"@)\n"
 		if (id=finditem files06 oldFiles[idx]) !=0 then
 		str01+="setinisetting spIniCategory @"+"S6"+"@ @b" + id as string+"@ (newname.text+@"+getfilenametype oldFiles[idx]+"@)\n"
-		str01+="CGplusplusFunc.refeshUIs()\ndestroydialog renamerol \n)--end if\nelse CGplusplusFunc.msgbox @ÖØÃüÃûÊ§°Ü,ºÎ²»»»¸öÃû×ÖÊÔÊÔ?@"
+		str01+="CGplusplusFunc.refeshUIs()\ndestroydialog renamerol \n)--end if\nelse CGplusplusFunc.msgbox @ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½,ï¿½Î²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?@"
 		str02="destroydialog renamerol"
 		r.addHandler #b1 #pressed codeStr:str01
 		r.addHandler #b2 #pressed codeStr:str02
@@ -801,17 +800,17 @@ fn renamebtn s idx =
 	OK
 ),
 fn renamescript oldFile =
-(	--ÖØÃüÃû½Å±¾,½Å±¾¹ÜÀí-->ÎÞ¼Ò¿É¹éÏÂÃæ °´Å¥Ê¹ÓÃ
+(	--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å±ï¿½,ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½-->ï¿½Þ¼Ò¿É¹ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å¥Ê¹ï¿½ï¿½
 	local renamerol
 	if doesfileexist (spLibPath+"\\"+oldFile) then (
 		r=rolloutCreator "renamerol" (getfilenamefile oldFile)
 		r.begin()
-		r.addControl #edittext #newname "ÇëÊäÈëÐÂÃû³Æ:"  paramStr:"width:150 height:18 pos:[3,3] labelontop:true"
-		r.addControl #button #b1 "È·¶¨" paramStr:"width:50 height:18 pos:[30,44]"
-		r.addControl #button #b2 "È¡Ïû" paramStr:"width:50 height:18 pos:[83,44]"
+		r.addControl #edittext #newname "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:"  paramStr:"width:150 height:18 pos:[3,3] labelontop:true"
+		r.addControl #button #b1 "È·ï¿½ï¿½" paramStr:"width:50 height:18 pos:[30,44]"
+		r.addControl #button #b2 "È¡ï¿½ï¿½" paramStr:"width:50 height:18 pos:[83,44]"
 		str01="test = renamefile (spLibPath+@\\\\"+oldFile+"@)"+" (spLibPath+@\\\\@+newname.text+@"+getfilenametype oldFile+"@)\n"
 		str01+="if test then (\n"
-		str01+="CGplusplusFunc.refeshUIs()\ndestroydialog renamerol \n)--end if\nelse CGplusplusFunc.msgbox @ÊäÈëÃû³ÆÓëÏÖÓÐÃû³ÆÖØ¸´,ÇëÖØÐÂÊäÈë!@"
+		str01+="CGplusplusFunc.refeshUIs()\ndestroydialog renamerol \n)--end if\nelse CGplusplusFunc.msgbox @ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½!@"
 		str02="destroydialog renamerol"
 		r.addHandler #b1 #pressed codeStr:str01
 		r.addHandler #b2 #pressed codeStr:str02
@@ -820,7 +819,7 @@ fn renamescript oldFile =
 	OK
 ),
 fn moveBtn s idx state:#up =
-(	--½Å±¾¹ÜÀí,ÉÏÒÆ,ÏÂÒÆ
+(	--ï¿½Å±ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½
 	if s<7 then (
 	keystr="S"+s as string
 	oldItems=getinisetting spIniCategory keystr
@@ -830,7 +829,7 @@ fn moveBtn s idx state:#up =
 		(	#up : 
 			(	if idx > 1 then (
 					tempstr=oldFiles[idx]
-					oldFiles[idx]=oldFiles[idx-1] --½»»»Î»ÖÃ
+					oldFiles[idx]=oldFiles[idx-1] --ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
 					oldFiles[idx-1]=tempstr
 					delIniSetting spIniCategory keystr
 					for i in 1 to oldFiles.count do setinisetting spIniCategory keystr ("b"+i as string) oldFiles[i]
@@ -852,7 +851,7 @@ fn moveBtn s idx state:#up =
 	)--end if
 	OK
 ),
---ÖúÊÖ¹¤¾ßÀ¸
+--ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½
 fn closeToolbar =	try (
 	cui.UnRegisterDialogBar  sptoolbar
 	destroydialog sptoolbar
@@ -862,7 +861,7 @@ fn createLinkHint =
 (	spCreateLinkHint=try execute (getinisetting spInifilepath "Main" "Linkhint") catch true
 	if spCreateLinkHint then (try destroydialog SPLinkHint catch() ; createdialog SPLinkHint)
 ),
---´´½¨ÖúÊÖ¹¤¾ßÀ¸
+--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½
 fn createToolbar thetype:spToolbarType=
 (	
 	spToolbarType=thetype
@@ -874,7 +873,7 @@ fn createToolbar thetype:spToolbarType=
 	SPToolBarHeightOffset = execute( getinisetting spInifilepath "Main" "ToolBarHeightoffset")
 	SPToolBarWidthOffset = execute( getinisetting spInifilepath "Main" "ToolBarWidthoffset")
 
-	--¶ÁÈ¡½Å±¾ÎÄ¼þÂ·¾¶
+	--ï¿½ï¿½È¡ï¿½Å±ï¿½ï¿½Ä¼ï¿½Â·ï¿½ï¿½
 	itemsTxt=#();SPtoolbarBtn=#()
 	itemsTxtArr=getinisetting spIniCategory "S6"
 	for s in itemsTxtArr do (
@@ -883,20 +882,20 @@ fn createToolbar thetype:spToolbarType=
 	append SPtoolbarBtn temp
 	)--end for
 
-	rci=rolloutCreator "sptoolbar" "ÖúÊÖ¹¤¾ßÀ¸"
+	rci=rolloutCreator "sptoolbar" "ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½"
 	rci.begin()
 	px=0;py=2
 	maxxpos=CGplusplusFunc.getDockWidth type:thetype
-	len01=(GetTextExtent "Ñ¡Ïî")[1]+10 + SPToolBarWidthOffset
+	len01=(GetTextExtent "Ñ¡ï¿½ï¿½")[1]+10 + SPToolBarWidthOffset
 	pstr01=("pos:["+px as string+","+py as string+"] width:"+len01 as string+" height:" + (18+ SPToolBarHeightOffset) as string)
 	code01="spShowtoolbar=execute (getinisetting spInifilepath \"Main\" \"Toolbar\")\n"
 	code01+="PopupMenu SPsettingMenuTB"
-	rci.addControl #button #setting "Ñ¡Ïî" paramStr:pstr01
+	rci.addControl #button #setting "Ñ¡ï¿½ï¿½" paramStr:pstr01
 	rci.addHandler #setting #pressed codeStr:code01
 	px+=len01+3
-	len02=(GetTextExtent "Ö÷½çÃæ")[1]+10 + SPToolBarWidthOffset
+	len02=(GetTextExtent "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½")[1]+10 + SPToolBarWidthOffset
 	pstr02=("pos:["+px as string+","+py as string+"] width:"+len02 as string+" height:"+ (18+ SPToolBarHeightOffset) as string)
-	rci.addControl #button #mainui "Ö÷½çÃæ" paramStr:pstr02
+	rci.addControl #button #mainui "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" paramStr:pstr02
 	rci.addHandler #mainui #pressed codeStr:"CGplusplusFunc.createMainRlt()"
 	px+=len02+3
 
@@ -904,14 +903,14 @@ fn createToolbar thetype:spToolbarType=
 	(
 		thename=itemsTxt[i]
 		bn=execute ("#btn"+i as string)
-		len=(GetTextExtent thename)[1]+10 + SPToolBarWidthOffset	--°´Å¥¿í¶È
-		if (px+len)>maxxpos	--Èç¹û³¬¹ýÆÁÄ»¿í¶È£¬Ôò»»ÐÐ
+		len=(GetTextExtent thename)[1]+10 + SPToolBarWidthOffset	--ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½
+		if (px+len)>maxxpos	--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½
 	    then	(	px=0;py+=20 + SPToolBarHeightOffset)
 		pstr=(" pos:["+px as string+","+py as string+"] width:"+len as string+" height:"+ (18+ SPToolBarHeightOffset) as string)
 		px+=len+3
-		--Ìí¼Ó°´Å¥
+		--ï¿½ï¿½ï¿½Ó°ï¿½Å¥
 		thestr="try filein (spRootPath+@\\\\Lib\\\\@+SPtoolbarBtn[" + i as string +"]) catch OK"
-		rcmenustr="rcmenu tempmenu (\nmenuitem m1 @±à¼­´úÂë@\nmenuitem rename @ÖØÃüÃû@ \nmenuitem m2 @É¾³ý°´Å¥@\nmenuitem m3 @Éú³É¿ì½Ý·½Ê½@\n"
+		rcmenustr="rcmenu tempmenu (\nmenuitem m1 @ï¿½à¼­ï¿½ï¿½ï¿½ï¿½@\nmenuitem rename @ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½@ \nmenuitem m2 @É¾ï¿½ï¿½ï¿½ï¿½Å¥@\nmenuitem m3 @ï¿½ï¿½ï¿½É¿ï¿½Ý·ï¿½Ê½@\n"
 		rcmenustr+="on tempmenu open do (if getfilenametype SPtoolbarBtn["+ i as string +"]==@.mse@ then m1.enabled=false)\n"
 		rcmenustr+="on m1 picked do (edit "+"(spRootPath+@\\\\Lib\\\\@+SPtoolbarBtn[" + i as string +"]))\n"
 		rcmenustr+="on m2 picked do (CGplusplusFunc.delBtn 6 "+i as string+";CGplusplusFunc.refeshUIs())\n"
@@ -923,16 +922,15 @@ fn createToolbar thetype:spToolbarType=
 		rci.addHandler bn #pressed codeStr:thestr filter:on
 		rci.addHandler bn #rightclick codeStr:rcmenustr filter:on
 	)
-	-- rci.addControl #ActiveXControl #ax "http://www.cgplusplus.com/mini/sptb4001.html" [disabled: dead domain causes script error] paramStr:"pos:[0,0] width:0 height:0"
 	rci.end()
 	dockSt=if thetype==#top then #cui_dock_top else #cui_dock_bottom
 	createdialog sptoolbar
 	cui.RegisterDialogBar sptoolbar style:#(dockSt, #cui_floatable, #cui_handles,#cui_max_sized)
 	cui.DockDialogBar sptoolbar dockSt
 ),
---ÖØÆôMAX
+--ï¿½ï¿½ï¿½ï¿½MAX
 fn restartMax =
-(	--if queryBox "ÇëÈ·¶¨ÒÑ±£´æµ±Ç°ÎÄ¼þ£¬ÖØÆôMAXºó£¬µ±Ç°ÎÄ¼þ½«×Ô¶¯¼ÓÔØ£¡\nÊÇ·ñÖØÆôMAX£¿" title:"ÖØÆôMAXÌáÊ¾"
+(	--if queryBox "ï¿½ï¿½È·ï¿½ï¿½ï¿½Ñ±ï¿½ï¿½æµ±Ç°ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½MAXï¿½ó£¬µï¿½Ç°ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ø£ï¿½\nï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½MAXï¿½ï¿½" title:"ï¿½ï¿½ï¿½ï¿½MAXï¿½ï¿½Ê¾"
 	if checkForSave()
 	then (
 		shellLaunch (getdir #maxroot+"\\3dsmax.exe") (maxfilepath+maxfilename)
@@ -940,15 +938,15 @@ fn restartMax =
 	)
 	else ()
 ),
---Êý¾ÝÍ¬²½
+--ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½
 fn dataSync =
 (	curPath=CGplusplusFunc.slashConvert (getdir #maxroot)
-	curPath=substring curPath 1 (curPath.count-1) --È¥µô×îºóÃæÄÇ¸ö·´Ð±¸Ü\
+	curPath=substring curPath 1 (curPath.count-1) --È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½Ð±ï¿½ï¿½\
 	items01=getinisetting spInifilepath "Path"
 	items02=for i in items01 collect (getinisetting spInifilepath "Path" i)
 	idx=finditem items02 curPath
 	if idx!=0 then deleteitem items02 idx
-	--¿ªÊ¼Í¬²½
+	--ï¿½ï¿½Ê¼Í¬ï¿½ï¿½
 	files01=getFiles (getdir #maxroot +"/scripts/ScenePromoter4/*")
 	files02=getDir #maxroot +"/scripts/Startup/SP4_startup.ms"
 	files03=getFiles (getdir #maxroot +"/scripts/ScenePromoter4/Lib/*")
@@ -1001,24 +999,24 @@ fn dataSync =
 	)
 )
 ,
---Ð¶ÔØ
+--Ð¶ï¿½ï¿½
 fn unInstall =
 (
-	--³¡¾°ÖúÊÖ4ÍêÈ«Ð¶ÔØ
-	--±¾³ÌÐò¿ÉÒÔÐ¶ÔØÄãµçÄÔÀïÃæµÄ³¡¾°ÖúÊÖ4£¬°üÀ¨ÄãÓÃÊý¾ÝÍ¬²½¹ýµÄÖúÊÖ4
-	--³¡¾°ÖúÊÖÐ¶ÔØºó£¬»á²ÐÁô³¡¾°ÖúÊÖÎÄ¼þ¼ÐScenePromoter4£¬²»ÊÇ²»ÏëÉ¾£¬MAX½Å±¾Ã»ÓÐÌá¹©É¾³ýÎÄ¼þ¼Ð¹¦ÄÜ
+	--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½È«Ð¶ï¿½ï¿½
+	--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4
+	--ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½Øºó£¬»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ScenePromoter4ï¿½ï¿½ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½É¾ï¿½ï¿½MAXï¿½Å±ï¿½Ã»ï¿½ï¿½ï¿½á¹©É¾ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð¹ï¿½ï¿½ï¿½
 	curPath=CGplusplusFunc.slashConvert (getdir #maxroot)
-	curPath=substring curPath 1 (curPath.count-1) --È¥µô×îºóÃæÄÇ¸ö·´Ð±¸Ü\
+	curPath=substring curPath 1 (curPath.count-1) --È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½Ð±ï¿½ï¿½\
 	items01=getinisetting spInifilepath "Path"
 	items02=for i in items01 collect (getinisetting spInifilepath "Path" i)
 	idx=finditem items02 curPath
 	if idx==0 then append items02 curPath
-	str = "´Ë³ÌÐò½«Ð¶ÔØÄúµçÄÔÉÏÏÂÁÐÂ·¾¶ÖÐµÄ³¡¾°ÖúÊÖ4:\n\n" 
+	str = "ï¿½Ë³ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ÐµÄ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4:\n\n" 
 	for f in items02 do str += f + "\n"
-		str += "\n¼ÌÐøÐ¶ÔØÇëµ¥»÷¡°ÊÇ¡±£¬È¡ÏûÐ¶ÔØÇëµ¥»÷¡°·ñ¡±£¡"
-	if queryBox str title:"Ð¶ÔØ³¡¾°ÖúÊÖ2012" then
+		str += "\nï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ëµ¥ï¿½ï¿½ï¿½ï¿½ï¿½Ç¡ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ëµ¥ï¿½ï¿½ï¿½ï¿½ï¿½ñ¡±£ï¿½"
+	if queryBox str title:"Ð¶ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2012" then
 	(
-		--¿ªÊ¼Ð¶ÔØ
+		--ï¿½ï¿½Ê¼Ð¶ï¿½ï¿½
 		for f in items02 where doesfileexist (f+"/3dsmax.exe") do
 		(        
 				deletefile (f+"/scripts/Startup/SP4_startup.ms")
@@ -1043,9 +1041,9 @@ fn unInstall =
 				files=getfiles (getdir #usermacros+"/FeilangTools-SP_*.mcr")
 				for p in files do deletefile p
 		)
-		if queryBox "³¡¾°ÖúÊÖ2012ÒÑ¾­Ð¶ÔØÍê±Ï£¬ÖØÆôMAXºóÉúÐ§¡£\nÊÇ·ñÏÖÔÚÖØÆôMAX£¿" title:"Ð¶ÔØ³¡¾°ÖúÊÖ2012" then CGplusplusFunc.restartMax()
+		if queryBox "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2012ï¿½Ñ¾ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½MAXï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½\nï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½MAXï¿½ï¿½" title:"Ð¶ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2012" then CGplusplusFunc.restartMax()
 	)
-	else format "È¡ÏûÐ¶ÔØ³¡¾°ÖúÊÖ£¡"
+	else format "È¡ï¿½ï¿½Ð¶ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½"
 )
 )--end struct
 CGplusplusFunc=CGppFuncStruct()
