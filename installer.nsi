@@ -27,6 +27,8 @@ ${StrTok}    ; 初始化字符串分词函数
 Name "场景助手 4.3.0"
 OutFile "dist\场景助手4_3_0.exe"
 InstallDir "$LOCALAPPDATA\ScenePromoter4"
+Icon "images\logo.ico"
+UninstallIcon "images\logo.ico"
 RequestExecutionLevel admin        ; 写 3ds Max 脚本目录(多在 Program Files)需要管理员
 SetCompressor /SOLID lzma
 CRCCheck on

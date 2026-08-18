@@ -22,6 +22,20 @@ if not defined MAKENSIS (
 
 if not exist dist mkdir dist
 
+REM 自动生成图标（gif -> ico，NSIS Icon 只认 ico）
+if not exist "images\logo.ico" (
+  echo [信息] 正在从 images\logo.gif 生成 images\logo.ico...
+  python "build_icon.py" 2>nul
+  if errorlevel 1 (
+    python3 "build_icon.py" 2>nul
+    if errorlevel 1 (
+      echo [错误] 无法生成 images\logo.ico。请确保已安装 Python 与 Pillow，或手动准备 images\logo.ico。
+      pause
+      exit /b 1
+    )
+  )
+)
+
 echo [信息] 正在编译安装包...
 "%MAKENSIS%" installer.nsi
 if errorlevel 1 (
