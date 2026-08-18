@@ -266,7 +266,7 @@ Section "安装场景助手" SEC_INSTALL
       ${ExitDo}
     ${EndIf}
     IntOp $R3 $R1 + 1
-    ${StrTok} $R5 $selPaths "|" $R3 "+"
+    ${StrTok} $R5 $detectedPaths "|" $R3 "+"
     ${If} $R5 != ""
       WriteRegStr HKLM "Software\ScenePromoter4" "Path$R2" "$R5"
       IntOp $R2 $R2 + 1
