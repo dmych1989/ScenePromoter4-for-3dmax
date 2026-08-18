@@ -12,6 +12,11 @@
 ;  构建：安装 NSIS (https://nsis.sourceforge.io) 后运行 build_nsis.bat
 ; ============================================================================
 
+; ---- 强制 Unicode 编译（中文不乱码的关键）----
+; 不加此指令时 NSIS 默认 ANSI，UTF-8 中文会被当 GBK 字节存储，运行时乱码。
+; 本机 NSIS 自带 x86-unicode 的插件与 Stubs，加此指令可正确编译为 Unicode 安装包。
+Unicode true
+
 !include "MUI2.nsh"
 !include "LogicLib.nsh"
 !include "StrFunc.nsh"
